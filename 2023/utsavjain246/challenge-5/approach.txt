@@ -1,0 +1,49 @@
+make sure to install webdriver on your device to run this script
+
+1) Importing Necessary Modules:
+
+Importing modules such as smtplib for sending emails, EmailMessage for creating email messages, and selenium for web scraping.
+
+2) Parsing Time Remaining:
+
+A function parse_time_remaining is defined to convert the time remaining string into total hours. It considers both days and hours in the time string.
+
+3)Sending Email:
+
+The send_email function is defined to send emails using the smtplib module. It requires a subject and body for the email, and it sends the email to a specified recipient. for login Id :- you gmail will work and for password you have to generate a app password first by enabling 2 factor auth on your gmal id and then go to the app password generation option or just type it on google to gen a pass for mailing.
+
+4)Web Scraping with Selenium:
+
+Using Selenium, a headless browser is initiated, and the script logs into the IIT Mandi LMS platform.
+It extracts course names and links from the dashboard (my courses) and stores them in the course_data dictionary.
+
+5)Iterating Over Courses:
+
+For each course, the script navigates to the course page and extracts assignment links.
+For each assignment link, it checks the submission status and time remaining.
+
+6)Checking Submission Status and Time Remaining:
+
+If no submissions have been made, and the assignment is not overdue, it checks the time remaining.
+If the time remaining is less than or equal to 6 hours, it sends a reminder email.
+If the time remaining is greater than 6 hours, it schedules a reminder for the specified time before the deadline.
+
+7) Handling Overdue Assignments:
+
+If an assignment is overdue and no submissions have been made, it sends an email indicating the overdue status with course name and assignment name.
+
+8) Email Content and Recipient:
+
+The email content includes the assignment title and a reminder message. Emails are sent to a specified recipient email address.
+
+
+
+
+
+# here i also send the the email if time remain is more than 6 also.
+   we can change it and to make this script to send mails 6 hrs before deadline by making this script to run at a time before 6 hrs before the deadline means at around 6 pm as most of our assignment deadlines are at 12 am.
+
+use cron jobs for linux like i use din challenge 3
+
+and task schedule for windows.
+            
