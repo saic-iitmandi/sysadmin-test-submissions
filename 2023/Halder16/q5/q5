@@ -1,0 +1,41 @@
+
+
+
+# Challenge 5 Documentation
+
+
+After reading the challenge question, i realised i had to somehow access the assignment info from some server hosting the lms website. Next, I did some googling on how to do 
+just that. I found about this 'requests' library available for python. Afterwards, i started trying out code snippets from geeksforgeeks requests library gudie
+(https://www.geeksforgeeks.org/how-to-install-requests-in-python-for-windows-linux-mac).
+
+Then i started trying get requests on github trying to log in, only to realise that github uses some 'key' to authorise that action. Later i found out nearly every other 
+modern website uses this kind of authorisation. So, on more googling i found out this website by Stephen Brennan (https://brennan.io/2016/03/02/logging-in-with-requests/),
+which was exactly what i needed. He also worked on a similar project, to web-scrape his school's website to automate things.
+
+now, i tried to use his code snippets, while modifying them (since there might have been differences in webpage structures of his and my school), but that didnt work. At last,
+i realised i just needed to just copy his code and run it, just changing the login page url. Because apparently, the 'logintoken' was in a 'form' element with class as 'hidden'
+in both cases (his and mine). 
+
+Upon more research and some help from chatGPT, i wrote 'httprequests.py' (should be included in this flolder) as my testing python file to try to login into lms webpage. I was
+trying to input the login credentials and get the response and wrote it in another file named 'testing.html' to see what it returned.
+
+Now, having run this file multiple times, changing something or even without changing anything, hoping it would just work, it didnt work. So, on more googling i found another 
+library but this time it was a javascript library. Again, this lib claimed to do exactly what i was trying to do. It too claimed to login to a website using get requests. Now
+not bring very familiar with js, i still tried to run it, but it didnt work. So i switched back to python. 
+
+Finally, i discovered 'playright' library in python (i had found a similar lib in js, called puppeteer, but being unfamiliar with js i didnt go with it). Now using playright,
+i could finally login and get the course content from lms.
+
+Before discovering playright, i realised that even after we establish a session using requests, and login, it doesnt work properly. So using playright in headless=Trueode, i co
+uld see what is really the code doing. And i found that the best way to do what i wanted was to try to access the target url first(instead of login first), then the target url 
+itself leads us to the login page, so we inout our credentials and boom we in!
+
+Using this method, i got the course list by using the link to the 'courses' tab, the then using the course list, which had linkks to all the respective courses, i went in 
+the courses pages to get the assignment info.
+
+i wrote functions to retrieve the data and turn it into something that we can use. 
+
+For the sending email part, i tried using the smtp module in python, and gmail as the relay server to send an test email. But it didnt work and kept throwing a authorization
+error. I tried resolving it by going to the google api console and enable gmail api for the test account, but even afte that it didnt work.
+
+So finally, i couldnt get the script to send an email with the said information. But if i had more time, i would maybe try different relays instead of gmail to send the email.
