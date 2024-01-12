@@ -1,0 +1,42 @@
+version: '3'
+
+services:
+  matrix1:
+    build:
+      context: ./matrix
+    ports:
+      - "3001:3000"
+    networks:
+      - matrix_network
+
+  matrix2:
+    build:
+      context: ./matrix
+    ports:
+      - "3002:3000"
+    networks:
+      - matrix_network
+
+  matrix3:
+    build:
+      context: ./matrix
+    ports:
+      - "3003:3000"
+    networks:
+      - matrix_network
+
+  nginx:
+    image: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - matrix1
+      - matrix2
+      - matrix3
+    networks:
+      - matrix_network
+
+networks:
+  matrix_network:
