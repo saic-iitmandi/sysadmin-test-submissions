@@ -1,0 +1,44 @@
+version: '3'
+
+services:
+
+  postgres:
+    image: postgres:latest
+    volumes:
+      - /home/utsav/Desktop/challenge-3/postgres-data:/var/lib/postgresql/data
+    networks:
+      - ruby-on-rails-network
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: github-languages_development
+      POSTGRES_USER: github-languages
+      
+  saic-website:
+    build: ./SAIC-Website
+    ports:
+      - "8080:80"
+    networks:
+      - html-css-js-network
+    volumes:
+      - /home/utsav/Desktop/challenge-3/saic-data:/app/data
+
+  github-lang:
+    build: ./github-languages-master
+    ports:
+      - "3000:3000"
+    networks:
+      - ruby-on-rails-network
+    depends_on:
+      - postgres 
+    environment:
+      RAILS_ENV: development
+      DATABASE_HOST: postgres
+
+networks:
+  html-css-js-network:
+    driver: bridge
+
+  ruby-on-rails-network:
+    driver: bridge
+
+
