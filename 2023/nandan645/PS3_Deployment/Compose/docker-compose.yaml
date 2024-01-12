@@ -1,0 +1,11 @@
+version: "3"
+services:
+  website:
+    image: my-apache
+    ports:
+      - "8080:80"
+    restart: always
+
+  git-lang:
+    image: my-ruby-app
+    restart: always
