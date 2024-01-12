@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  app1:
+    image: piyushjson/hello
+    ports:
+      - 8080:5000
+    volumes:
+      - ./logs/app1:/app/logs
+  app2:
+    image: metavinayak/matrix
+    ports:
+      - 8081:3000
+    volumes:
+      - ./logs/app2:/app/logs

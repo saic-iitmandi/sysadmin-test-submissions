@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  web:
+    image: metavinayak/matrix
+    ports:
+      - '3000'
+
+  load-balancer:
+    image: nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - '8000:80'
+    depends_on:
+      - web
