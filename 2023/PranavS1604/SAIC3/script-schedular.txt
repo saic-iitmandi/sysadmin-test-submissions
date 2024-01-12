@@ -1,0 +1,11 @@
+#RUN the given below command in powershell for scheduling the backup at 11:55 PM everyday.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+> schtasks /create /tn "BackupTask" /tr "powershell -Command Compress-Archive -Path 'C:\Users\91928\Desktop\SAIC3\SAIC-Website' -DestinationPath 'C:\Users\91928\Desktop\SAIC3\backup_trial\backup_$(Get-Date -Format 'yyyyMMdd_HHmmss').zip'" /sc daily /st 23:55 /f
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#1] Here in -Path put the path of file where you have cloned SAIC_Website instead of 'C:\Users\91928\Desktop\SAIC3\SAIC-Website' in my case.
+#2] Here in -DestinationPath put the path of file where you have cloned Github_languages instead of 'C:\Users\91928\Desktop\SAIC3\backup_trial' in my case.

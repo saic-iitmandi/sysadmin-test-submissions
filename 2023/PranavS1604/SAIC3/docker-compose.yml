@@ -1,0 +1,23 @@
+version: '3'
+services:
+  saic:
+    image: nginx:alpine
+    ports:
+      - "4444:80"
+    volumes:
+      - ./SAIC-Website:/usr/share/nginx/html/
+    networks:
+      - webnet
+  linguist:
+    image: ruby:2.3.1
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./github-languages:/app 
+    working_dir: /app
+    command: bundle exec rackup -p 3000
+    networks:
+      - webnet
+networks:
+  webnet:
+    driver: bridge
