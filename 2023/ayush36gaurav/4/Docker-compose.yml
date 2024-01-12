@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  matrix-custom1:
+    image: metavinayak/matrix-custom
+    container_name: matrix-custom-container1
+    environment:
+      - PORT=8001
+
+  matrix-custom2:
+    image: metavinayak/matrix-custom
+    container_name: matrix-custom-container2
+    environment:
+      - PORT=8002
+
+  matrix-custom3:
+    image: metavinayak/matrix-custom
+    container_name: matrix-custom-container3
+    environment:
+      - PORT=8003
+
+  nginx:
+    image: nginx
+    container_name: load-balancer
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - matrix-custom1
+      - matrix-custom2
+      - matrix-custom3

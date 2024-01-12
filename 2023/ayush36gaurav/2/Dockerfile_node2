@@ -1,0 +1,5 @@
+FROM node:14
+
+COPY node_app2.js /node_app2.js
+
+CMD ["node", "/node_app2.js"]

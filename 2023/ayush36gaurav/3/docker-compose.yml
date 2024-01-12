@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  saic-iit-mandi:
+    build: C:\Users\Dell\Desktop\SAIC-Website
+    container_name: saic-iit-mandi
+    ports:
+      - "8081:80"  # Map host port 8081 to container port 80
+    networks:
+      - saic-iit-mandi-net
+
+  github-languages:
+    build: C:\Users\Dell\Desktop\github-languages
+    container_name: github-languages
+    ports:
+      - "8082:3000"  # Map host port 8082 to container port 3000
+    networks:
+      - github-languages-net
+
+networks:
+  saic-iit-mandi-net:
+    driver: bridge
+
+  github-languages-net:
+    driver: bridge

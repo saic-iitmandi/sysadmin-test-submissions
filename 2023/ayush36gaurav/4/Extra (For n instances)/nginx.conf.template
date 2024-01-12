@@ -1,0 +1,27 @@
+worker_processes 1;
+
+events {
+    worker_connections 1024;
+}
+
+http {
+    sendfile on;
+
+    upstream backend {
+        {% for instance in range(1, n_instances + 1) %}
+        server matrix-custom{{ instance }}:{{ 8000 + (instance - 1) * 500 }};
+        {% endfor %}
+    }
+
+    server {
+        listen 80;
+
+        location / {
+            proxy_pass http://backend;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+        }
+    }
+}

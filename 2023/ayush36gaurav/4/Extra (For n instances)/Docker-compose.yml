@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  matrix-custom:
+    image: metavinayak/matrix-custom
+    container_name: matrix-custom-container
+    environment:
+      - PORT=8000
+
+  nginx:
+    image: nginx
+    container_name: load-balancer
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf.template:/etc/nginx/nginx.conf.template:ro
+      - ./entrypoint.ps1:/entrypoint.ps1:ro
+    depends_on:
+      - matrix-custom
+    environment:
+      - n_instances=3  # Set the desired number of instances
+    entrypoint: powershell /entrypoint.ps1
