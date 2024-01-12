@@ -1,0 +1,57 @@
+#show {
+  #donut {
+    // margin-left: auto;
+  }
+
+  img {
+    width: 150px;
+    height: auto;
+    border-radius: 3px;
+
+    display: block;
+    margin: 10px auto;
+  }
+
+  ul {
+    text-align: center;
+  }
+
+  table {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+
+    .left-align {
+      text-align: left;
+    }
+
+    .right-align {
+      text-align: right;
+    }
+  }
+
+  h1 {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    position: relative;
+
+    &:before, &:after{
+      content: "";
+      position: absolute;
+      background-color: #333;
+      width: 35px;
+      height: 2px;
+      left: 50%;
+      transform: translateX(-50%);
+      }
+    &:before{
+      top: -10px;
+      }
+    &:after{
+      bottom: -10px;
+    }
+  }
+
+  .back-button {
+    margin-top: 30px;
+  }
+}
