@@ -1,0 +1,13 @@
+FROM ruby:2.3.1
+
+# throw errors if Gemfile has been modified since Gemfile.lock
+RUN bundle config --global frozen 1
+
+WORKDIR .
+
+COPY Gemfile Gemfile.lock ./
+RUN bundle install
+
+COPY . .
+RUN chmod +x ./app/services/github_client.rb
+CMD ["./app/services/github_client.rb","puma"]
