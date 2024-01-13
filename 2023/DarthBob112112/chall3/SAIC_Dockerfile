@@ -1,0 +1,8 @@
+FROM nginx:alpine
+
+COPY . /usr/share/nginx/html
+
+#RUN THE FOLLOWING
+#docker build -t your-image-name .
+#docker run -d -p 80:80 --name your-container-name your-image-name
+#accessible through http://localhost

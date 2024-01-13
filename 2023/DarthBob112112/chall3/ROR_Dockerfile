@@ -1,0 +1,17 @@
+FROM ubuntu
+
+RUN apt-get update && apt-get install -y npm && npm install -g yarn && apt-get install -y rbenv
+RUN rbenv install 2.3.1 && rbenv global 2.3.1
+RUN mkdir -p /var/app
+COPY . /var/app
+WORKDIR /var/app
+
+RUN bundle install
+
+EXPOSE 3000
+
+CMD rails s -b 0.0.0.0
+
+#RUN THE FOLLOWING
+#docker build -t your-image-name .
+#docker run -p 3000:3000 --name your-container-name -d your-image-name
