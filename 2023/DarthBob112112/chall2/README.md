@@ -8,6 +8,4 @@ Steps for testing:
 2. set up cronjob for the bash script
 1. Run the docker `docker run -it ubuntu bash`. Wait for the script to run. Exit the docker by typing exit in the shell. Check your email.
 
-https://github.com/DarthBob112112/sysadmin-test-2023/blob/main/chall2/Screencast%20from%2001-11-2024%2002%2050%2033%20AM.mov
-
-video above
+[video](Screencast%20from%2001-11-2024%2002%2050%2033%20AM.mov)
