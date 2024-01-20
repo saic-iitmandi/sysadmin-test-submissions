@@ -11,7 +11,7 @@ homepage_url = 'https://lms.iitmandi.ac.in/'
 
 payload = {
     'username': 'b23354',
-    'password': 'Piyush@2904'
+    'password': '*********'#password
 }
 
 def send_email(subject, body):
