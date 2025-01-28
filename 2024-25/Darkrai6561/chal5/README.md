@@ -53,6 +53,7 @@ also in the script at line 78 you will need to change the driver path
 I used wsl to run it
 also I can't upload the .env file here I guess
 So if you want to run it please use this format of env file
+save the .env file in the same directory as the script.py and please download chrome driver for it to work
 
 LOGIN_ID= 
 
