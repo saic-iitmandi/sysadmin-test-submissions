@@ -51,3 +51,11 @@ also I did notice some things that the booking portal opens 15 days before, I ha
 I used environment variables to secure my id passwords, I will upload the script and environment file without any id password so you will need to put your details in it before running it
 also in the script at line 78 you will need to change the driver path
 I used wsl to run it
+also I can't upload the .env file here I guess
+So if you want to run it please use this format of env file
+
+LOGIN_ID=
+PASSWORD=
+SENDER_EMAIL=
+SENDER_PASSWORD=
+RECEIVER_EMAIL=
