@@ -54,8 +54,17 @@ I used wsl to run it
 also I can't upload the .env file here I guess
 So if you want to run it please use this format of env file
 
-LOGIN_ID=
-PASSWORD=
+LOGIN_ID= 
+
+PASSWORD= 
+
 SENDER_EMAIL=
+
 SENDER_PASSWORD=
+
 RECEIVER_EMAIL=
+
+
+for demo video
+
+https://drive.google.com/file/d/1cvn3LU1uzDc1PvhcsOjx3_Fm9XQJPo-m/view?usp=drive_link
