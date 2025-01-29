@@ -48,6 +48,7 @@
 
 - I had little experience here as well, but due to guilt of using GPT, I preferred to learn this and then complete the task.
 - It took me a while to get a hang of it, starting by printing a sentence every minute to eventually including error handling.
+- I have scheduled the script to run at the same time of the day as traveltime as it would be the exact time that the window opens meaning the booking      would happen  immediately
 
 # Conclusion
 
