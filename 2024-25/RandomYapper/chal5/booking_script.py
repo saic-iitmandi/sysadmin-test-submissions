@@ -55,6 +55,7 @@ def BookTicket(input_date,input_time,input_route,user_name,user_pass,selected_bu
     driver.get(reservationurl)
 
     try:
+        time.sleep(5)
         date_field = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.ID, 'txtFromDate'))
         )
@@ -133,13 +134,14 @@ Routes = {
 traveldate = input("Enter the date and month (eg: 20 January): ")
 traveltime = input("Enter the travel time(HH:MM AM/PM): ")
 userbus = 'BUS(G)'#Hardcoded, will have to change according to need
+print(int(traveltime[3:]))
 try:
     BookTicket(traveldate,traveltime,Routes[routeKey],username,password,userbus)
 except:
     scheduler =  BackgroundScheduler()
     scheduler.add_job(
     BookTicket,  
-        'cron', hour=10, minute=0, args=[traveldate, traveltime, Routes[routeKey], username, password, userbus]
+        'cron', hour=int(traveltime[:2]), minute=int(traveltime[3:]), args=[traveldate, traveltime, Routes[routeKey], username, password, userbus]
     )
     scheduler.start()
 
