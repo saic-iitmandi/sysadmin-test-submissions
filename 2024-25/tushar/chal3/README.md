@@ -20,5 +20,12 @@ Dockerfile:18
 ERROR: failed to solve: process "/bin/sh -c bundle install" did not complete successfully: exit code: 5
 ```
 
-# Docker Deployment - Nutrient Tracker
+# Docker Deployment - TIP
 
+created the ```dockerfile``` and ```docker-compose.yml``` using GPT obv 
+
+then did ```docker-compose up --build```
+
+then ```docker ps``` got the container running 
+
+and there it was on ```http://localhost:3000```

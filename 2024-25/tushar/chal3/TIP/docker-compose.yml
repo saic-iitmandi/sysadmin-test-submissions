@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  tip:
+    build:
+      context: ./  # Path to the TIP (Next.js) project directory
+    ports:
+      - "3000:3000"  # Maps the container's 3000 port to the host's 3000 port
+    networks:
+      - webapp
+
+networks:
+  webapp:
+    driver: bridge
