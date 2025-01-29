@@ -17,7 +17,7 @@ This script automates the process of booking a bus seat on the IIT Mandi bus boo
 
 3. **Polling Avoidance**:
 
-   - Uses a scheduled task to trigger the booking process precisely at the specified time, avoiding continuous polling of the website.retries afther  RETRY_INTERVAL
+   - Uses a scheduled task to trigger the booking process precisely at the specified time, avoiding continuous polling of the website. retries afther  ```RETRY_INTERVAL```
 
 4. **Security**:
 
@@ -33,33 +33,6 @@ This script automates the process of booking a bus seat on the IIT Mandi bus boo
 5. **Email Notifications**:
 
    - Sends a confirmation email with booking details upon successful booking.
-
----
-
-## Installation
-
-1. Clone this repository:
-
-   ```bash
-   git clone https://github.com/your-repo-name.git
-   cd bus-booking-automation
-   ```
-
-2. Install the required dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Set up environment variables:
-
-   - Create a `.env` file in the project root directory.
-
-
-4. Install a browser driver (e.g., ChromeDriver):
-
-   - Ensure the driver version matches your browser version.
-   - Add the driver to your system's PATH.
 
 ---
 
@@ -90,27 +63,5 @@ This script automates the process of booking a bus seat on the IIT Mandi bus boo
    - Log in to the booking system.
    - Book a seat for the specified path.
    - Send a confirmation email with booking details.
-
----
-
-### Avoiding Polling
-
-- The script uses a scheduled task mechanism (`APScheduler`) to wake up and execute the booking process at the exact time when bookings open, minimizing server load and adhering to best practices.
-
----
-
-## Files
-
-- **`bus_booking.py`**: The main script that automates the booking process.
-- **`.env`**: File for storing sensitive data (not included in the repository for security reasons).
----
-
-## Dependencies
-
-- Python 3.7+
-- Selenium
-- APScheduler
-- dotenv
-- smtplib (for email notifications)
 
 ---
