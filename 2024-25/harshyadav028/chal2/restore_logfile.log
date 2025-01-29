@@ -1,0 +1,10 @@
+[2025-01-29 12:15:57] starting full restore proccess
+[2025-01-29 12:15:57] Starting restore for volume: q4_db-data_20250129121510
+[2025-01-29 12:15:58] Restore successful for volume: q4_db-data_20250129121510
+[2025-01-29 12:15:58] Starting restore for volume: 853725f4a8bde12e0bda51c424609ad9994fad6996c5651c490afb9c468c2910_20250129121512
+[2025-01-29 12:15:58] Restore successful for volume: 853725f4a8bde12e0bda51c424609ad9994fad6996c5651c490afb9c468c2910_20250129121512
+[2025-01-29 12:15:58] Starting restore for volume: html-site_html-data_20250129121511
+[2025-01-29 12:15:58] Restore successful for volume: html-site_html-data_20250129121511
+[2025-01-29 12:15:58] Starting restore for volume: sample-volume_20250129121511
+[2025-01-29 12:15:59] Restore successful for volume: sample-volume_20250129121511
+[2025-01-29 12:15:59] all volumes restored successfully
