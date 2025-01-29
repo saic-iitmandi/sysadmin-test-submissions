@@ -1,0 +1,37 @@
+# Use Go 1.15 image from Docker Hub
+FROM golang:1.15 AS builder
+
+# Set the current working directory inside the container
+WORKDIR /app
+
+# Copy the go.mod and go.sum files to download dependencies
+COPY go.mod go.sum ./
+
+# Download all dependencies (this will create a Go Modules cache)
+RUN go mod download
+
+# Copy the rest of the application code into the container
+COPY . .
+
+# Build the Go application
+RUN go build -o server .
+
+# Final stage to create a smaller image
+FROM debian:bullseye-slim
+
+# Install necessary dependencies for running the app (e.g., libc)
+RUN apt-get update && apt-get install -y ca-certificates && rm -rf /var/lib/apt/lists/*
+
+# Set a directory for the app inside the container
+WORKDIR /ping/
+
+# Copy the compiled binary from the builder stage
+COPY --from=builder /app/server .
+
+ENV REACT_APP_API_URL=https://backend:8080
+
+# Expose the server port (adjust if necessary)
+EXPOSE 8080
+
+# Command to run the Go binary
+CMD ["./server"]
