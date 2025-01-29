@@ -1,0 +1,20 @@
+2025-01-29 01:31:11 - No backup timestamp provided. Restoring from latest backup.
+2025-01-29 01:31:11 - Restoring from backup directory: /home/utkarshsahu/Chal2/backup/20250129012903
+2025-01-29 01:31:11 - Restoring volume: *
+2025-01-29 01:31:17 - Restore completed.
+2025-01-29 02:02:51 - Starting Docker volumes backup.
+2025-01-29 02:02:51 - Backing up volume: test_volume
+2025-01-29 02:02:52 - Backup completed. Files are stored in /home/utkarshsahu/Chal2/backup/20250129020251.
+2025-01-29 02:04:57 - No backup timestamp provided. Restoring from latest backup.
+2025-01-29 02:04:57 - Restoring from backup directory: /home/utkarshsahu/Chal2/backup/20250129020251
+2025-01-29 02:04:57 - Restoring volume: test_volume
+2025-01-29 02:04:57 - Restore completed.
+2025-01-29 02:32:08 - Starting Docker volumes backup.
+2025-01-29 02:32:09 - Backing up volume: test_volume
+2025-01-29 02:32:09 - Backup completed. Files are stored in /home/utkarshsahu/Chal2/backup/20250129023208.
+2025-01-29 02:34:22 - Starting Docker volumes backup.
+2025-01-29 02:34:22 - Backing up volume: test_volume
+2025-01-29 02:34:23 - Backup completed. Files are stored in /home/utkarshsahu/Chal2/backup/20250129023422.
+2025-01-29 02:37:10 - Starting Docker volumes backup.
+2025-01-29 02:37:10 - Backing up volume: test_volume
+2025-01-29 02:37:11 - Backup completed. Files are stored in /home/utkarshsahu/Chal2/backup/20250129023710.

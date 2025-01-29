@@ -1,0 +1,12 @@
+Running the backup and restore script:
+
+To grant permissions for execution:  chmod +x /path/to/docker_backup_restore.sh
+To backup all the volumes:  sudo /path/to/docker_backup_restore.sh backup
+List the backups:  ls -lh /home/user/docker_backups/
+To restore from latest backup:  sudo /path/to/docker_backup_restore.sh restore
+Check the volume contents inside a new container:  docker run --rm -v test_volume:/data alpine ls -l /data
+Check Log File:  cat /var/log/docker_backup_restore.log
+
+Automating Backup at Midnight Using cron
+Open cron file:  crontab -e
+Add this line:  0 0 * * * sudo /path/to/docker_backup_restore.sh backup >> /path/to/backup.log 2>&1
