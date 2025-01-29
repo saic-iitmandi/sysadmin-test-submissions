@@ -1,0 +1,8 @@
+[2025-01-26 06:53:50] Starting backup process.
+[2025-01-26 06:53:51] Backing up volume: test_volume to /home/epicgamer/backup/test_volume_20250126_065350.tar.gz
+[2025-01-26 06:53:53] Backup for volume test_volume completed successfully.
+[2025-01-26 06:53:53] Backup process completed.
+[2025-01-26 06:55:58] Starting restore process.
+[2025-01-26 06:55:58] Restoring volume: test_volume from test_volume_20250126_065350.tar.gz
+[2025-01-26 06:56:03] Restore for volume test_volume completed successfully.
+[2025-01-26 06:56:03] Restore process completed.
