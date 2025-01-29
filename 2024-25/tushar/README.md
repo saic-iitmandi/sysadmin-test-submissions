@@ -8,3 +8,5 @@ Done Partially
 
 ## Chal 5
 Done Completely
+
+## Was heavely dependent on ChatGPT
