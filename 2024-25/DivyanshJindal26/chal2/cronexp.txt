@@ -1,0 +1,1 @@
+0 0 * * * /dockerBackupRestore.sh backup >> /var/log/docker_backup.log 2>&1

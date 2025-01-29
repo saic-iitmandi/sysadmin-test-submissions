@@ -1,0 +1,26 @@
+FROM ruby:2.5
+
+# Install system dependencies (including Node.js and build tools)
+RUN apt-get update -qq && apt-get install -y \
+  build-essential \
+  libpq-dev \
+  nodejs \
+  npm
+
+# Set working directory
+WORKDIR /app
+
+ENV PATH=/usr/local/bin:$PATH
+
+# Install dependencies
+COPY Gemfile Gemfile.lock ./
+RUN bundle install
+
+# Copy the rest of the app
+COPY . .
+
+# Expose port for Rails
+EXPOSE 3000
+
+# Start the Rails server
+CMD ["rails", "server", "-b", "0.0.0.0", "-p", "3000"]

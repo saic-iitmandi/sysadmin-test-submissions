@@ -1,0 +1,13 @@
+FROM golang:1.20 AS builder
+WORKDIR /app
+COPY go.mod go.sum ./
+RUN go mod download
+COPY . .
+RUN go build -o backend .
+FROM debian:bookworm-slim
+WORKDIR /
+RUN apt-get update && apt-get install -y \
+    libc6 libstdc++6 ca-certificates && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
+COPY --from=builder /app/backend .
+CMD ["/backend"]
