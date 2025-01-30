@@ -1,0 +1,45 @@
+version: "3.9"
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: ./frontend/Dockerfile
+    networks:
+      - app-network
+    ports:
+      - "8080:80"
+
+  backend:
+    build:
+      context: .
+      dockerfile: ./backend/Dockerfile
+    networks:
+      - app-network
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_USER=secure_user
+      - DB_PASSWORD=secure_password
+      - DB_NAME=app_db
+    ports:
+      - "5000:5000"
+
+  db:
+    image: postgres:15
+    networks:
+      - app-network
+    environment:
+      POSTGRES_USER: secure_user
+      POSTGRES_PASSWORD: secure_password
+      POSTGRES_DB: app_db
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    expose:
+      - "5432"
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  db_data:
