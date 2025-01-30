@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: 
+          context: ./frontend
+          dockerfile: dockerfile
+    ports:
+      - "3001:80"  # Expose frontend app on port 80 inside container, and 3001 on host
+    environment:
+      REACT_APP_BACKEND_URL: "http://localhost:8080/ping"
+
+
+  backend:
+    build: 
+          context: ./backend
+          dockerfile: dockerfile
+    ports:
+      - "8080:8080"  # Expose Go backend app on port 8080
+
+networks:
+  mynetwork:
+    driver: bridge
