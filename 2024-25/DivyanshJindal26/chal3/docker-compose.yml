@@ -1,0 +1,39 @@
+version: '3.8'
+services:
+  nutrient-tracker:
+    build:
+      context: ./Nutrient-Tracker
+    ports:
+      - "3000:3000"
+    networks:
+      - app-network
+    environment:
+      RAILS_ENV: development
+    volumes:
+      - ./Nutrient-Tracker:/app
+
+  nodejs-app:
+    build:
+      context: ./TIP  # Set the context to your project root
+    image: nodejs-app
+    container_name: nodejs-app
+    ports:
+      - "3001:3000"  # Map container port 3000 to local port 3001
+    networks:
+      - app-network
+    environment:
+      NODE_ENV: production
+    volumes: []  # No volumes for production
+    working_dir: /app
+
+  redis:
+    image: redis:6
+    container_name: nutrient-tracker-redis
+    networks:
+      - app-network
+    ports:
+      - "6379:6379"
+
+networks:
+  app-network:
+    driver: bridge
