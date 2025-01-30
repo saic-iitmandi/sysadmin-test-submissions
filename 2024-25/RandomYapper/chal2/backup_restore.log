@@ -1,0 +1,12 @@
+[2025-01-26_10-36-22] Starting Docker Backup Process
+Backing up volume: dockertestapp_test_volume
+Backup completed successfully.
+[2025-01-26_11-27-14] Starting Docker Backup Process
+Restoring volume: dockertestapp_test_volume from /home/shivam_regix/docker_backups/dockertestapp_test_volume_2025-01-26_10-36-22.tar.gz
+Restore process completed.
+[2025-01-26_11-33-40] Starting Docker Backup Process
+Backing up volume: dockertestapp_test_volume
+Backup completed successfully.
+[2025-01-26_11-33-45] Starting Docker Backup Process
+Restoring volume: dockertestapp_test_volume from /home/shivam_regix/docker_backups/dockertestapp_test_volume_2025-01-26_11-33-40.tar.gz
+Restore process completed.
