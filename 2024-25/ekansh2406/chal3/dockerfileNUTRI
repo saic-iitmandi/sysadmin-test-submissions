@@ -1,0 +1,26 @@
+FROM ruby:2.7.8
+
+# Install SQLite3 and Node.js
+RUN apt-get update -qq && apt-get install -y nodejs sqlite3 libsqlite3-dev
+
+# Set working directory
+WORKDIR /app
+
+# Install Bundler
+RUN gem install bundler -v '~> 2.4.22'
+
+# Copy Gemfiles and install gems
+COPY Gemfile Gemfile.lock ./
+RUN bundle install
+
+# Copy application code
+COPY . .
+
+# Entrypoint script to handle DB setup and server start
+COPY entrypoint.sh /usr/bin/
+RUN chmod +x /usr/bin/entrypoint.sh
+ENTRYPOINT ["entrypoint.sh"]
+
+# Start Rails server
+EXPOSE 3000
+CMD ["rails", "server", "-b", "0.0.0.0" ,  "-p", "3000"]
