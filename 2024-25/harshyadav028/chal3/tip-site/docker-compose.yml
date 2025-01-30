@@ -1,0 +1,19 @@
+version: "3.8" # Version of Docker Compose file format
+
+services: # Defines the services (containers) we will use
+  tip-app: # The name of the service (which will become the container name)
+    build: # Specifies how to build the image for this service
+      context: . # The directory containing the Dockerfile (current directory)
+      dockerfile: Dockerfile # The Dockerfile used to build the container
+    ports:
+      - "4000:3000" # Maps port 4000 on the host to port 3000 in the container
+    networks:
+      - tip-network # Attaches the container to the 'tip-network'
+    volumes:
+      - .:/app # Maps the current directory to /app in the container (for live code changes)
+    environment:
+      - NODE_ENV=production
+
+networks: # Defines the networks the containers will use
+  tip-network: # The name of the network we are creating
+    driver: bridge # The driver for the network (bridge is used for local communication between containers)
