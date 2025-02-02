@@ -1,0 +1,6 @@
+['1', '01/02/2025', 'North Campus -To- Mandi (via South)', 'BUS(F)', '09:00 AM', '1', 'DHRUV']Date : 01/02/2025 
+ Route : North Campus -To- Mandi (via South) 
+ Bus Board : BUS(F) 
+ Time : 09:00 AM 
+ No of person : 1 
+ Name : DHRUV 

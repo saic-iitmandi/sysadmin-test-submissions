@@ -1,0 +1,37 @@
+# Use an official Ruby image as a parent image
+FROM ruby:3.0.0
+
+# Install required system dependencies
+RUN apt-get update -qq && apt-get install -y \
+  nodejs \
+  npm \
+  build-essential \
+  libpq-dev \
+  && rm -rf /var/lib/apt/lists/*
+
+# Install Yarn
+RUN npm install -g yarn
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the Gemfile and Gemfile.lock into the container
+COPY Gemfile Gemfile.lock ./
+
+# Install Ruby gems
+RUN bundle install
+
+# Copy the rest of the application into the container
+COPY . .
+
+# Install JavaScript dependencies
+RUN yarn install
+
+# Precompile assets (optional, but needed for production environments)
+# RUN bundle exec rake assets:precompile
+
+# Expose port (adjust if needed)
+EXPOSE 3000
+
+# Define the command to run the app (use `rails server` in development)
+CMD ["rails", "server", "-b", "0.0.0.0"]
