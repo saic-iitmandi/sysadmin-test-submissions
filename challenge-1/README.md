@@ -251,12 +251,3 @@ SAIC{C0ngr4ts_d0_y0u_l0v3_ST4C?}
 ```
 ## Solved
 ### Flag = SAIC{C0ngr4ts_d0_y0u_l0v3_ST4C?}
-
-
-
-
-
-
-
-
-
