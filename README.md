@@ -11,7 +11,7 @@ Welcome to the **SysAdmin Test Submissions** repository! Please carefully follow
 - Fork this repository: [https://github.com/saic-iitmandi/sysadmin-test-submissions](https://github.com/saic-iitmandi/sysadmin-test-submissions).  
 
 ### 2. Folder Structure  
-- Create a folder named after your **GitHub username** inside the `2024-25` directory.  
+- Create a folder named after your **GitHub username** inside the `2025-26` directory.  
 - Inside your folder, include subfolders for each challenge, named as:  
   - `chal1`  
   - `chal2`  
@@ -23,7 +23,7 @@ Welcome to the **SysAdmin Test Submissions** repository! Please carefully follow
   - **Deliverables**: All necessary files/scripts/code required for the challenge.  
 - Example folder structure:  
   ```plaintext
-  2024-25/
+  2025-26/
     your-github-username/
       chal1/
         README.md
@@ -45,7 +45,7 @@ Welcome to the **SysAdmin Test Submissions** repository! Please carefully follow
 
 ## Submission Process  
 1. Fork the repository.  
-2. Create the necessary folder structure under `2024-25/your-github-username`.  
+2. Create the necessary folder structure under `2025-26/your-github-username`.  
 3. Upload your challenge folders along with their deliverables.  
 1. Push your changes to your forked repository.  
 2. Submit a pull request (PR) to this repository.  
