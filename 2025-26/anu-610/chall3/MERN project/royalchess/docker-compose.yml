@@ -1,0 +1,54 @@
+services:
+  db:
+    image: postgres:15-alpine
+    restart: always
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=royalchess
+      - POSTGRES_USER=chess_admin
+      - POSTGRES_PASSWORD=secure_chess_password
+    networks:
+      - royal-net
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U chess_admin -d royalchess"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  app:
+    build: .
+    restart: always
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+    environment:
+      # --- Database Variables (From README) ---
+      - PGHOST=db
+      - PGPORT=5432
+      - PGDATABASE=royalchess
+      - PGUSER=chess_admin
+      - PGPASSWORD=secure_chess_password
+      
+      # --- Application Variables (From README) ---
+      - NODE_ENV=production
+      - SESSION_SECRET=super_secret_session_key
+      - CORS_ORIGIN=http://localhost:3000
+      - HOSTNAME=0.0.0.0
+      - PORT=3001
+      
+      # --- Extra Variable (Required for Next.js to talk to Backend) ---
+      # (Not in README list, but the app will fail without it)
+      - NEXT_PUBLIC_API_URL=http://localhost:3001
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - royal-net
+
+networks:
+  royal-net:
+    driver: bridge
+
+volumes:
+  postgres_data:
