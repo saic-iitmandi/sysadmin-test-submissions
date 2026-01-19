@@ -1,0 +1,67 @@
+services:
+  stac_db:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: stac
+      POSTGRES_USER: stac_user
+      POSTGRES_PASSWORD: stac_password
+    volumes:
+      - stac_db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U stac_user -d stac"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - stac_internal
+    restart: unless-stopped
+
+
+  stac_backend:
+    build:
+      context: .
+      dockerfile: docker/backend/Dockerfile
+    environment:
+      DJANGO_SETTINGS_MODULE: STAC.settings
+
+      # Django security
+      DEBUG: "False"
+      SECRET_KEY: stac-production-secret-change-later
+      ALLOWED_HOSTS: localhost,127.0.0.1
+
+      #Database
+      DATABASE_URL: postgres://stac_user:stac_password@stac_db:5432/stac
+    depends_on:
+      stac_db:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    networks:
+      - stac_public
+      - stac_internal
+    restart: unless-stopped
+
+
+  stac_frontend:
+    build:
+      context: .
+      dockerfile: docker/frontend/Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - "4000:3000"
+    depends_on:
+      - stac_backend
+    networks:
+      - stac_public
+    restart: unless-stopped
+
+
+networks:
+  stac_public:
+  stac_internal:
+    internal: true
+
+
+volumes:
+  stac_db_data:

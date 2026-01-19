@@ -1,0 +1,43 @@
+RoyalChess – Setup Instructions
+
+Project Root Directory
+- The project root directory is named: `royalchess`
+- All Docker commands (docker compose build / up) are executed from this directory.
+- The actual application source code resides inside: `royalchess/app/`
+- The Docker-related files are located in: `royalchess/docker/`
+  - Dockerfile(s)
+  - start.sh
+
+Project Structure Overview
+royalchess/
+├── app/                # Application source code (frontend & backend)
+├── docker/             # Dockerfile(s) and start.sh
+├── docker-compose.yml  # Service orchestration
+└── .env (optional)
+
+Setup Steps
+
+1. Navigate to the project root directory:
+   cd royalchess
+
+2. Build the Docker images:
+   docker compose build
+
+3. Start the application:
+   docker compose up
+
+4. Verify that all services are running:
+   docker ps
+
+5. Access the application via the port exposed for the frontend service
+   (as defined in docker-compose.yml).
+
+Notes
+- All dependencies are containerized; no local installations are required.
+- Frontend, backend, and database services communicate over a Docker bridge network.
+- Environment variables are injected via Docker Compose.
+- Cookie-based session handling was configured to work correctly within Docker.
+
+Stopping the Application
+docker compose down
+
