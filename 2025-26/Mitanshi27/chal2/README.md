@@ -1,20 +1,17 @@
 # Challenge 2 – Docker Scripting & Log Analysis
 
-## What I Did
-- Ran website containers using Docker.
-- Inspected logs using `docker logs`.
-- Identified error-level messages.
-- Simulated a port clash by binding two containers to the same host port.
+## Log Analysis
+Docker container logs were inspected using `docker logs <container>`.
+Error and service-related messages can be identified from container output.
 
-## How Port Clash Was Detected
-Docker reported a bind failure (`address already in use`) when starting a container on an occupied port.
+## Port Clash Detection
+A port clash was simulated by attempting to start multiple containers on the same host port.
+Docker correctly reported a bind failure (`address already in use`).
 
-## Recovery Approach
-- Stop the conflicting container.
-- Reassign a free port.
-- Restart the service.
+## Recovery
+The issue was resolved by reassigning a free port and restarting the affected container.
 
-## How to Reproduce
-1. Start a container on port 80.
-2. Start another container on port 80.
-3. Observe error and resolve by changing port.
+## Commands Used
+- docker ps
+- docker logs <container>
+- docker run -p <host_port>:80 nginx
