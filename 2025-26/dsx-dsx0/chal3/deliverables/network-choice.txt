@@ -1,0 +1,6 @@
+Justification for Using a Bridge Network
+
+A Docker bridge network was used to isolate the application services while still allowing controlled communication between them. By placing the frontend, backend, and database within the same bridge network, services can resolve each other by container name without exposing internal ports to the host system.
+
+This approach limits the attack surface by ensuring that only explicitly published ports are accessible externally, while all internal service-to-service communication remains confined to the Docker network. Additionally, the bridge network provides predictable networking behavior and simplifies local deployment without requiring host-level network configuration changes.
+

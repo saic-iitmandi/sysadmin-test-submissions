@@ -1,0 +1,77 @@
+services:
+  royalchess_app:
+    image: royalchess-app
+    container_name: royalchess_app
+
+    depends_on:
+       royalchess_db:
+         condition: service_healthy 
+    environment:
+      # =====================
+      # Database configuration
+      # =====================
+      PGHOST: royalchess_db
+      PGPORT: 5432
+      PGDATABASE: royalchess
+      PGUSER: royalchess_user
+      PGPASSWORD: royalchess_password
+
+      # =====================
+      # Backend configuration
+      # =====================
+      NODE_ENV: production
+      PORT: 3001
+      HOSTNAME: 0.0.0.0
+
+      # =====================
+      # Frontend configuration
+      # =====================
+      NEXT_PUBLIC_PORT: 3000
+      NEXT_PUBLIC_BACKEND_URL: http://localhost:3001
+
+      # =====================
+      # Security / misc
+      # =====================
+      SESSION_SECRET: 9f3c2b4e7a8d1c6f0a2e5b9d7c4a8f1e6b3d9c2a5e7f8b4c6d0a1e9
+      CORS_ORIGIN: http://localhost:3000
+
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+
+    networks:
+      - royalchess_public
+      - royalchess_internal
+    restart: unless-stopped
+
+  royalchess_db:
+    image: postgres:15
+    container_name: royalchess_db
+
+    environment:
+      POSTGRES_DB: royalchess
+      POSTGRES_USER: royalchess_user
+      POSTGRES_PASSWORD: royalchess_password
+
+    volumes:
+      - royalchess_db_data:/var/lib/postgresql/data
+
+    networks:
+      - royalchess_internal
+    restart: unless-stopped
+    
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${PGUSER} -d ${PGDATABASE}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  royalchess_db_data:
+
+networks:
+  royalchess_public:
+    driver: bridge
+  royalchess_internal:
+    driver: bridge
+    internal: true
