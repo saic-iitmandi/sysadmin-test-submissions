@@ -1,0 +1,75 @@
+networks:
+  internal_net:
+    driver: bridge
+
+services:
+
+  # =======================
+  # RoyalChess (pnpm monorepo)
+  # =======================
+
+  royal_frontend:
+    build:
+      context: ./royalchess
+      dockerfile: client/Dockerfile
+    ports:
+      - "3001:3000"
+    depends_on:
+      - royal_backend
+    networks:
+      - internal_net
+
+  royal_backend:
+    build:
+      context: ./royalchess
+      dockerfile: server/Dockerfile
+    environment:
+      - MONGO_URI=mongodb://royal_db:27017/royalchess
+    depends_on:
+      - royal_db
+    networks:
+      - internal_net
+
+  royal_db:
+    image: mongo:6
+    networks:
+      - internal_net
+    volumes:
+      - royal_data:/data/db
+
+  # =======================
+  # STAC (Next + Django)
+  # =======================
+
+  stac_frontend:
+    build: ./stac-clone/frontend
+    ports:
+      - "3002:3000"
+    depends_on:
+      - stac_backend
+    networks:
+      - internal_net
+
+  stac_backend:
+    build: ./stac-clone/backend
+    environment:
+      - DATABASE_URL=postgres://stacuser:stacpass@stac_db:5432/stacdb
+    depends_on:
+      - stac_db
+    networks:
+      - internal_net
+
+  stac_db:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: stacdb
+      POSTGRES_USER: stacuser
+      POSTGRES_PASSWORD: stacpass
+    volumes:
+      - stac_data:/var/lib/postgresql/data
+    networks:
+      - internal_net
+
+volumes:
+  royal_data:
+  stac_data:
