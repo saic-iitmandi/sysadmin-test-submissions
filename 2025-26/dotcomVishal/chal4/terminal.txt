@@ -1,0 +1,243 @@
+PS C:\Users\Rabbit\Downloads\chall6> git log --oneline --all
+2084ffc (HEAD -> main) update hours
+0c9b415 add menu
+9c89d2e the bakery is open
+PS C:\Users\Rabbit\Downloads\chall6> git show 9c89d2e
+commit 9c89d2e4fffee48411b9fa62a30994ad1c69e05a
+Author: = <=>
+Date:   Fri Jan 9 07:45:08 2026 +0530
+
+    the bakery is open
+
+diff --git a/README.md b/README.md
+new file mode 100644
+index 0000000..d2c78c5
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,3 @@
++Cookie Bakery
++Welcome to our bakery!
++We make the best cookies in town!! Come have a look!
+PS C:\Users\Rabbit\Downloads\chall6> git show 0c9b415
+commit 0c9b415b8bcf290a471df48b2dc255e1bb94f14d
+Author: = <=>
+Date:   Fri Jan 9 07:57:15 2026 +0530
+
+    add menu
+
+diff --git a/menu.txt b/menu.txt
+new file mode 100644
+index 0000000..1996ba2
+--- /dev/null
++++ b/menu.txt
+@@ -0,0 +1,3 @@
++Today's Specials:
++- Chocolate Chip
++- Mystery Cookie
+PS C:\Users\Rabbit\Downloads\chall6> git show 2084ffc
+commit 2084ffce98c493ee02c07b1943817f2b9acfbd6b (HEAD -> main)
+Author: = <=>
+Date:   Fri Jan 9 07:57:24 2026 +0530
+
+    update hours
+
+diff --git a/README.md b/README.md
+index d2c78c5..8c3c3de 100644
+--- a/README.md
++++ b/README.md
+@@ -1,3 +1,4 @@
+ Cookie Bakery
+ Welcome to our bakery!
+ We make the best cookies in town!! Come have a look!
++Hours: 9-5 PM
+PS C:\Users\Rabbit\Downloads\chall6> git show 9c89d2e:README.md
+Cookie Bakery
+Welcome to our bakery!
+We make the best cookies in town!! Come have a look!
+PS C:\Users\Rabbit\Downloads\chall6> git show 9c89d2e:menu.txt
+fatal: path 'menu.txt' exists on disk, but not in '9c89d2e'
+PS C:\Users\Rabbit\Downloads\chall6> git show 0c9b415:README.md
+Cookie Bakery
+Welcome to our bakery!
+We make the best cookies in town!! Come have a look!
+PS C:\Users\Rabbit\Downloads\chall6> git show 0c9b415:menu.txt
+Today's Specials:
+- Chocolate Chip
+- Mystery Cookie
+PS C:\Users\Rabbit\Downloads\chall6> git grep "SAIC{" $(git rev-list --all)
+PS C:\Users\Rabbit\Downloads\chall6> git grep "SAIC" $(git rev-list --all)
+PS C:\Users\Rabbit\Downloads\chall6> type .git\logs\HEAD
+9c89d2e4fffee48411b9fa62a30994ad1c69e05a 0c9b415b8bcf290a471df48b2dc255e1bb94f14d = <=> 1767925635 +0530        commit: add menu
+0c9b415b8bcf290a471df48b2dc255e1bb94f14d 2084ffce98c493ee02c07b1943817f2b9acfbd6b = <=> 1767925644 +0530        commit: update hours
+PS C:\Users\Rabbit\Downloads\chall6> type .git\logs\refs\heads\main
+9c89d2e4fffee48411b9fa62a30994ad1c69e05a 0c9b415b8bcf290a471df48b2dc255e1bb94f14d = <=> 1767925635 +0530        commit: add menu
+0c9b415b8bcf290a471df48b2dc255e1bb94f14d 2084ffce98c493ee02c07b1943817f2b9acfbd6b = <=> 1767925644 +0530        commit: update hours
+PS C:\Users\Rabbit\Downloads\chall6> type .git\packed-refs
+# pack-refs with: peeled fully-peeled sorted
+9c89d2e4fffee48411b9fa62a30994ad1c69e05a refs/heads/main
+PS C:\Users\Rabbit\Downloads\chall6> git fsck --lost-found
+Checking ref database: 100% (1/1), done.
+Checking object directories: 100% (256/256), done.
+Checking objects: 100% (14/14), done.
+dangling commit 63570471b6d86a7c63ddb2fc3dd5d55da624e1ea
+dangling commit a3e00065651d7bb9a54c10a9157696e07903ebac
+Verifying commits in commit graph: 100% (5/5), done.
+PS C:\Users\Rabbit\Downloads\chall6> dir .git\lost-found\other
+dir : Cannot find path 'C:\Users\Rabbit\Downloads\chall6\.git\lost-found\other' because it does not exist.
+At line:1 char:1
++ dir .git\lost-found\other
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Rabbit...ost-found\other:String) [Get-ChildItem], ItemNotFound
+   Exception
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+PS C:\Users\Rabbit\Downloads\chall6> type .git\COMMIT_EDITMSG
+update hours
+PS C:\Users\Rabbit\Downloads\chall6> git show 63570471b6d86a7c63ddb2fc3dd5d55da624e1ea
+commit 63570471b6d86a7c63ddb2fc3dd5d55da624e1ea
+Author: = <=>
+Date:   Fri Jan 9 07:54:55 2026 +0530
+
+    batch archive
+
+diff --git a/baked_goods.txt b/baked_goods.txt
+new file mode 100644
+index 0000000..10432c2
+--- /dev/null
++++ b/baked_goods.txt
+@@ -0,0 +1 @@
++[8186, 10208, 3632, 12587, 12311, 8428, 6333, 864, 6786, 12811, 5442, 7245, 103, 2626, 12811, 2766, 10208, 6786, 12811, 5442, 11474, 864, 12811, 1817, 7514, 7921, 2626, 1817, 12811, 6786, 7245, 12811, 7245, 6786, 864, 8477]
+diff --git a/oven.py b/oven.py
+new file mode 100644
+index 0000000..2111286
+--- /dev/null
++++ b/oven.py
+@@ -0,0 +1,5 @@
++#import ingredients
++n = p*q
++m = flag.encode()
++cypher = [pow(b, e, n) for b in m] #we like our cookies chunky
++#and the cookies are ready!!
+PS C:\Users\Rabbit\Downloads\chall6> git show a3e00065651d7bb9a54c10a9157696e07903ebac
+commit a3e00065651d7bb9a54c10a9157696e07903ebac
+Merge: 9c89d2e 47c8d89
+Author: = <=>
+Date:   Fri Jan 9 07:48:05 2026 +0530
+
+    merge recipe parameters
+
+PS C:\Users\Rabbit\Downloads\chall6> git grep "p ="
+PS C:\Users\Rabbit\Downloads\chall6> git grep "q ="
+PS C:\Users\Rabbit\Downloads\chall6> git grep "e ="
+PS C:\Users\Rabbit\Downloads\chall6> git grep "flag"
+PS C:\Users\Rabbit\Downloads\chall6> git grep "ingredient"
+PS C:\Users\Rabbit\Downloads\chall6> git show 47c8d89
+commit 47c8d890dad988495827579f31295c5adc262e75
+Author: = <=>
+Date:   Fri Jan 9 07:47:22 2026 +0530
+
+    timestamp
+
+diff --git a/.env b/.env
+index 1cb05f1..9005f71 100644
+--- a/.env
++++ b/.env
+@@ -1,4 +1,4 @@
+ our super special secret ingredients
+ n = 13081
+ e = 19
+-
++Updated: Jan 2026
+PS C:\Users\Rabbit\Downloads\chall6> git rev-list --objects --all | git cat-file --batch-check | findstr blob
+PS C:\Users\Rabbit\Downloads\chall6> git rev-list --objects --all | for %i in (*) do git cat-file -p %i | findstr SAIC
+* : The term '*' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:43
++ git rev-list --objects --all | for %i in (*) do git cat-file -p %i |  ...
++                                           ~
+    + CategoryInfo          : ObjectNotFound: (*:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Rabbit\Downloads\chall6> git fsck --full
+Checking ref database: 100% (1/1), done.
+Checking object directories: 100% (256/256), done.
+Checking objects: 100% (14/14), done.
+dangling commit 63570471b6d86a7c63ddb2fc3dd5d55da624e1ea
+dangling commit a3e00065651d7bb9a54c10a9157696e07903ebac
+Verifying commits in commit graph: 100% (5/5), done.
+PS C:\Users\Rabbit\Downloads\chall6> git fsck --lost-found
+Checking ref database: 100% (1/1), done.
+Checking object directories: 100% (256/256), done.
+Checking objects: 100% (14/14), done.
+dangling commit 63570471b6d86a7c63ddb2fc3dd5d55da624e1ea
+dangling commit a3e00065651d7bb9a54c10a9157696e07903ebac
+Verifying commits in commit graph: 100% (5/5), done.
+PS C:\Users\Rabbit\Downloads\chall6> dir .git\lost-found
+
+
+    Directory: C:\Users\Rabbit\Downloads\chall6\.git\lost-found
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         1/10/2026   9:29 PM                commit
+
+
+PS C:\Users\Rabbit\Downloads\chall6> findstr /S "SAIC{" .git\*
+PS C:\Users\Rabbit\Downloads\chall6> findstr /S "SAIC" .git\*
+PS C:\Users\Rabbit\Downloads\chall6> git reflog
+2084ffc (HEAD -> main) HEAD@{0}: commit: update hours
+0c9b415 HEAD@{1}: commit: add menu
+PS C:\Users\Rabbit\Downloads\chall6> git show HEAD@{1}
+fatal: ambiguous argument 'HEAD@': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+PS C:\Users\Rabbit\Downloads\chall6> git show -- HEAD@{1}
+PS C:\Users\Rabbit\Downloads\chall6> git log -p --all
+commit 2084ffce98c493ee02c07b1943817f2b9acfbd6b (HEAD -> main)
+Author: = <=>
+Date:   Fri Jan 9 07:57:24 2026 +0530
+
+    update hours
+
+diff --git a/README.md b/README.md
+index d2c78c5..8c3c3de 100644
+--- a/README.md
++++ b/README.md
+@@ -1,3 +1,4 @@
+ Cookie Bakery
+ Welcome to our bakery!
+ We make the best cookies in town!! Come have a look!
++Hours: 9-5 PM
+
+commit 0c9b415b8bcf290a471df48b2dc255e1bb94f14d
+Author: = <=>
+Date:   Fri Jan 9 07:57:15 2026 +0530
+
+    add menu
+
+diff --git a/menu.txt b/menu.txt
+new file mode 100644
+index 0000000..1996ba2
+--- /dev/null
++++ b/menu.txt
+@@ -0,0 +1,3 @@
++Today's Specials:
++- Chocolate Chip
++- Mystery Cookie
+
+commit 9c89d2e4fffee48411b9fa62a30994ad1c69e05a
+Author: = <=>
+Date:   Fri Jan 9 07:45:08 2026 +0530
+
+    the bakery is open
+
+diff --git a/README.md b/README.md
+new file mode 100644
+index 0000000..d2c78c5
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,3 @@
++Cookie Bakery
++Welcome to our bakery!
++We make the best cookies in town!! Come have a look!
