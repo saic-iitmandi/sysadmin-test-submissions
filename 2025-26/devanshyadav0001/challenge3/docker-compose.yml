@@ -5,7 +5,7 @@ networks:
 services:
 
   # =======================
-  # RoyalChess (pnpm monorepo)
+  # RoyalChess
   # =======================
 
   royal_frontend:
@@ -32,13 +32,14 @@ services:
 
   royal_db:
     image: mongo:6
-    networks:
-      - internal_net
     volumes:
       - royal_data:/data/db
+    networks:
+      - internal_net
+
 
   # =======================
-  # STAC (Next + Django)
+  # STAC
   # =======================
 
   stac_frontend:
@@ -53,7 +54,7 @@ services:
   stac_backend:
     build: ./stac-clone/backend
     environment:
-      - DATABASE_URL=postgres://stacuser:stacpass@stac_db:5432/stacdb
+      - DATABASE_URL=postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@stac_db:5432/${POSTGRES_DB}
     depends_on:
       - stac_db
     networks:
@@ -62,9 +63,9 @@ services:
   stac_db:
     image: postgres:15
     environment:
-      POSTGRES_DB: stacdb
-      POSTGRES_USER: stacuser
-      POSTGRES_PASSWORD: stacpass
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     volumes:
       - stac_data:/var/lib/postgresql/data
     networks:
