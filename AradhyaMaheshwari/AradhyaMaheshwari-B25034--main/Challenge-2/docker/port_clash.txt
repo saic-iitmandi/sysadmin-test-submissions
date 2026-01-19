@@ -1,6 +1,0 @@
-Container: web_server
-CRITICAL LOGS FOUND:
-Error: bind failed
-
-PORT CLASH DETECTED
-Service restored on new port: 80

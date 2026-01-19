@@ -1,3 +1,0 @@
-CRITICAL LOGS FOUND
-PORT CLASH DETECTED
-Service restored on new port: 45821
