@@ -1,0 +1,97 @@
+version: '3.8'
+
+services:
+  # ==========================================
+  # PROJECT 1: RoyalChess (MERN)
+  # ==========================================
+  
+  # Database: MongoDB
+  royal-db:
+    image: mongo:latest
+    container_name: royal_db
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: password123
+    networks:
+      - royal-net
+    # SECURITY NOTE: We do NOT use "ports" here. 
+    # This keeps the DB inaccessible from the host or outside world.
+
+ # Backend: Node/Express
+  royal-backend:
+    build:
+      context: ./royal-chess        # <--- LOOK HERE: Point to the root repo
+      dockerfile: backend/Dockerfile # <--- Tell it where the Dockerfile is inside
+    container_name: royal_api
+    depends_on:
+      - royal-db
+    environment:
+      MONGO_URI: "mongodb://admin:password123@royal-db:27017/royalchess?authSource=admin"
+    networks:
+      - royal-net
+    ports:
+      - "5000:5000"
+
+  # Frontend: React
+  royal-frontend:
+    build:
+      context: ./royal-chess        # <--- LOOK HERE: Point to the root repo
+      dockerfile: frontend/Dockerfile
+    container_name: royal_ui
+    depends_on:
+      - royal-backend
+    networks:
+      - royal-net
+    ports:
+      - "3000:80"
+      
+  # ==========================================
+  # PROJECT 2: STAC Website (Next.js + Django)
+  # ==========================================
+
+  # Database: PostgreSQL
+  stac-db:
+    image: postgres:13-alpine
+    container_name: stac_db
+    restart: always
+    environment:
+      POSTGRES_USER: stacuser
+      POSTGRES_PASSWORD: stacpassword
+      POSTGRES_DB: stacdb
+    networks:
+      - stac-net
+    # SECURITY NOTE: Again, NO "ports" section ensures isolation.
+
+  # Backend: Django
+  stac-backend:
+    build: ./stac-website/backend
+    container_name: stac_api
+    depends_on:
+      - stac-db
+    environment:
+      DATABASE_URL: "postgres://stacuser:stacpassword@stac-db:5432/stacdb"
+    networks:
+      - stac-net
+    ports:
+      - "8000:8000" # Accessible on localhost:8000
+
+  # Frontend: Next.js
+  stac-frontend:
+    build: ./stac-website/frontend
+    container_name: stac_ui
+    depends_on:
+      - stac-backend
+    networks:
+      - stac-net
+    ports:
+      - "3001:3000" # Map localhost:3001 to Next.js port 3000
+
+# ==========================================
+# NETWORKS
+# ==========================================
+networks:
+  royal-net:
+    driver: bridge # Isolated bridge network for Project 1
+  stac-net:
+    driver: bridge # Isolated bridge network for Project 2
