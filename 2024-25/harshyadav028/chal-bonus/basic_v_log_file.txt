@@ -1,0 +1,27 @@
+log time: 2025-01-29 00:16:06.059239 
+Folders in ./test_directory:
+    Folder: ./test_directory/folder_hehehe
+    Folder: ./test_directory/folder_hahaha
+file: ./test_directory/b.txt
+file: ./test_directory/a.txt
+Folders in ./test_directory/folder_hehehe:
+Folders in ./test_directory/folder_hahaha:
+enumeration completed ;)
+log time: 2025-01-29 00:21:54.777124 
+Folders in ./test_directory:
+    Folder: ./test_directory/folder_hehehe
+    Folder: ./test_directory/folder_hahaha
+file: ./test_directory/b.txt
+file: ./test_directory/a.txt
+Folders in ./test_directory/folder_hehehe:
+Folders in ./test_directory/folder_hahaha:
+enumeration completed ;)
+log time: 2025-01-29 00:27:12.942401 
+Folders in ./test_directory:
+    Folder: ./test_directory/folder_hehehe
+    Folder: ./test_directory/folder_hahaha
+file: ./test_directory/b.txt
+file: ./test_directory/a.txt
+Folders in ./test_directory/folder_hehehe:
+Folders in ./test_directory/folder_hahaha:
+enumeration completed ;)

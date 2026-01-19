@@ -1,0 +1,4 @@
+## CHALLENGE 4- dockerize a fullstack app (frontend+backend)
+
+started by obviously cloning and containerizing frontend and backend. went through the directories and then created dockerfiles for frontend (javascript) and backend (golang), and the docker-compose.yml file. made a .env file to store sensitive information. building the containers with the ```docker-compose up --build -d``` command threw a lot of errors at me, they all seemed to be related to the npm command once again. the next error was about the "COPY --from=builder" command. since i was building in multiple stages there were some errors.  i had to spend a lot of time troubleshooting again.
+finally i got done with the set up. for security check, i ran ```curl localhost:5432``` and it refused connection.

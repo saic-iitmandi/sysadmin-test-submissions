@@ -1,0 +1,265 @@
+Starting Nmap 7.01 ( https://nmap.org ) at 2018-02-06 12:06 IST
+Warning: 14.139.34.10 giving up on port because retransmission cap hit (10).
+Nmap scan report for 14.139.34.2
+Host is up (0.091s latency).
+Not shown: 973 closed ports
+PORT      STATE    SERVICE
+22/tcp    open     ssh
+23/tcp    filtered telnet
+25/tcp    filtered smtp
+53/tcp    open     domain
+80/tcp    open     http
+443/tcp   open     https
+445/tcp   filtered microsoft-ds
+513/tcp   filtered login
+514/tcp   filtered shell
+1062/tcp  filtered veracity
+1166/tcp  filtered qsm-remote
+1201/tcp  filtered nucleus-sand
+1863/tcp  filtered msnp
+2323/tcp  filtered 3d-nfsd
+3000/tcp  open     ppp
+3005/tcp  filtered deslogin
+4279/tcp  filtered vrml-multi-use
+5001/tcp  open     commplex-link
+5555/tcp  filtered freeciv
+5631/tcp  filtered pcanywheredata
+7001/tcp  open     afs3-callback
+8045/tcp  filtered unknown
+9000/tcp  filtered cslistener
+10000/tcp open     snet-sensor-mgmt
+15742/tcp filtered unknown
+16016/tcp filtered unknown
+44501/tcp filtered unknown
+
+Nmap scan report for mail.students.iitmandi.ac.in (14.139.34.3)
+Host is up (0.066s latency).
+Not shown: 986 filtered ports
+PORT      STATE  SERVICE
+53/tcp    open   domain
+80/tcp    open   http
+110/tcp   open   pop3
+143/tcp   open   imap
+389/tcp   closed ldap
+443/tcp   open   https
+465/tcp   open   smtps
+587/tcp   closed submission
+993/tcp   open   imaps
+995/tcp   open   pop3s
+3306/tcp  closed mysql
+5000/tcp  closed upnp
+8000/tcp  closed http-alt
+10000/tcp open   snet-sensor-mgmt
+
+Nmap scan report for 14.139.34.4
+Host is up (0.071s latency).
+Not shown: 987 closed ports
+PORT     STATE    SERVICE
+22/tcp   open     ssh
+23/tcp   filtered telnet
+25/tcp   filtered smtp
+80/tcp   open     http
+445/tcp  filtered microsoft-ds
+513/tcp  filtered login
+514/tcp  filtered shell
+1038/tcp filtered mtqp
+2323/tcp filtered 3d-nfsd
+3005/tcp filtered deslogin
+5555/tcp filtered freeciv
+6001/tcp open     X11:1
+8080/tcp open     http-proxy
+
+Nmap scan report for mail.alumni.iitmandi.ac.in (14.139.34.7)
+Host is up (0.063s latency).
+Not shown: 981 closed ports
+PORT      STATE    SERVICE
+20/tcp    filtered ftp-data
+22/tcp    open     ssh
+23/tcp    filtered telnet
+25/tcp    filtered smtp
+53/tcp    open     domain
+80/tcp    open     http
+110/tcp   open     pop3
+143/tcp   open     imap
+445/tcp   filtered microsoft-ds
+513/tcp   filtered login
+514/tcp   filtered shell
+587/tcp   open     submission
+993/tcp   open     imaps
+995/tcp   open     pop3s
+2323/tcp  filtered 3d-nfsd
+3005/tcp  filtered deslogin
+5555/tcp  filtered freeciv
+10000/tcp open     snet-sensor-mgmt
+20000/tcp open     dnp
+
+Nmap scan report for 14.139.34.8
+Host is up (0.061s latency).
+Not shown: 995 filtered ports
+PORT     STATE  SERVICE
+53/tcp   closed domain
+80/tcp   open   http
+389/tcp  open   ldap
+443/tcp  open   https
+3306/tcp closed mysql
+
+Nmap scan report for mail.projects.iitmandi.ac.in (14.139.34.9)
+Host is up (0.063s latency).
+Not shown: 990 filtered ports
+PORT      STATE  SERVICE
+53/tcp    closed domain
+80/tcp    open   http
+110/tcp   open   pop3
+143/tcp   open   imap
+389/tcp   closed ldap
+443/tcp   open   https
+465/tcp   open   smtps
+587/tcp   closed submission
+993/tcp   open   imaps
+10000/tcp open   snet-sensor-mgmt
+
+Nmap scan report for 14.139.34.10
+Host is up (0.062s latency).
+Not shown: 531 filtered ports, 463 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+80/tcp   open  http
+443/tcp  open  https
+8000/tcp open  http-alt
+8082/tcp open  blackice-alerts
+
+Nmap scan report for 14.139.34.11
+Host is up (0.16s latency).
+Not shown: 988 closed ports
+PORT     STATE    SERVICE
+22/tcp   open     ssh
+23/tcp   filtered telnet
+25/tcp   filtered smtp
+53/tcp   open     domain
+80/tcp   open     http
+445/tcp  filtered microsoft-ds
+513/tcp  filtered login
+514/tcp  filtered shell
+2323/tcp filtered 3d-nfsd
+3005/tcp filtered deslogin
+5555/tcp filtered freeciv
+8080/tcp open     http-proxy
+
+Nmap scan report for 14.139.34.17
+Host is up (0.15s latency).
+Not shown: 985 closed ports
+PORT      STATE    SERVICE
+22/tcp    open     ssh
+23/tcp    filtered telnet
+25/tcp    filtered smtp
+80/tcp    open     http
+445/tcp   filtered microsoft-ds
+513/tcp   filtered login
+514/tcp   filtered shell
+1216/tcp  filtered etebac5
+2323/tcp  filtered 3d-nfsd
+3005/tcp  filtered deslogin
+5555/tcp  filtered freeciv
+5800/tcp  open     vnc-http
+5900/tcp  open     vnc
+8800/tcp  filtered sunwebadmin
+32771/tcp filtered sometimes-rpc5
+
+Nmap scan report for 14.139.34.24
+Host is up (0.058s latency).
+Not shown: 968 closed ports
+PORT      STATE    SERVICE
+23/tcp    filtered telnet
+25/tcp    filtered smtp
+80/tcp    open     http
+135/tcp   open     msrpc
+139/tcp   open     netbios-ssn
+445/tcp   filtered microsoft-ds
+513/tcp   filtered login
+514/tcp   filtered shell
+1023/tcp  open     netvenuechat
+1433/tcp  open     ms-sql-s
+1801/tcp  open     msmq
+2103/tcp  open     zephyr-clt
+2105/tcp  open     eklogin
+2107/tcp  open     msmq-mgmt
+2323/tcp  filtered 3d-nfsd
+2383/tcp  open     ms-olap4
+3001/tcp  open     nessus
+3005/tcp  filtered deslogin
+3306/tcp  open     mysql
+3389/tcp  open     ms-wbt-server
+3690/tcp  open     svn
+5555/tcp  filtered freeciv
+8080/tcp  open     http-proxy
+8085/tcp  open     unknown
+8086/tcp  open     d-s-n
+9000/tcp  open     cslistener
+49152/tcp open     unknown
+49153/tcp open     unknown
+49154/tcp open     unknown
+49155/tcp open     unknown
+49156/tcp open     unknown
+49157/tcp open     unknown
+
+Nmap scan report for 14.139.34.26
+Host is up (0.071s latency).
+Not shown: 972 closed ports
+PORT      STATE    SERVICE
+23/tcp    filtered telnet
+25/tcp    filtered smtp
+80/tcp    open     http
+135/tcp   open     msrpc
+139/tcp   open     netbios-ssn
+445/tcp   filtered microsoft-ds
+513/tcp   filtered login
+514/tcp   filtered shell
+1023/tcp  open     netvenuechat
+1433/tcp  open     ms-sql-s
+1801/tcp  open     msmq
+2103/tcp  open     zephyr-clt
+2105/tcp  open     eklogin
+2107/tcp  open     msmq-mgmt
+2323/tcp  filtered 3d-nfsd
+2383/tcp  open     ms-olap4
+2809/tcp  filtered corbaloc
+3005/tcp  filtered deslogin
+3389/tcp  open     ms-wbt-server
+5555/tcp  filtered freeciv
+49152/tcp open     unknown
+49153/tcp open     unknown
+49154/tcp open     unknown
+49155/tcp open     unknown
+49156/tcp open     unknown
+49157/tcp open     unknown
+49158/tcp open     unknown
+49159/tcp open     unknown
+
+Nmap scan report for 14.139.34.43
+Host is up (0.11s latency).
+Not shown: 979 closed ports
+PORT     STATE    SERVICE
+22/tcp   open     ssh
+23/tcp   filtered telnet
+25/tcp   filtered smtp
+80/tcp   open     http
+139/tcp  open     netbios-ssn
+254/tcp  filtered unknown
+445/tcp  filtered microsoft-ds
+513/tcp  filtered login
+514/tcp  filtered shell
+1084/tcp filtered ansoft-lm-2
+2323/tcp filtered 3d-nfsd
+3005/tcp filtered deslogin
+3221/tcp filtered xnm-clear-text
+3306/tcp open     mysql
+4662/tcp filtered edonkey
+5555/tcp filtered freeciv
+6346/tcp filtered gnutella
+7106/tcp filtered unknown
+8080/tcp open     http-proxy
+8081/tcp open     blackice-icecap
+8082/tcp open     blackice-alerts
+
+Nmap done: 256 IP addresses (12 hosts up) scanned in 2077.72 seconds

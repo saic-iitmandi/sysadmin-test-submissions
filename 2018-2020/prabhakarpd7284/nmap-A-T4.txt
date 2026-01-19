@@ -1,0 +1,68 @@
+
+Starting Nmap 7.01 ( https://nmap.org ) at 2018-02-07 00:17 IST
+Nmap scan report for students.iitmandi.ac.in (10.8.1.3)
+Host is up (0.043s latency).
+rDNS record for 10.8.1.3: mail.students.iitmandi.ac.in
+Not shown: 987 filtered ports
+PORT      STATE  SERVICE    VERSION
+22/tcp    open   ssh        OpenSSH 7.2p2 Ubuntu 4ubuntu2.4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 da:39:2b:fd:ee:8c:44:79:d6:c7:8e:39:73:f6:41:a5 (RSA)
+|_  256 34:88:e9:b8:29:03:0b:75:bb:bf:20:e0:f2:2b:bb:22 (ECDSA)
+25/tcp    open   smtp       Postfix smtpd
+|_smtp-commands: mail.students.iitmandi.ac.in, PIPELINING, SIZE 10485760, VRFY, ETRN, STARTTLS, AUTH PLAIN LOGIN, ENHANCEDSTATUSCODES, 8BITMIME, DSN, SMTPUTF8, 
+| ssl-cert: Subject: commonName=*.iitmandi.ac.in
+| Not valid before: 2016-12-05T07:00:00
+|_Not valid after:  2019-12-05T07:00:00
+|_ssl-date: TLS randomness does not represent time
+53/tcp    open   domain     ISC BIND 9.10.3-P4-Ubuntu
+| dns-nsid: 
+|_  bind.version: 9.10.3-P4-Ubuntu
+80/tcp    open   http       Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Students
+110/tcp   open   pop3       Dovecot pop3d
+|_pop3-capabilities: TOP STLS SASL(PLAIN LOGIN) AUTH-RESP-CODE USER UIDL RESP-CODES PIPELINING CAPA
+| ssl-cert: Subject: commonName=*.iitmandi.ac.in
+| Not valid before: 2016-12-05T07:00:00
+|_Not valid after:  2019-12-05T07:00:00
+|_ssl-date: TLS randomness does not represent time
+143/tcp   open   imap       Dovecot imapd
+|_imap-capabilities: listed AUTH=LOGINA0001 STARTTLS AUTH=PLAIN post-login IDLE have ID OK more ENABLE LITERAL+ SASL-IR capabilities LOGIN-REFERRALS Pre-login IMAP4rev1
+| ssl-cert: Subject: commonName=*.iitmandi.ac.in
+| Not valid before: 2016-12-05T07:00:00
+|_Not valid after:  2019-12-05T07:00:00
+|_ssl-date: TLS randomness does not represent time
+443/tcp   open   ssl/http   Apache httpd 2.4.18
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Students
+| ssl-cert: Subject: commonName=*.iitmandi.ac.in
+| Not valid before: 2016-12-05T07:00:00
+|_Not valid after:  2019-12-05T07:00:00
+|_ssl-date: TLS randomness does not represent time
+465/tcp   open   ssl/smtp   Postfix smtpd
+|_smtp-commands: mail.students.iitmandi.ac.in, PIPELINING, SIZE 10485760, VRFY, ETRN, AUTH PLAIN LOGIN, ENHANCEDSTATUSCODES, 8BITMIME, DSN, SMTPUTF8, 
+| ssl-cert: Subject: commonName=*.iitmandi.ac.in
+| Not valid before: 2016-12-05T07:00:00
+|_Not valid after:  2019-12-05T07:00:00
+|_ssl-date: TLS randomness does not represent time
+587/tcp   closed submission
+993/tcp   open   ssl/imap   Dovecot imapd
+|_imap-capabilities: OK SASL-IR more AUTH=LOGINA0001 ENABLE LITERAL+ capabilities listed AUTH=PLAIN post-login IDLE have Pre-login LOGIN-REFERRALS ID IMAP4rev1
+| ssl-cert: Subject: commonName=*.iitmandi.ac.in
+| Not valid before: 2016-12-05T07:00:00
+|_Not valid after:  2019-12-05T07:00:00
+|_ssl-date: TLS randomness does not represent time
+995/tcp   open   ssl/pop3   Dovecot pop3d
+|_pop3-capabilities: TOP SASL(PLAIN LOGIN) RESP-CODES USER UIDL AUTH-RESP-CODE CAPA PIPELINING
+| ssl-cert: Subject: commonName=*.iitmandi.ac.in
+| Not valid before: 2016-12-05T07:00:00
+|_Not valid after:  2019-12-05T07:00:00
+|_ssl-date: TLS randomness does not represent time
+3306/tcp  closed mysql
+10000/tcp open   http       MiniServ 1.850 (Webmin httpd)
+|_http-title: Site doesn't have a title (text/html; Charset=iso-8859-1).
+Service Info: Host: students.iitmandi.ac.in; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 73.07 seconds

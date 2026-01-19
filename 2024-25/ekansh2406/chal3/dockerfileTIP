@@ -1,0 +1,20 @@
+# Use Node.js 18 image
+FROM node:18-alpine
+
+# Set working directory
+WORKDIR /app
+
+# Copy package files and install dependencies
+COPY package.json package-lock.json ./
+RUN npm install
+
+# Copy application code
+COPY . .
+
+# Build Next.js app
+RUN npm run build
+EXPOSE 3000
+CMD ["node", ".next/standalone/server.js"]
+
+# Start Next.js server
+

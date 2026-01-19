@@ -1,0 +1,15 @@
+version: "3"
+services:
+  webapp:
+    image: "metavinayak/matrix"
+    expose:
+      - 3000
+    deploy:
+      replicas: 3
+  loadbalancing:
+    image: nginx
+    ports:
+      - "81:81"
+    depends_on:
+      - webapp
+    

@@ -1,0 +1,877 @@
+
+Starting Nmap 7.01 ( https://nmap.org ) at 2018-02-06 14:20 IST
+Initiating Ping Scan at 14:20
+Scanning 256 hosts [4 ports/host]
+Completed Ping Scan at 14:20, 20.68s elapsed (256 total hosts)
+Initiating Parallel DNS resolution of 256 hosts. at 14:20
+Completed Parallel DNS resolution of 256 hosts. at 14:20, 2.11s elapsed
+Nmap scan report for 14.139.34.0 [host down]
+Nmap scan report for 14.139.34.1 [host down]
+Nmap scan report for 14.139.34.5 [host down]
+Nmap scan report for 14.139.34.6 [host down]
+Nmap scan report for 14.139.34.12 [host down]
+Nmap scan report for 14.139.34.13 [host down]
+Nmap scan report for 14.139.34.14 [host down]
+Nmap scan report for 14.139.34.15 [host down]
+Nmap scan report for 14.139.34.16 [host down]
+Nmap scan report for 14.139.34.18 [host down]
+Nmap scan report for 14.139.34.19 [host down]
+Nmap scan report for 14.139.34.20 [host down]
+Nmap scan report for 14.139.34.21 [host down]
+Nmap scan report for 14.139.34.22 [host down]
+Nmap scan report for 14.139.34.23 [host down]
+Nmap scan report for 14.139.34.25 [host down]
+Nmap scan report for 14.139.34.28 [host down]
+Nmap scan report for 14.139.34.29 [host down]
+Nmap scan report for 14.139.34.30 [host down]
+Nmap scan report for 14.139.34.31 [host down]
+Nmap scan report for 14.139.34.32 [host down]
+Nmap scan report for 14.139.34.33 [host down]
+Nmap scan report for 14.139.34.34 [host down]
+Nmap scan report for 14.139.34.35 [host down]
+Nmap scan report for 14.139.34.36 [host down]
+Nmap scan report for 14.139.34.37 [host down]
+Nmap scan report for 14.139.34.38 [host down]
+Nmap scan report for 14.139.34.39 [host down]
+Nmap scan report for 14.139.34.40 [host down]
+Nmap scan report for 14.139.34.41 [host down]
+Nmap scan report for 14.139.34.42 [host down]
+Nmap scan report for 14.139.34.44 [host down]
+Nmap scan report for 14.139.34.45 [host down]
+Nmap scan report for 14.139.34.46 [host down]
+Nmap scan report for 14.139.34.47 [host down]
+Nmap scan report for 14.139.34.48 [host down]
+Nmap scan report for 14.139.34.49 [host down]
+Nmap scan report for 14.139.34.50 [host down]
+Nmap scan report for 14.139.34.51 [host down]
+Nmap scan report for 14.139.34.52 [host down]
+Nmap scan report for 14.139.34.53 [host down]
+Nmap scan report for 14.139.34.54 [host down]
+Nmap scan report for 14.139.34.55 [host down]
+Nmap scan report for 14.139.34.56 [host down]
+Nmap scan report for 14.139.34.57 [host down]
+Nmap scan report for 14.139.34.58 [host down]
+Nmap scan report for 14.139.34.59 [host down]
+Nmap scan report for 14.139.34.60 [host down]
+Nmap scan report for 14.139.34.61 [host down]
+Nmap scan report for 14.139.34.62 [host down]
+Nmap scan report for 14.139.34.63 [host down]
+Nmap scan report for 14.139.34.64 [host down]
+Nmap scan report for 14.139.34.65 [host down]
+Nmap scan report for 14.139.34.66 [host down]
+Nmap scan report for 14.139.34.67 [host down]
+Nmap scan report for 14.139.34.68 [host down]
+Nmap scan report for 14.139.34.69 [host down]
+Nmap scan report for 14.139.34.70 [host down]
+Nmap scan report for 14.139.34.71 [host down]
+Nmap scan report for 14.139.34.72 [host down]
+Nmap scan report for 14.139.34.73 [host down]
+Nmap scan report for 14.139.34.74 [host down]
+Nmap scan report for 14.139.34.75 [host down]
+Nmap scan report for 14.139.34.76 [host down]
+Nmap scan report for 14.139.34.77 [host down]
+Nmap scan report for 14.139.34.78 [host down]
+Nmap scan report for 14.139.34.79 [host down]
+Nmap scan report for 14.139.34.80 [host down]
+Nmap scan report for 14.139.34.81 [host down]
+Nmap scan report for 14.139.34.82 [host down]
+Nmap scan report for 14.139.34.83 [host down]
+Nmap scan report for 14.139.34.84 [host down]
+Nmap scan report for 14.139.34.85 [host down]
+Nmap scan report for 14.139.34.86 [host down]
+Nmap scan report for 14.139.34.87 [host down]
+Nmap scan report for 14.139.34.88 [host down]
+Nmap scan report for 14.139.34.89 [host down]
+Nmap scan report for 14.139.34.90 [host down]
+Nmap scan report for 14.139.34.91 [host down]
+Nmap scan report for 14.139.34.92 [host down]
+Nmap scan report for 14.139.34.93 [host down]
+Nmap scan report for 14.139.34.94 [host down]
+Nmap scan report for 14.139.34.95 [host down]
+Nmap scan report for 14.139.34.96 [host down]
+Nmap scan report for 14.139.34.97 [host down]
+Nmap scan report for 14.139.34.98 [host down]
+Nmap scan report for 14.139.34.99 [host down]
+Nmap scan report for 14.139.34.100 [host down]
+Nmap scan report for 14.139.34.101 [host down]
+Nmap scan report for 14.139.34.102 [host down]
+Nmap scan report for 14.139.34.103 [host down]
+Nmap scan report for 14.139.34.104 [host down]
+Nmap scan report for 14.139.34.105 [host down]
+Nmap scan report for 14.139.34.106 [host down]
+Nmap scan report for 14.139.34.107 [host down]
+Nmap scan report for 14.139.34.108 [host down]
+Nmap scan report for 14.139.34.109 [host down]
+Nmap scan report for 14.139.34.110 [host down]
+Nmap scan report for 14.139.34.111 [host down]
+Nmap scan report for 14.139.34.112 [host down]
+Nmap scan report for 14.139.34.113 [host down]
+Nmap scan report for 14.139.34.114 [host down]
+Nmap scan report for 14.139.34.115 [host down]
+Nmap scan report for 14.139.34.116 [host down]
+Nmap scan report for 14.139.34.117 [host down]
+Nmap scan report for 14.139.34.118 [host down]
+Nmap scan report for 14.139.34.119 [host down]
+Nmap scan report for 14.139.34.120 [host down]
+Nmap scan report for 14.139.34.121 [host down]
+Nmap scan report for 14.139.34.122 [host down]
+Nmap scan report for 14.139.34.123 [host down]
+Nmap scan report for 14.139.34.124 [host down]
+Nmap scan report for 14.139.34.125 [host down]
+Nmap scan report for 14.139.34.126 [host down]
+Nmap scan report for 14.139.34.127 [host down]
+Nmap scan report for 14.139.34.128 [host down]
+Nmap scan report for 14.139.34.129 [host down]
+Nmap scan report for 14.139.34.130 [host down]
+Nmap scan report for 14.139.34.131 [host down]
+Nmap scan report for 14.139.34.132 [host down]
+Nmap scan report for 14.139.34.133 [host down]
+Nmap scan report for 14.139.34.134 [host down]
+Nmap scan report for 14.139.34.135 [host down]
+Nmap scan report for 14.139.34.136 [host down]
+Nmap scan report for 14.139.34.137 [host down]
+Nmap scan report for 14.139.34.138 [host down]
+Nmap scan report for 14.139.34.139 [host down]
+Nmap scan report for 14.139.34.140 [host down]
+Nmap scan report for 14.139.34.141 [host down]
+Nmap scan report for 14.139.34.142 [host down]
+Nmap scan report for 14.139.34.143 [host down]
+Nmap scan report for 14.139.34.144 [host down]
+Nmap scan report for 14.139.34.145 [host down]
+Nmap scan report for 14.139.34.146 [host down]
+Nmap scan report for 14.139.34.147 [host down]
+Nmap scan report for 14.139.34.148 [host down]
+Nmap scan report for 14.139.34.149 [host down]
+Nmap scan report for 14.139.34.150 [host down]
+Nmap scan report for 14.139.34.151 [host down]
+Nmap scan report for 14.139.34.152 [host down]
+Nmap scan report for 14.139.34.153 [host down]
+Nmap scan report for 14.139.34.154 [host down]
+Nmap scan report for 14.139.34.155 [host down]
+Nmap scan report for 14.139.34.156 [host down]
+Nmap scan report for 14.139.34.157 [host down]
+Nmap scan report for 14.139.34.158 [host down]
+Nmap scan report for 14.139.34.159 [host down]
+Nmap scan report for 14.139.34.160 [host down]
+Nmap scan report for 14.139.34.161 [host down]
+Nmap scan report for 14.139.34.162 [host down]
+Nmap scan report for 14.139.34.163 [host down]
+Nmap scan report for 14.139.34.164 [host down]
+Nmap scan report for 14.139.34.165 [host down]
+Nmap scan report for 14.139.34.166 [host down]
+Nmap scan report for 14.139.34.167 [host down]
+Nmap scan report for 14.139.34.168 [host down]
+Nmap scan report for 14.139.34.169 [host down]
+Nmap scan report for 14.139.34.170 [host down]
+Nmap scan report for 14.139.34.171 [host down]
+Nmap scan report for 14.139.34.172 [host down]
+Nmap scan report for 14.139.34.173 [host down]
+Nmap scan report for 14.139.34.174 [host down]
+Nmap scan report for 14.139.34.175 [host down]
+Nmap scan report for 14.139.34.176 [host down]
+Nmap scan report for 14.139.34.177 [host down]
+Nmap scan report for 14.139.34.178 [host down]
+Nmap scan report for 14.139.34.179 [host down]
+Nmap scan report for 14.139.34.180 [host down]
+Nmap scan report for 14.139.34.181 [host down]
+Nmap scan report for 14.139.34.182 [host down]
+Nmap scan report for 14.139.34.183 [host down]
+Nmap scan report for 14.139.34.184 [host down]
+Nmap scan report for 14.139.34.185 [host down]
+Nmap scan report for 14.139.34.186 [host down]
+Nmap scan report for 14.139.34.187 [host down]
+Nmap scan report for 14.139.34.188 [host down]
+Nmap scan report for 14.139.34.189 [host down]
+Nmap scan report for 14.139.34.190 [host down]
+Nmap scan report for 14.139.34.191 [host down]
+Nmap scan report for 14.139.34.192 [host down]
+Nmap scan report for 14.139.34.193 [host down]
+Nmap scan report for 14.139.34.194 [host down]
+Nmap scan report for 14.139.34.195 [host down]
+Nmap scan report for 14.139.34.196 [host down]
+Nmap scan report for 14.139.34.197 [host down]
+Nmap scan report for 14.139.34.198 [host down]
+Nmap scan report for 14.139.34.199 [host down]
+Nmap scan report for 14.139.34.200 [host down]
+Nmap scan report for 14.139.34.201 [host down]
+Nmap scan report for 14.139.34.202 [host down]
+Nmap scan report for 14.139.34.203 [host down]
+Nmap scan report for 14.139.34.204 [host down]
+Nmap scan report for 14.139.34.205 [host down]
+Nmap scan report for 14.139.34.206 [host down]
+Nmap scan report for 14.139.34.207 [host down]
+Nmap scan report for 14.139.34.208 [host down]
+Nmap scan report for 14.139.34.209 [host down]
+Nmap scan report for 14.139.34.210 [host down]
+Nmap scan report for 14.139.34.211 [host down]
+Nmap scan report for 14.139.34.212 [host down]
+Nmap scan report for 14.139.34.213 [host down]
+Nmap scan report for 14.139.34.214 [host down]
+Nmap scan report for 14.139.34.215 [host down]
+Nmap scan report for 14.139.34.216 [host down]
+Nmap scan report for 14.139.34.217 [host down]
+Nmap scan report for 14.139.34.218 [host down]
+Nmap scan report for 14.139.34.219 [host down]
+Nmap scan report for 14.139.34.220 [host down]
+Nmap scan report for 14.139.34.221 [host down]
+Nmap scan report for 14.139.34.222 [host down]
+Nmap scan report for 14.139.34.223 [host down]
+Nmap scan report for 14.139.34.224 [host down]
+Nmap scan report for 14.139.34.225 [host down]
+Nmap scan report for 14.139.34.226 [host down]
+Nmap scan report for 14.139.34.227 [host down]
+Nmap scan report for 14.139.34.228 [host down]
+Nmap scan report for 14.139.34.229 [host down]
+Nmap scan report for 14.139.34.230 [host down]
+Nmap scan report for 14.139.34.231 [host down]
+Nmap scan report for 14.139.34.232 [host down]
+Nmap scan report for 14.139.34.233 [host down]
+Nmap scan report for 14.139.34.234 [host down]
+Nmap scan report for 14.139.34.235 [host down]
+Nmap scan report for 14.139.34.236 [host down]
+Nmap scan report for 14.139.34.237 [host down]
+Nmap scan report for 14.139.34.238 [host down]
+Nmap scan report for 14.139.34.239 [host down]
+Nmap scan report for 14.139.34.240 [host down]
+Nmap scan report for 14.139.34.241 [host down]
+Nmap scan report for 14.139.34.242 [host down]
+Nmap scan report for 14.139.34.243 [host down]
+Nmap scan report for 14.139.34.244 [host down]
+Nmap scan report for 14.139.34.245 [host down]
+Nmap scan report for 14.139.34.246 [host down]
+Nmap scan report for 14.139.34.247 [host down]
+Nmap scan report for 14.139.34.248 [host down]
+Nmap scan report for 14.139.34.249 [host down]
+Nmap scan report for 14.139.34.250 [host down]
+Nmap scan report for 14.139.34.251 [host down]
+Nmap scan report for 14.139.34.252 [host down]
+Nmap scan report for 14.139.34.253 [host down]
+Nmap scan report for 14.139.34.254 [host down]
+Nmap scan report for 14.139.34.255 [host down]
+Initiating SYN Stealth Scan at 14:20
+Scanning 13 hosts [1000 ports/host]
+Discovered open port 139/tcp on 14.139.34.24
+Discovered open port 139/tcp on 14.139.34.26
+Discovered open port 22/tcp on 14.139.34.4
+Discovered open port 22/tcp on 14.139.34.11
+Discovered open port 22/tcp on 14.139.34.17
+Discovered open port 22/tcp on 14.139.34.7
+Discovered open port 22/tcp on 14.139.34.27
+Discovered open port 443/tcp on 14.139.34.10
+Discovered open port 139/tcp on 14.139.34.43
+Discovered open port 22/tcp on 14.139.34.43
+Discovered open port 22/tcp on 14.139.34.2
+Discovered open port 443/tcp on 14.139.34.2
+Discovered open port 143/tcp on 14.139.34.7
+Discovered open port 587/tcp on 14.139.34.7
+Discovered open port 8080/tcp on 14.139.34.11
+Discovered open port 443/tcp on 14.139.34.3
+Discovered open port 443/tcp on 14.139.34.8
+Discovered open port 443/tcp on 14.139.34.9
+Discovered open port 53/tcp on 14.139.34.3
+Discovered open port 143/tcp on 14.139.34.3
+Discovered open port 995/tcp on 14.139.34.7
+Discovered open port 53/tcp on 14.139.34.7
+Discovered open port 80/tcp on 14.139.34.11
+Discovered open port 80/tcp on 14.139.34.8
+Discovered open port 8080/tcp on 14.139.34.24
+Discovered open port 80/tcp on 14.139.34.4
+Discovered open port 8080/tcp on 14.139.34.4
+Increasing send delay for 14.139.34.4 from 0 to 5 due to 11 out of 17 dropped probes since last increase.
+Discovered open port 5900/tcp on 14.139.34.17
+Discovered open port 53/tcp on 14.139.34.11
+Increasing send delay for 14.139.34.7 from 0 to 5 due to max_successful_tryno increase to 4
+Discovered open port 80/tcp on 14.139.34.7
+Discovered open port 3389/tcp on 14.139.34.24
+Increasing send delay for 14.139.34.11 from 0 to 5 due to max_successful_tryno increase to 4
+Discovered open port 8080/tcp on 14.139.34.43
+Discovered open port 80/tcp on 14.139.34.3
+Discovered open port 3389/tcp on 14.139.34.26
+Discovered open port 80/tcp on 14.139.34.9
+Discovered open port 993/tcp on 14.139.34.3
+Discovered open port 993/tcp on 14.139.34.7
+Discovered open port 993/tcp on 14.139.34.9
+Increasing send delay for 14.139.34.4 from 5 to 10 due to max_successful_tryno increase to 4
+Discovered open port 80/tcp on 14.139.34.24
+Discovered open port 53/tcp on 14.139.34.2
+Increasing send delay for 14.139.34.7 from 5 to 10 due to max_successful_tryno increase to 5
+Increasing send delay for 14.139.34.4 from 10 to 20 due to max_successful_tryno increase to 5
+Discovered open port 80/tcp on 14.139.34.26
+Discovered open port 80/tcp on 14.139.34.43
+Discovered open port 80/tcp on 14.139.34.17
+Discovered open port 3306/tcp on 14.139.34.24
+Increasing send delay for 14.139.34.17 from 0 to 5 due to 11 out of 21 dropped probes since last increase.
+Discovered open port 80/tcp on 14.139.34.2
+Increasing send delay for 14.139.34.17 from 5 to 10 due to max_successful_tryno increase to 4
+Increasing send delay for 14.139.34.7 from 10 to 20 due to max_successful_tryno increase to 6
+Increasing send delay for 14.139.34.43 from 0 to 5 due to 11 out of 24 dropped probes since last increase.
+Discovered open port 135/tcp on 14.139.34.24
+Discovered open port 3306/tcp on 14.139.34.43
+Increasing send delay for 14.139.34.11 from 5 to 10 due to max_successful_tryno increase to 5
+Increasing send delay for 14.139.34.24 from 0 to 5 due to 11 out of 31 dropped probes since last increase.
+Discovered open port 110/tcp on 14.139.34.7
+Increasing send delay for 14.139.34.7 from 20 to 40 due to max_successful_tryno increase to 7
+Increasing send delay for 14.139.34.2 from 0 to 5 due to 11 out of 25 dropped probes since last increase.
+Discovered open port 21/tcp on 14.139.34.10
+Increasing send delay for 14.139.34.24 from 5 to 10 due to max_successful_tryno increase to 4
+Increasing send delay for 14.139.34.24 from 10 to 20 due to max_successful_tryno increase to 5
+Increasing send delay for 14.139.34.11 from 10 to 20 due to max_successful_tryno increase to 6
+Increasing send delay for 14.139.34.17 from 10 to 20 due to max_successful_tryno increase to 5
+Increasing send delay for 14.139.34.24 from 20 to 40 due to max_successful_tryno increase to 6
+Increasing send delay for 14.139.34.4 from 20 to 40 due to 11 out of 18 dropped probes since last increase.
+Increasing send delay for 14.139.34.4 from 40 to 80 due to max_successful_tryno increase to 6
+Discovered open port 110/tcp on 14.139.34.9
+Increasing send delay for 14.139.34.26 from 0 to 5 due to max_successful_tryno increase to 4
+Increasing send delay for 14.139.34.26 from 5 to 10 due to max_successful_tryno increase to 5
+Increasing send delay for 14.139.34.4 from 80 to 160 due to max_successful_tryno increase to 7
+Increasing send delay for 14.139.34.2 from 5 to 10 due to 11 out of 15 dropped probes since last increase.
+Increasing send delay for 14.139.34.2 from 10 to 20 due to max_successful_tryno increase to 4
+Increasing send delay for 14.139.34.2 from 20 to 40 due to max_successful_tryno increase to 5
+Increasing send delay for 14.139.34.7 from 40 to 80 due to 11 out of 17 dropped probes since last increase.
+SYN Stealth Scan Timing: About 3.98% done; ETC: 14:33 (0:12:27 remaining)
+Increasing send delay for 14.139.34.7 from 80 to 160 due to max_successful_tryno increase to 8
+Increasing send delay for 14.139.34.2 from 40 to 80 due to max_successful_tryno increase to 6
+Discovered open port 135/tcp on 14.139.34.26
+Increasing send delay for 14.139.34.17 from 20 to 40 due to 11 out of 15 dropped probes since last increase.
+Increasing send delay for 14.139.34.26 from 10 to 20 due to max_successful_tryno increase to 6
+Increasing send delay for 14.139.34.11 from 20 to 40 due to 11 out of 17 dropped probes since last increase.
+Increasing send delay for 14.139.34.43 from 5 to 10 due to 11 out of 17 dropped probes since last increase.
+Increasing send delay for 14.139.34.43 from 10 to 20 due to max_successful_tryno increase to 4
+Increasing send delay for 14.139.34.24 from 40 to 80 due to 11 out of 19 dropped probes since last increase.
+Increasing send delay for 14.139.34.2 from 80 to 160 due to max_successful_tryno increase to 7
+Increasing send delay for 14.139.34.11 from 40 to 80 due to 11 out of 15 dropped probes since last increase.
+Increasing send delay for 14.139.34.17 from 40 to 80 due to 11 out of 15 dropped probes since last increase.
+Increasing send delay for 14.139.34.4 from 160 to 320 due to 11 out of 15 dropped probes since last increase.
+Increasing send delay for 14.139.34.26 from 20 to 40 due to max_successful_tryno increase to 7
+Increasing send delay for 14.139.34.26 from 40 to 80 due to max_successful_tryno increase to 8
+Increasing send delay for 14.139.34.7 from 160 to 320 due to max_successful_tryno increase to 9
+Increasing send delay for 14.139.34.24 from 80 to 160 due to 11 out of 15 dropped probes since last increase.
+Increasing send delay for 14.139.34.11 from 80 to 160 due to 11 out of 14 dropped probes since last increase.
+Increasing send delay for 14.139.34.26 from 80 to 160 due to max_successful_tryno increase to 9
+Increasing send delay for 14.139.34.43 from 20 to 40 due to 11 out of 22 dropped probes since last increase.
+Increasing send delay for 14.139.34.43 from 40 to 80 due to max_successful_tryno increase to 5
+Increasing send delay for 14.139.34.11 from 160 to 320 due to max_successful_tryno increase to 7
+Increasing send delay for 14.139.34.43 from 80 to 160 due to max_successful_tryno increase to 6
+Increasing send delay for 14.139.34.17 from 80 to 160 due to max_successful_tryno increase to 6
+Discovered open port 49158/tcp on 14.139.34.26
+Increasing send delay for 14.139.34.17 from 160 to 320 due to max_successful_tryno increase to 7
+Discovered open port 49152/tcp on 14.139.34.24
+Discovered open port 8082/tcp on 14.139.34.10
+Increasing send delay for 14.139.34.24 from 160 to 320 due to max_successful_tryno increase to 7
+Increasing send delay for 14.139.34.24 from 320 to 640 due to max_successful_tryno increase to 8
+Increasing send delay for 14.139.34.2 from 160 to 320 due to 11 out of 15 dropped probes since last increase.
+Discovered open port 80/tcp on 14.139.34.10
+Increasing send delay for 14.139.34.10 from 0 to 5 due to max_successful_tryno increase to 4
+Increasing send delay for 14.139.34.24 from 640 to 1000 due to max_successful_tryno increase to 9
+Increasing send delay for 14.139.34.26 from 160 to 320 due to 11 out of 18 dropped probes since last increase.
+Discovered open port 49152/tcp on 14.139.34.26
+Increasing send delay for 14.139.34.43 from 160 to 320 due to 11 out of 18 dropped probes since last increase.
+SYN Stealth Scan Timing: About 9.16% done; ETC: 14:31 (0:10:05 remaining)
+Increasing send delay for 14.139.34.7 from 320 to 640 due to 11 out of 20 dropped probes since last increase.
+Discovered open port 8082/tcp on 14.139.34.43
+Increasing send delay for 14.139.34.11 from 320 to 640 due to 11 out of 20 dropped probes since last increase.
+Increasing send delay for 14.139.34.8 from 0 to 5 due to 13 out of 42 dropped probes since last increase.
+Increasing send delay for 14.139.34.4 from 320 to 640 due to 11 out of 29 dropped probes since last increase.
+Increasing send delay for 14.139.34.2 from 320 to 640 due to 11 out of 21 dropped probes since last increase.
+Increasing send delay for 14.139.34.26 from 320 to 640 due to 11 out of 17 dropped probes since last increase.
+Increasing send delay for 14.139.34.17 from 320 to 640 due to 11 out of 28 dropped probes since last increase.
+Increasing send delay for 14.139.34.9 from 0 to 5 due to 12 out of 39 dropped probes since last increase.
+Increasing send delay for 14.139.34.10 from 5 to 10 due to 11 out of 25 dropped probes since last increase.
+Increasing send delay for 14.139.34.3 from 0 to 5 due to 18 out of 59 dropped probes since last increase.
+Increasing send delay for 14.139.34.43 from 320 to 640 due to 11 out of 22 dropped probes since last increase.
+Increasing send delay for 14.139.34.8 from 5 to 10 due to 11 out of 29 dropped probes since last increase.
+SYN Stealth Scan Timing: About 15.67% done; ETC: 14:30 (0:08:10 remaining)
+Increasing send delay for 14.139.34.11 from 640 to 1000 due to 11 out of 27 dropped probes since last increase.
+Discovered open port 10000/tcp on 14.139.34.8
+Increasing send delay for 14.139.34.10 from 10 to 20 due to 11 out of 29 dropped probes since last increase.
+Increasing send delay for 14.139.34.3 from 5 to 10 due to 11 out of 29 dropped probes since last increase.
+Increasing send delay for 14.139.34.7 from 640 to 1000 due to 11 out of 28 dropped probes since last increase.
+Increasing send delay for 14.139.34.26 from 640 to 1000 due to 11 out of 17 dropped probes since last increase.
+Increasing send delay for 14.139.34.43 from 640 to 1000 due to 11 out of 19 dropped probes since last increase.
+Increasing send delay for 14.139.34.4 from 640 to 1000 due to 11 out of 23 dropped probes since last increase.
+Increasing send delay for 14.139.34.9 from 5 to 10 due to 11 out of 31 dropped probes since last increase.
+Increasing send delay for 14.139.34.17 from 640 to 1000 due to 11 out of 24 dropped probes since last increase.
+Increasing send delay for 14.139.34.2 from 640 to 1000 due to 11 out of 22 dropped probes since last increase.
+Discovered open port 10000/tcp on 14.139.34.3
+Increasing send delay for 14.139.34.10 from 20 to 40 due to 11 out of 26 dropped probes since last increase.
+Increasing send delay for 14.139.34.8 from 10 to 20 due to 11 out of 33 dropped probes since last increase.
+Increasing send delay for 14.139.34.3 from 10 to 20 due to 11 out of 25 dropped probes since last increase.
+SYN Stealth Scan Timing: About 21.86% done; ETC: 14:29 (0:07:13 remaining)
+Discovered open port 10000/tcp on 14.139.34.9
+Increasing send delay for 14.139.34.10 from 40 to 80 due to max_successful_tryno increase to 5
+Increasing send delay for 14.139.34.3 from 20 to 40 due to 11 out of 25 dropped probes since last increase.
+Increasing send delay for 14.139.34.8 from 20 to 40 due to 11 out of 27 dropped probes since last increase.
+Increasing send delay for 14.139.34.9 from 10 to 20 due to 12 out of 39 dropped probes since last increase.
+Completed SYN Stealth Scan against 14.139.34.27 in 144.71s (12 hosts left)
+Increasing send delay for 14.139.34.10 from 80 to 160 due to 11 out of 22 dropped probes since last increase.
+SYN Stealth Scan Timing: About 28.69% done; ETC: 14:29 (0:06:15 remaining)
+Increasing send delay for 14.139.34.10 from 160 to 320 due to max_successful_tryno increase to 6
+Increasing send delay for 14.139.34.3 from 40 to 80 due to 11 out of 24 dropped probes since last increase.
+Increasing send delay for 14.139.34.8 from 40 to 80 due to 11 out of 25 dropped probes since last increase.
+Increasing send delay for 14.139.34.9 from 20 to 40 due to 11 out of 25 dropped probes since last increase.
+Discovered open port 389/tcp on 14.139.34.8
+Discovered open port 465/tcp on 14.139.34.9
+Discovered open port 465/tcp on 14.139.34.3
+Increasing send delay for 14.139.34.8 from 80 to 160 due to 11 out of 25 dropped probes since last increase.
+Increasing send delay for 14.139.34.3 from 80 to 160 due to 11 out of 29 dropped probes since last increase.
+Increasing send delay for 14.139.34.9 from 40 to 80 due to 11 out of 26 dropped probes since last increase.
+Increasing send delay for 14.139.34.8 from 160 to 320 due to 11 out of 30 dropped probes since last increase.
+Increasing send delay for 14.139.34.9 from 80 to 160 due to 11 out of 35 dropped probes since last increase.
+Discovered open port 6001/tcp on 14.139.34.4
+Increasing send delay for 14.139.34.10 from 320 to 640 due to 11 out of 27 dropped probes since last increase.
+Increasing send delay for 14.139.34.3 from 160 to 320 due to 11 out of 33 dropped probes since last increase.
+Completed SYN Stealth Scan against 14.139.34.9 in 228.54s (11 hosts left)
+SYN Stealth Scan Timing: About 35.58% done; ETC: 14:31 (0:07:00 remaining)
+SYN Stealth Scan Timing: About 37.40% done; ETC: 14:32 (0:07:34 remaining)
+Discovered open port 2105/tcp on 14.139.34.26
+Increasing send delay for 14.139.34.8 from 320 to 640 due to 11 out of 34 dropped probes since last increase.
+Discovered open port 2105/tcp on 14.139.34.24
+Discovered open port 49153/tcp on 14.139.34.26
+Increasing send delay for 14.139.34.3 from 320 to 640 due to 11 out of 36 dropped probes since last increase.
+Discovered open port 49153/tcp on 14.139.34.24
+Increasing send delay for 14.139.34.10 from 640 to 1000 due to 11 out of 31 dropped probes since last increase.
+Discovered open port 1433/tcp on 14.139.34.26
+Discovered open port 1433/tcp on 14.139.34.24
+Discovered open port 8085/tcp on 14.139.34.24
+Increasing send delay for 14.139.34.8 from 640 to 1000 due to 11 out of 30 dropped probes since last increase.
+Discovered open port 10000/tcp on 14.139.34.7
+Discovered open port 10000/tcp on 14.139.34.2
+Discovered open port 49157/tcp on 14.139.34.26
+Discovered open port 49157/tcp on 14.139.34.24
+Discovered open port 1801/tcp on 14.139.34.26
+Discovered open port 1801/tcp on 14.139.34.24
+Discovered open port 49154/tcp on 14.139.34.26
+Discovered open port 49154/tcp on 14.139.34.24
+SYN Stealth Scan Timing: About 57.92% done; ETC: 14:37 (0:06:57 remaining)
+Discovered open port 5001/tcp on 14.139.34.2
+Discovered open port 8086/tcp on 14.139.34.24
+Warning: 14.139.34.7 giving up on port because retransmission cap hit (10).
+Discovered open port 49155/tcp on 14.139.34.26
+Discovered open port 49155/tcp on 14.139.34.24
+Discovered open port 1023/tcp on 14.139.34.26
+Discovered open port 1023/tcp on 14.139.34.24
+SYN Stealth Scan Timing: About 65.59% done; ETC: 14:38 (0:06:06 remaining)
+Discovered open port 3690/tcp on 14.139.34.24
+Discovered open port 2103/tcp on 14.139.34.26
+Discovered open port 2103/tcp on 14.139.34.24
+Completed SYN Stealth Scan against 14.139.34.3 in 766.00s (10 hosts left)
+SYN Stealth Scan Timing: About 71.58% done; ETC: 14:38 (0:05:12 remaining)
+Discovered open port 9000/tcp on 14.139.34.24
+Discovered open port 8081/tcp on 14.139.34.43
+Discovered open port 5800/tcp on 14.139.34.17
+SYN Stealth Scan Timing: About 77.74% done; ETC: 14:39 (0:04:16 remaining)
+Discovered open port 2107/tcp on 14.139.34.26
+Discovered open port 2107/tcp on 14.139.34.24
+Discovered open port 7001/tcp on 14.139.34.2
+Discovered open port 49159/tcp on 14.139.34.26
+Discovered open port 3001/tcp on 14.139.34.24
+SYN Stealth Scan Timing: About 83.31% done; ETC: 14:40 (0:03:17 remaining)
+Discovered open port 49156/tcp on 14.139.34.26
+Discovered open port 49156/tcp on 14.139.34.24
+Discovered open port 20000/tcp on 14.139.34.7
+Discovered open port 2383/tcp on 14.139.34.26
+Discovered open port 2383/tcp on 14.139.34.24
+SYN Stealth Scan Timing: About 88.63% done; ETC: 14:40 (0:02:17 remaining)
+Completed SYN Stealth Scan against 14.139.34.11 in 1138.02s (9 hosts left)
+Completed SYN Stealth Scan against 14.139.34.43 in 1143.92s (8 hosts left)
+Completed SYN Stealth Scan against 14.139.34.17 in 1144.92s (7 hosts left)
+Completed SYN Stealth Scan against 14.139.34.4 in 1147.02s (6 hosts left)
+Completed SYN Stealth Scan against 14.139.34.26 in 1161.68s (5 hosts left)
+Completed SYN Stealth Scan against 14.139.34.7 in 1163.22s (4 hosts left)
+Completed SYN Stealth Scan against 14.139.34.24 in 1171.22s (3 hosts left)
+Discovered open port 3000/tcp on 14.139.34.2
+Completed SYN Stealth Scan against 14.139.34.2 in 1185.70s (2 hosts left)
+SYN Stealth Scan Timing: About 92.70% done; ETC: 14:42 (0:01:35 remaining)
+SYN Stealth Scan Timing: About 92.95% done; ETC: 14:43 (0:01:39 remaining)
+SYN Stealth Scan Timing: About 93.22% done; ETC: 14:45 (0:01:42 remaining)
+SYN Stealth Scan Timing: About 93.49% done; ETC: 14:47 (0:01:45 remaining)
+SYN Stealth Scan Timing: About 93.77% done; ETC: 14:49 (0:01:47 remaining)
+SYN Stealth Scan Timing: About 94.06% done; ETC: 14:51 (0:01:49 remaining)
+SYN Stealth Scan Timing: About 94.36% done; ETC: 14:52 (0:01:50 remaining)
+SYN Stealth Scan Timing: About 94.65% done; ETC: 14:54 (0:01:50 remaining)
+SYN Stealth Scan Timing: About 94.95% done; ETC: 14:56 (0:01:49 remaining)
+SYN Stealth Scan Timing: About 95.24% done; ETC: 14:58 (0:01:48 remaining)
+SYN Stealth Scan Timing: About 95.53% done; ETC: 15:00 (0:01:47 remaining)
+Completed SYN Stealth Scan against 14.139.34.8 in 2367.73s (1 host left)
+SYN Stealth Scan Timing: About 95.77% done; ETC: 15:01 (0:01:45 remaining)
+SYN Stealth Scan Timing: About 95.87% done; ETC: 15:03 (0:01:47 remaining)
+SYN Stealth Scan Timing: About 95.97% done; ETC: 15:05 (0:01:49 remaining)
+SYN Stealth Scan Timing: About 96.07% done; ETC: 15:07 (0:01:51 remaining)
+SYN Stealth Scan Timing: About 96.17% done; ETC: 15:09 (0:01:52 remaining)
+SYN Stealth Scan Timing: About 96.27% done; ETC: 15:11 (0:01:54 remaining)
+SYN Stealth Scan Timing: About 96.37% done; ETC: 15:13 (0:01:55 remaining)
+SYN Stealth Scan Timing: About 96.47% done; ETC: 15:15 (0:01:56 remaining)
+SYN Stealth Scan Timing: About 96.58% done; ETC: 15:17 (0:01:56 remaining)
+SYN Stealth Scan Timing: About 96.69% done; ETC: 15:19 (0:01:56 remaining)
+SYN Stealth Scan Timing: About 96.79% done; ETC: 15:21 (0:01:57 remaining)
+SYN Stealth Scan Timing: About 96.89% done; ETC: 15:22 (0:01:57 remaining)
+SYN Stealth Scan Timing: About 97.00% done; ETC: 15:24 (0:01:56 remaining)
+SYN Stealth Scan Timing: About 97.10% done; ETC: 15:26 (0:01:56 remaining)
+SYN Stealth Scan Timing: About 97.20% done; ETC: 15:28 (0:01:55 remaining)
+SYN Stealth Scan Timing: About 97.30% done; ETC: 15:30 (0:01:54 remaining)
+SYN Stealth Scan Timing: About 97.40% done; ETC: 15:32 (0:01:52 remaining)
+SYN Stealth Scan Timing: About 97.50% done; ETC: 15:34 (0:01:51 remaining)
+SYN Stealth Scan Timing: About 97.60% done; ETC: 15:36 (0:01:49 remaining)
+SYN Stealth Scan Timing: About 97.70% done; ETC: 15:38 (0:01:47 remaining)
+SYN Stealth Scan Timing: About 97.80% done; ETC: 15:39 (0:01:45 remaining)
+SYN Stealth Scan Timing: About 97.90% done; ETC: 15:41 (0:01:42 remaining)
+SYN Stealth Scan Timing: About 97.99% done; ETC: 15:43 (0:01:40 remaining)
+SYN Stealth Scan Timing: About 98.09% done; ETC: 15:44 (0:01:37 remaining)
+SYN Stealth Scan Timing: About 98.17% done; ETC: 15:46 (0:01:34 remaining)
+SYN Stealth Scan Timing: About 98.26% done; ETC: 15:48 (0:01:32 remaining)
+SYN Stealth Scan Timing: About 98.35% done; ETC: 15:49 (0:01:28 remaining)
+SYN Stealth Scan Timing: About 98.42% done; ETC: 15:51 (0:01:26 remaining)
+SYN Stealth Scan Timing: About 98.50% done; ETC: 15:52 (0:01:23 remaining)
+SYN Stealth Scan Timing: About 98.58% done; ETC: 15:53 (0:01:19 remaining)
+SYN Stealth Scan Timing: About 98.65% done; ETC: 15:55 (0:01:17 remaining)
+SYN Stealth Scan Timing: About 98.73% done; ETC: 15:56 (0:01:13 remaining)
+SYN Stealth Scan Timing: About 98.81% done; ETC: 15:57 (0:01:10 remaining)
+SYN Stealth Scan Timing: About 98.87% done; ETC: 15:58 (0:01:07 remaining)
+SYN Stealth Scan Timing: About 98.94% done; ETC: 15:59 (0:01:03 remaining)
+SYN Stealth Scan Timing: About 98.99% done; ETC: 16:00 (0:01:01 remaining)
+SYN Stealth Scan Timing: About 99.05% done; ETC: 16:01 (0:00:58 remaining)
+SYN Stealth Scan Timing: About 99.10% done; ETC: 16:02 (0:00:55 remaining)
+SYN Stealth Scan Timing: About 99.15% done; ETC: 16:03 (0:00:53 remaining)
+SYN Stealth Scan Timing: About 99.19% done; ETC: 16:04 (0:00:50 remaining)
+SYN Stealth Scan Timing: About 99.24% done; ETC: 16:05 (0:00:48 remaining)
+SYN Stealth Scan Timing: About 99.28% done; ETC: 16:06 (0:00:46 remaining)
+SYN Stealth Scan Timing: About 99.32% done; ETC: 16:06 (0:00:43 remaining)
+SYN Stealth Scan Timing: About 99.36% done; ETC: 16:07 (0:00:41 remaining)
+SYN Stealth Scan Timing: About 99.40% done; ETC: 16:08 (0:00:39 remaining)
+SYN Stealth Scan Timing: About 99.43% done; ETC: 16:08 (0:00:37 remaining)
+SYN Stealth Scan Timing: About 99.47% done; ETC: 16:09 (0:00:35 remaining)
+SYN Stealth Scan Timing: About 99.50% done; ETC: 16:10 (0:00:33 remaining)
+SYN Stealth Scan Timing: About 99.53% done; ETC: 16:10 (0:00:31 remaining)
+Discovered open port 8000/tcp on 14.139.34.10
+Completed SYN Stealth Scan at 16:19, 7139.52s elapsed (13000 total ports)
+Initiating OS detection (try #1) against 13 hosts
+Retrying OS detection (try #2) against 13 hosts
+Nmap scan report for 14.139.34.2
+Host is up (0.056s latency).
+Not shown: 983 closed ports
+PORT      STATE    SERVICE
+22/tcp    open     ssh
+23/tcp    filtered telnet
+25/tcp    filtered smtp
+53/tcp    open     domain
+80/tcp    open     http
+443/tcp   open     https
+445/tcp   filtered microsoft-ds
+513/tcp   filtered login
+514/tcp   filtered shell
+2323/tcp  filtered 3d-nfsd
+3000/tcp  open     ppp
+3005/tcp  filtered deslogin
+5001/tcp  open     commplex-link
+5555/tcp  filtered freeciv
+7001/tcp  open     afs3-callback
+9000/tcp  filtered cslistener
+10000/tcp open     snet-sensor-mgmt
+Aggressive OS guesses: Linux 3.13 - 3.16 (95%), Linux 2.6.24 (94%), Asus RT-N10 router or AXIS 211A Network Camera (Linux 2.6) (93%), Linux 2.6.18 (93%), AXIS 211A Network Camera (Linux 2.6.20) (93%), Linux 3.11 (93%), Linux 3.12 (93%), Linux 3.13 (93%), Linux 3.18 (93%), Linux 3.2 - 4.0 (93%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 54.880 days (since Wed Dec 13 19:12:07 2017)
+Network Distance: 11 hops
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Nmap scan report for mail.students.iitmandi.ac.in (14.139.34.3)
+Host is up (0.052s latency).
+Not shown: 988 filtered ports
+PORT      STATE  SERVICE
+53/tcp    open   domain
+80/tcp    open   http
+143/tcp   open   imap
+389/tcp   closed ldap
+443/tcp   open   https
+465/tcp   open   smtps
+587/tcp   closed submission
+993/tcp   open   imaps
+3306/tcp  closed mysql
+5000/tcp  closed upnp
+8000/tcp  closed http-alt
+10000/tcp open   snet-sensor-mgmt
+Device type: general purpose|WAP|specialized|storage-misc|printer
+Running (JUST GUESSING): Linux 3.X|4.X|2.6.X|2.4.X (93%), Crestron 2-Series (88%), Asus embedded (88%), HP embedded (88%)
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:2.6.22 cpe:/o:crestron:2_series cpe:/o:linux:linux_kernel cpe:/h:asus:rt-ac66u cpe:/h:hp:p2000_g3 cpe:/o:linux:linux_kernel:2.4
+Aggressive OS guesses: Linux 3.10 - 3.19 (93%), Linux 3.13 (93%), Linux 3.2 - 4.0 (90%), Linux 3.11 (89%), Linux 3.12 (89%), Linux 3.18 (89%), Linux 3.2 - 3.5 (89%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (88%), Crestron XPanel control system (88%), Asus RT-AC66U WAP (88%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 55.101 days (since Wed Dec 13 13:54:01 2017)
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Nmap scan report for 14.139.34.4
+Host is up (0.047s latency).
+Not shown: 988 closed ports
+PORT     STATE    SERVICE
+22/tcp   open     ssh
+23/tcp   filtered telnet
+25/tcp   filtered smtp
+80/tcp   open     http
+445/tcp  filtered microsoft-ds
+513/tcp  filtered login
+514/tcp  filtered shell
+2323/tcp filtered 3d-nfsd
+3005/tcp filtered deslogin
+5555/tcp filtered freeciv
+6001/tcp open     X11:1
+8080/tcp open     http-proxy
+Aggressive OS guesses: Linux 3.12 (95%), Linux 3.13 (95%), Linux 3.18 (95%), Linux 3.2 - 4.0 (95%), Linux 3.11 (95%), Linux 3.1 (93%), Linux 3.2 (93%), Linux 3.10 - 3.19 (93%), DD-WRT (Linux 3.18) (92%), Android 5.0.2 (92%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 55.547 days (since Wed Dec 13 03:12:04 2017)
+Network Distance: 11 hops
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Nmap scan report for mail.alumni.iitmandi.ac.in (14.139.34.7)
+Host is up (0.055s latency).
+Not shown: 982 closed ports
+PORT      STATE    SERVICE
+22/tcp    open     ssh
+23/tcp    filtered telnet
+25/tcp    filtered smtp
+53/tcp    open     domain
+80/tcp    open     http
+110/tcp   open     pop3
+143/tcp   open     imap
+445/tcp   filtered microsoft-ds
+513/tcp   filtered login
+514/tcp   filtered shell
+587/tcp   open     submission
+993/tcp   open     imaps
+995/tcp   open     pop3s
+2323/tcp  filtered 3d-nfsd
+3005/tcp  filtered deslogin
+5555/tcp  filtered freeciv
+10000/tcp open     snet-sensor-mgmt
+20000/tcp open     dnp
+Aggressive OS guesses: Linux 3.2 (95%), Linux 3.5 (95%), Linux 2.6.32 - 3.10 (95%), Linux 2.6.32 - 3.9 (95%), Linux 3.1 (94%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (94%), Android 4.3 (94%), Linux 3.2 - 3.10 (94%), Linux 3.2 - 3.13 (94%), Linux 3.8 (94%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 54.728 days (since Wed Dec 13 22:50:42 2017)
+Network Distance: 11 hops
+TCP Sequence Prediction: Difficulty=259 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Nmap scan report for 14.139.34.8
+Host is up (0.048s latency).
+Not shown: 994 filtered ports
+PORT      STATE  SERVICE
+53/tcp    closed domain
+80/tcp    open   http
+389/tcp   open   ldap
+443/tcp   open   https
+3306/tcp  closed mysql
+10000/tcp open   snet-sensor-mgmt
+Aggressive OS guesses: Linux 3.11 (94%), Linux 3.2 - 3.8 (94%), Linux 2.6.32 - 3.1 (92%), OpenWrt 12.09-rc1 Attitude Adjustment (Linux 3.3 - 3.7) (92%), Linux 3.2 (92%), Linux 2.6.32 - 3.13 (91%), Linux 3.2 - 3.10 (90%), Linux 3.2 - 3.13 (90%), Linux 3.5 (90%), Linux 2.6.32 - 2.6.39 (90%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 55.260 days (since Wed Dec 13 10:04:38 2017)
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Nmap scan report for mail.projects.iitmandi.ac.in (14.139.34.9)
+Host is up (0.053s latency).
+Not shown: 994 filtered ports
+PORT      STATE SERVICE
+80/tcp    open  http
+110/tcp   open  pop3
+443/tcp   open  https
+465/tcp   open  smtps
+993/tcp   open  imaps
+10000/tcp open  snet-sensor-mgmt
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 3.2 - 4.0 (91%), Linux 3.10 - 3.19 (90%), Linux 3.18 (90%), Crestron XPanel control system (89%), Linux 3.11 (88%), Linux 3.12 (88%), Linux 3.13 (88%), Linux 2.6.32 (87%), HP P2000 G3 NAS device (86%), Linux 3.1 (86%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 56.233 days (since Tue Dec 12 10:44:38 2017)
+TCP Sequence Prediction: Difficulty=248 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Nmap scan report for 14.139.34.10
+Host is up (0.052s latency).
+Not shown: 959 filtered ports, 36 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+443/tcp  open  https
+8000/tcp open  http-alt
+8082/tcp open  blackice-alerts
+Device type: general purpose|WAP|specialized|storage-misc|broadband router|printer
+Running (JUST GUESSING): Linux 3.X|4.X|2.6.X (94%), Asus embedded (90%), Crestron 2-Series (88%), HP embedded (88%)
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel cpe:/h:asus:rt-ac66u cpe:/o:crestron:2_series cpe:/h:hp:p2000_g3 cpe:/o:linux:linux_kernel:2.6.22 cpe:/o:linux:linux_kernel:2.6
+Aggressive OS guesses: Linux 3.10 - 3.19 (94%), Linux 3.13 (94%), Linux 3.11 (90%), Linux 3.12 (90%), Linux 3.18 (90%), Linux 3.2 - 4.0 (90%), Asus RT-AC66U WAP (90%), Linux 3.2 - 3.5 (89%), Linux 3.2 - 3.8 (89%), Crestron XPanel control system (88%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 55.080 days (since Wed Dec 13 14:24:20 2017)
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Nmap scan report for 14.139.34.11
+Host is up (0.047s latency).
+Not shown: 988 closed ports
+PORT     STATE    SERVICE
+22/tcp   open     ssh
+23/tcp   filtered telnet
+25/tcp   filtered smtp
+53/tcp   open     domain
+80/tcp   open     http
+445/tcp  filtered microsoft-ds
+513/tcp  filtered login
+514/tcp  filtered shell
+2323/tcp filtered 3d-nfsd
+3005/tcp filtered deslogin
+5555/tcp filtered freeciv
+8080/tcp open     http-proxy
+Aggressive OS guesses: Linux 3.2 - 4.0 (95%), Linux 3.11 (95%), Linux 3.12 (95%), Linux 3.13 (95%), Linux 3.18 (94%), Linux 3.1 (93%), Linux 3.2 (93%), Linux 3.10 - 3.19 (93%), Android 5.1 (92%), Linux 3.12 - 3.19 (92%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 55.855 days (since Tue Dec 12 19:48:52 2017)
+Network Distance: 11 hops
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Nmap scan report for 14.139.34.17
+Host is up (0.047s latency).
+Not shown: 988 closed ports
+PORT     STATE    SERVICE
+22/tcp   open     ssh
+23/tcp   filtered telnet
+25/tcp   filtered smtp
+80/tcp   open     http
+445/tcp  filtered microsoft-ds
+513/tcp  filtered login
+514/tcp  filtered shell
+2323/tcp filtered 3d-nfsd
+3005/tcp filtered deslogin
+5555/tcp filtered freeciv
+5800/tcp open     vnc-http
+5900/tcp open     vnc
+Aggressive OS guesses: Linux 3.2 (95%), Linux 3.2 - 3.10 (95%), Linux 3.2 - 3.13 (95%), XBMCbuntu Frodo v12.2 (Linux 3.X) (95%), Linux 3.5 (94%), Linux 2.6.32 - 3.10 (94%), Linux 2.6.32 - 3.9 (94%), Linux 3.1 (93%), Linux 3.2 - 3.8 (93%), Linux 3.0 (92%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 56.227 days (since Tue Dec 12 10:52:28 2017)
+Network Distance: 11 hops
+TCP Sequence Prediction: Difficulty=257 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Nmap scan report for 14.139.34.24
+Host is up (0.049s latency).
+Not shown: 968 closed ports
+PORT      STATE    SERVICE
+23/tcp    filtered telnet
+25/tcp    filtered smtp
+80/tcp    open     http
+135/tcp   open     msrpc
+139/tcp   open     netbios-ssn
+445/tcp   filtered microsoft-ds
+513/tcp   filtered login
+514/tcp   filtered shell
+1023/tcp  open     netvenuechat
+1433/tcp  open     ms-sql-s
+1801/tcp  open     msmq
+2103/tcp  open     zephyr-clt
+2105/tcp  open     eklogin
+2107/tcp  open     msmq-mgmt
+2323/tcp  filtered 3d-nfsd
+2383/tcp  open     ms-olap4
+3001/tcp  open     nessus
+3005/tcp  filtered deslogin
+3306/tcp  open     mysql
+3389/tcp  open     ms-wbt-server
+3690/tcp  open     svn
+5555/tcp  filtered freeciv
+8080/tcp  open     http-proxy
+8085/tcp  open     unknown
+8086/tcp  open     d-s-n
+9000/tcp  open     cslistener
+49152/tcp open     unknown
+49153/tcp open     unknown
+49154/tcp open     unknown
+49155/tcp open     unknown
+49156/tcp open     unknown
+49157/tcp open     unknown
+Device type: general purpose|specialized
+Running (JUST GUESSING): Microsoft Windows 2012|7|2008|Vista|8.1 (95%)
+OS CPE: cpe:/o:microsoft:windows_server_2012 cpe:/o:microsoft:windows_7::sp1 cpe:/o:microsoft:windows_server_2008::sp2 cpe:/o:microsoft:windows_vista::sp1:home_premium cpe:/o:microsoft:windows_7 cpe:/o:microsoft:windows_8.1 cpe:/o:microsoft:windows_8
+Aggressive OS guesses: Microsoft Windows Server 2012 R2 (95%), Microsoft Windows 7 SP1 or Windows Server 2008 SP2 (92%), Microsoft Windows Windows 7 SP1 (92%), Microsoft Windows Vista Home Premium SP1, Windows 7, or Windows Server 2008 (92%), Microsoft Windows Vista SP1 (92%), Microsoft Windows 7 SP1 (91%), Microsoft Windows Embedded POSready 7 (90%), Microsoft Windows Server 2012 or Server 2012 R2 (90%), Microsoft Windows 7 Ultimate (90%), Microsoft Windows 8.1 (90%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 7.331 days (since Tue Jan 30 08:23:28 2018)
+Network Distance: 11 hops
+TCP Sequence Prediction: Difficulty=259 (Good luck!)
+IP ID Sequence Generation: Randomized
+
+Nmap scan report for 14.139.34.26
+Host is up (0.054s latency).
+Not shown: 973 closed ports
+PORT      STATE    SERVICE
+23/tcp    filtered telnet
+25/tcp    filtered smtp
+80/tcp    open     http
+135/tcp   open     msrpc
+139/tcp   open     netbios-ssn
+445/tcp   filtered microsoft-ds
+513/tcp   filtered login
+514/tcp   filtered shell
+1023/tcp  open     netvenuechat
+1433/tcp  open     ms-sql-s
+1801/tcp  open     msmq
+2103/tcp  open     zephyr-clt
+2105/tcp  open     eklogin
+2107/tcp  open     msmq-mgmt
+2323/tcp  filtered 3d-nfsd
+2383/tcp  open     ms-olap4
+3005/tcp  filtered deslogin
+3389/tcp  open     ms-wbt-server
+5555/tcp  filtered freeciv
+49152/tcp open     unknown
+49153/tcp open     unknown
+49154/tcp open     unknown
+49155/tcp open     unknown
+49156/tcp open     unknown
+49157/tcp open     unknown
+49158/tcp open     unknown
+49159/tcp open     unknown
+Aggressive OS guesses: Microsoft Windows Embedded POSready 7 (96%), Microsoft Windows Server 2012 or Server 2012 R2 (95%), Microsoft Windows 7 SP1 (94%), Microsoft Windows Vista SP1 (93%), Microsoft Windows 7, Windows Server 2012, or Windows 8.1 Update 1 (93%), Microsoft Windows Server 2012 (93%), Microsoft Windows Server 2012 R2 (93%), Microsoft Windows Server 2012 R2 Update 1 (93%), Windows Server 2012 R2 Update 1 (93%), Windows Server 2012 R2 (92%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 54.884 days (since Wed Dec 13 19:06:55 2017)
+Network Distance: 11 hops
+TCP Sequence Prediction: Difficulty=247 (Good luck!)
+IP ID Sequence Generation: Incremental
+
+Nmap scan report for 14.139.34.27
+Host is up (0.069s latency).
+Not shown: 999 filtered ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 2.6.32 (93%), Linux 3.10 - 3.19 (91%), Linux 3.18 (91%), Linux 3.2 - 4.0 (91%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (86%), Linux 3.1 (86%), Linux 3.2 (86%), Linux 3.4 (86%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (86%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 1.186 days (since Mon Feb  5 11:51:26 2018)
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Nmap scan report for 14.139.34.43
+Host is up (0.048s latency).
+Not shown: 984 closed ports
+PORT     STATE    SERVICE
+21/tcp   filtered ftp
+22/tcp   open     ssh
+23/tcp   filtered telnet
+25/tcp   filtered smtp
+80/tcp   open     http
+139/tcp  open     netbios-ssn
+445/tcp  filtered microsoft-ds
+513/tcp  filtered login
+514/tcp  filtered shell
+2323/tcp filtered 3d-nfsd
+3005/tcp filtered deslogin
+3306/tcp open     mysql
+5555/tcp filtered freeciv
+8080/tcp open     http-proxy
+8081/tcp open     blackice-icecap
+8082/tcp open     blackice-alerts
+Aggressive OS guesses: Linux 3.2 (95%), Linux 2.6.32 - 3.10 (95%), Linux 2.6.32 - 3.9 (95%), Linux 3.5 (95%), Linux 3.1 (94%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (94%), Linux 3.2 - 3.10 (94%), Linux 3.2 - 3.13 (94%), Linux 3.8 (94%), XBMCbuntu Frodo v12.2 (Linux 3.X) (93%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 5.293 days (since Thu Feb  1 09:17:34 2018)
+Network Distance: 11 hops
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Read data files from: /usr/bin/../share/nmap
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 256 IP addresses (13 hosts up) scanned in 7174.33 seconds
+           Raw packets sent: 34049 (1.553MB) | Rcvd: 12603 (564.556KB)

@@ -1,0 +1,1911 @@
+Starting Nmap 7.01 ( https://nmap.org ) at 2018-02-01 19:54 IST
+Nmap scan report for 14.139.34.0
+Host is up (0.061s latency).
+Not shown: 98 filtered ports
+PORT    STATE  SERVICE
+179/tcp closed bgp
+646/tcp closed ldp
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco 3550 switch (IOS 12.2) (92%), HP LaserJet 2200dtn printer (89%), HP LaserJet 5M printer (89%), DEC Digital UNIX 5.X (89%), ZyXEL P-2602H-D1A DSL modem (88%), Apple AirPort Extreme WAP (88%), HP 170X print server or Inkjet 3000 printer (88%), HP JetDirect 2591A print server (88%), HP LaserJet 4050 or 4000n printer or JetDirect EX Plus 3 print server (88%), HP LaserJet 4050 printer (88%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.1
+Host is up (0.064s latency).
+All 100 scanned ports on 14.139.34.1 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.2
+Host is up (0.093s latency).
+Not shown: 92 closed ports
+PORT      STATE    SERVICE
+22/tcp    open     ssh
+25/tcp    filtered smtp
+53/tcp    open     domain
+80/tcp    open     http
+443/tcp   open     https
+445/tcp   filtered microsoft-ds
+3000/tcp  open     ppp
+10000/tcp open     snet-sensor-mgmt
+Device type: WAP|general purpose
+Running (JUST GUESSING): Linux 2.6.X|2.4.X (86%)
+OS CPE: cpe:/o:linux:linux_kernel:2.6.22 cpe:/o:linux:linux_kernel:2.4 cpe:/o:linux:linux_kernel:2.6
+Aggressive OS guesses: OpenWrt Kamikaze 7.09 (Linux 2.6.22) (86%), OpenWrt 0.9 - 7.09 (Linux 2.4.30 - 2.4.34) (85%), OpenWrt White Russian 0.9 (Linux 2.4.30) (85%), Linux 2.6.18 - 2.6.22 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 15 hops
+
+Nmap scan report for mail.students.iitmandi.ac.in (14.139.34.3)
+Host is up (0.089s latency).
+Not shown: 86 filtered ports
+PORT      STATE  SERVICE
+53/tcp    open   domain
+80/tcp    open   http
+110/tcp   open   pop3
+143/tcp   open   imap
+389/tcp   closed ldap
+443/tcp   open   https
+465/tcp   open   smtps
+587/tcp   closed submission
+993/tcp   open   imaps
+995/tcp   open   pop3s
+3306/tcp  closed mysql
+5000/tcp  closed upnp
+8000/tcp  closed http-alt
+10000/tcp open   snet-sensor-mgmt
+OS fingerprint not ideal because: Didn't receive UDP response. Please try again with -sSU
+No OS matches for host
+
+Nmap scan report for 14.139.34.4
+Host is up (0.088s latency).
+Not shown: 94 closed ports
+PORT     STATE    SERVICE
+22/tcp   open     ssh
+25/tcp   filtered smtp
+80/tcp   open     http
+445/tcp  filtered microsoft-ds
+6001/tcp open     X11:1
+8080/tcp open     http-proxy
+Device type: general purpose
+Running (JUST GUESSING): Linux 3.X|4.X|2.6.X (87%)
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:2.6.32
+Aggressive OS guesses: Linux 3.11 - 4.1 (87%), Linux 2.6.32 (86%), Linux 3.10 - 3.19 (86%), Linux 3.13 (86%), Linux 2.6.18 - 2.6.22 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 16 hops
+
+Nmap scan report for 14.139.34.5
+Host is up (0.063s latency).
+All 100 scanned ports on 14.139.34.5 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.6
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.6 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for mail.alumni.iitmandi.ac.in (14.139.34.7)
+Host is up (0.056s latency).
+All 100 scanned ports on mail.alumni.iitmandi.ac.in (14.139.34.7) are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.8
+Host is up (0.097s latency).
+Not shown: 94 filtered ports
+PORT      STATE  SERVICE
+53/tcp    closed domain
+80/tcp    open   http
+389/tcp   open   ldap
+443/tcp   open   https
+3306/tcp  closed mysql
+10000/tcp open   snet-sensor-mgmt
+OS fingerprint not ideal because: Didn't receive UDP response. Please try again with -sSU
+No OS matches for host
+
+Nmap scan report for mail.projects.iitmandi.ac.in (14.139.34.9)
+Host is up (0.091s latency).
+Not shown: 90 filtered ports
+PORT      STATE  SERVICE
+53/tcp    closed domain
+80/tcp    open   http
+110/tcp   open   pop3
+143/tcp   open   imap
+389/tcp   closed ldap
+443/tcp   open   https
+465/tcp   open   smtps
+587/tcp   closed submission
+993/tcp   open   imaps
+10000/tcp open   snet-sensor-mgmt
+OS fingerprint not ideal because: Didn't receive UDP response. Please try again with -sSU
+No OS matches for host
+
+Nmap scan report for 14.139.34.10
+Host is up (0.10s latency).
+Not shown: 81 filtered ports
+PORT      STATE  SERVICE
+21/tcp    open   ftp
+53/tcp    closed domain
+80/tcp    open   http
+143/tcp   closed imap
+389/tcp   closed ldap
+443/tcp   open   https
+990/tcp   closed ftps
+993/tcp   closed imaps
+3306/tcp  closed mysql
+5000/tcp  closed upnp
+5051/tcp  closed ida-agent
+5432/tcp  closed postgresql
+8000/tcp  open   http-alt
+49152/tcp closed unknown
+49153/tcp closed unknown
+49154/tcp closed unknown
+49155/tcp closed unknown
+49156/tcp closed unknown
+49157/tcp closed unknown
+OS fingerprint not ideal because: Didn't receive UDP response. Please try again with -sSU
+No OS matches for host
+
+Nmap scan report for 14.139.34.11
+Host is up (0.094s latency).
+Not shown: 94 closed ports
+PORT     STATE    SERVICE
+22/tcp   open     ssh
+25/tcp   filtered smtp
+53/tcp   open     domain
+80/tcp   open     http
+445/tcp  filtered microsoft-ds
+8080/tcp open     http-proxy
+Device type: general purpose
+Running (JUST GUESSING): Linux 3.X|4.X|2.6.X (87%)
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:2.6.32
+Aggressive OS guesses: Linux 3.11 - 4.1 (87%), Linux 3.10 - 3.19 (86%), Linux 3.13 (86%), Linux 2.6.32 (86%), Linux 2.6.18 - 2.6.22 (85%), Linux 3.8 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 16 hops
+
+Nmap scan report for 14.139.34.12
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.12 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.13
+Host is up (0.056s latency).
+All 100 scanned ports on 14.139.34.13 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.14
+Host is up (0.056s latency).
+All 100 scanned ports on 14.139.34.14 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.15
+Host is up (0.058s latency).
+All 100 scanned ports on 14.139.34.15 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.16
+Host is up (0.057s latency).
+All 100 scanned ports on 14.139.34.16 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.17
+Host is up (0.063s latency).
+All 100 scanned ports on 14.139.34.17 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.18
+Host is up (0.062s latency).
+All 100 scanned ports on 14.139.34.18 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.19
+Host is up (0.059s latency).
+All 100 scanned ports on 14.139.34.19 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.20
+Host is up (0.066s latency).
+All 100 scanned ports on 14.139.34.20 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.21
+Host is up (0.062s latency).
+All 100 scanned ports on 14.139.34.21 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.22
+Host is up (0.056s latency).
+All 100 scanned ports on 14.139.34.22 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.23
+Host is up (0.057s latency).
+All 100 scanned ports on 14.139.34.23 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.24
+Host is up (0.059s latency).
+All 100 scanned ports on 14.139.34.24 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.25
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.25 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.26
+Host is up (0.11s latency).
+Not shown: 87 closed ports
+PORT      STATE    SERVICE
+25/tcp    filtered smtp
+80/tcp    open     http
+135/tcp   open     msrpc
+139/tcp   open     netbios-ssn
+445/tcp   filtered microsoft-ds
+1433/tcp  open     ms-sql-s
+3389/tcp  open     ms-wbt-server
+49152/tcp open     unknown
+49153/tcp open     unknown
+49154/tcp open     unknown
+49155/tcp open     unknown
+49156/tcp open     unknown
+49157/tcp open     unknown
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 7|2012 (87%)
+OS CPE: cpe:/o:microsoft:windows_7::sp1 cpe:/o:microsoft:windows_server_2012
+Aggressive OS guesses: Microsoft Windows Windows 7 SP1 (87%), Microsoft Windows 7 (87%), Microsoft Windows Server 2012 R2 (86%), Windows Server 2012 (85%), Microsoft Windows Server 2012 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 15 hops
+
+Nmap scan report for 14.139.34.27
+Host is up (0.058s latency).
+All 100 scanned ports on 14.139.34.27 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.28
+Host is up (0.058s latency).
+All 100 scanned ports on 14.139.34.28 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.29
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.29 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.30
+Host is up (0.064s latency).
+All 100 scanned ports on 14.139.34.30 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.31
+Host is up (0.055s latency).
+All 100 scanned ports on 14.139.34.31 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.32
+Host is up (0.058s latency).
+All 100 scanned ports on 14.139.34.32 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.33
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.33 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.34
+Host is up (0.066s latency).
+All 100 scanned ports on 14.139.34.34 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.35
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.35 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.36
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.36 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.37
+Host is up (0.064s latency).
+All 100 scanned ports on 14.139.34.37 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.38
+Host is up (0.062s latency).
+All 100 scanned ports on 14.139.34.38 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.39
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.39 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.40
+Host is up (0.059s latency).
+All 100 scanned ports on 14.139.34.40 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.41
+Host is up (0.063s latency).
+All 100 scanned ports on 14.139.34.41 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.42
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.42 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.43
+Host is up (0.089s latency).
+Not shown: 92 closed ports
+PORT     STATE    SERVICE
+22/tcp   open     ssh
+25/tcp   filtered smtp
+80/tcp   open     http
+139/tcp  open     netbios-ssn
+445/tcp  filtered microsoft-ds
+3306/tcp open     mysql
+8080/tcp open     http-proxy
+8081/tcp open     blackice-icecap
+Device type: general purpose|firewall|broadband router
+Running (JUST GUESSING): Linux 3.X|2.6.X (87%), WatchGuard Fireware 11.X (87%)
+OS CPE: cpe:/o:linux:linux_kernel:3.8 cpe:/o:watchguard:fireware:11.8 cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:3
+Aggressive OS guesses: Linux 3.8 (87%), Linux 3.2 - 3.8 (87%), WatchGuard Fireware 11.8 (87%), Linux 3.2 (87%), Linux 2.6.32 - 3.1 (86%), OpenWrt 12.09-rc1 Attitude Adjustment (Linux 3.3 - 3.7) (86%), Linux 3.5 (86%), Linux 2.6.32 (86%), Linux 2.6.32 - 3.13 (86%), Linux 3.11 (86%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 15 hops
+
+Nmap scan report for 14.139.34.44
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.44 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.45
+Host is up (0.058s latency).
+All 100 scanned ports on 14.139.34.45 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.46
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.46 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.47
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.47 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.48
+Host is up (0.059s latency).
+All 100 scanned ports on 14.139.34.48 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.49
+Host is up (0.062s latency).
+All 100 scanned ports on 14.139.34.49 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.50
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.50 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.51
+Host is up (0.057s latency).
+All 100 scanned ports on 14.139.34.51 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.52
+Host is up (0.059s latency).
+All 100 scanned ports on 14.139.34.52 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.53
+Host is up (0.059s latency).
+All 100 scanned ports on 14.139.34.53 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.54
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.54 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.55
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.55 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.56
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.56 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.57
+Host is up (0.064s latency).
+All 100 scanned ports on 14.139.34.57 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.58
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.58 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.59
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.59 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.60
+Host is up (0.063s latency).
+All 100 scanned ports on 14.139.34.60 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.61
+Host is up (0.058s latency).
+All 100 scanned ports on 14.139.34.61 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.62
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.62 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.63
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.63 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.64
+Host is up (0.062s latency).
+All 100 scanned ports on 14.139.34.64 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.65
+Host is up (0.063s latency).
+All 100 scanned ports on 14.139.34.65 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.66
+Host is up (0.066s latency).
+All 100 scanned ports on 14.139.34.66 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.67
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.67 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.68
+Host is up (0.062s latency).
+All 100 scanned ports on 14.139.34.68 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.69
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.69 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.70
+Host is up (0.062s latency).
+All 100 scanned ports on 14.139.34.70 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.71
+Host is up (0.067s latency).
+All 100 scanned ports on 14.139.34.71 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.72
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.72 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.73
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.73 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.74
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.74 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.75
+Host is up (0.059s latency).
+All 100 scanned ports on 14.139.34.75 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.76
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.76 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.77
+Host is up (0.062s latency).
+All 100 scanned ports on 14.139.34.77 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.78
+Host is up (0.065s latency).
+All 100 scanned ports on 14.139.34.78 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.79
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.79 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.80
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.80 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.81
+Host is up (0.059s latency).
+All 100 scanned ports on 14.139.34.81 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.82
+Host is up (0.065s latency).
+All 100 scanned ports on 14.139.34.82 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.83
+Host is up (0.062s latency).
+All 100 scanned ports on 14.139.34.83 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.84
+Host is up (0.059s latency).
+All 100 scanned ports on 14.139.34.84 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.85
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.85 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.86
+Host is up (0.076s latency).
+All 100 scanned ports on 14.139.34.86 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.87
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.87 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.88
+Host is up (0.063s latency).
+All 100 scanned ports on 14.139.34.88 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.89
+Host is up (0.062s latency).
+All 100 scanned ports on 14.139.34.89 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.90
+Host is up (0.064s latency).
+All 100 scanned ports on 14.139.34.90 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.91
+Host is up (0.063s latency).
+All 100 scanned ports on 14.139.34.91 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.92
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.92 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.93
+Host is up (0.072s latency).
+All 100 scanned ports on 14.139.34.93 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.94
+Host is up (0.065s latency).
+All 100 scanned ports on 14.139.34.94 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.95
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.95 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.96
+Host is up (0.063s latency).
+All 100 scanned ports on 14.139.34.96 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.97
+Host is up (0.063s latency).
+All 100 scanned ports on 14.139.34.97 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.98
+Host is up (0.062s latency).
+All 100 scanned ports on 14.139.34.98 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.99
+Host is up (0.067s latency).
+All 100 scanned ports on 14.139.34.99 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.100
+Host is up (0.071s latency).
+All 100 scanned ports on 14.139.34.100 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.101
+Host is up (0.072s latency).
+All 100 scanned ports on 14.139.34.101 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.102
+Host is up (0.059s latency).
+All 100 scanned ports on 14.139.34.102 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.103
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.103 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.104
+Host is up (0.059s latency).
+All 100 scanned ports on 14.139.34.104 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.105
+Host is up (0.063s latency).
+All 100 scanned ports on 14.139.34.105 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.106
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.106 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.107
+Host is up (0.058s latency).
+All 100 scanned ports on 14.139.34.107 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.108
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.108 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.109
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.109 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.110
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.110 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.111
+Host is up (0.064s latency).
+All 100 scanned ports on 14.139.34.111 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.112
+Host is up (0.065s latency).
+All 100 scanned ports on 14.139.34.112 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.113
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.113 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.114
+Host is up (0.064s latency).
+All 100 scanned ports on 14.139.34.114 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.115
+Host is up (0.063s latency).
+All 100 scanned ports on 14.139.34.115 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.116
+Host is up (0.064s latency).
+All 100 scanned ports on 14.139.34.116 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.117
+Host is up (0.062s latency).
+All 100 scanned ports on 14.139.34.117 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.118
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.118 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.119
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.119 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.120
+Host is up (0.059s latency).
+All 100 scanned ports on 14.139.34.120 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.121
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.121 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.122
+Host is up (0.062s latency).
+All 100 scanned ports on 14.139.34.122 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.123
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.123 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.124
+Host is up (0.063s latency).
+All 100 scanned ports on 14.139.34.124 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.125
+Host is up (0.064s latency).
+All 100 scanned ports on 14.139.34.125 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.126
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.126 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.127
+Host is up (0.063s latency).
+All 100 scanned ports on 14.139.34.127 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.128
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.128 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.129
+Host is up (0.059s latency).
+All 100 scanned ports on 14.139.34.129 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.130
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.130 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.131
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.131 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.132
+Host is up (0.064s latency).
+All 100 scanned ports on 14.139.34.132 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.133
+Host is up (0.065s latency).
+All 100 scanned ports on 14.139.34.133 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.134
+Host is up (0.056s latency).
+All 100 scanned ports on 14.139.34.134 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.135
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.135 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.136
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.136 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.137
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.137 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.138
+Host is up (0.066s latency).
+All 100 scanned ports on 14.139.34.138 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.139
+Host is up (0.062s latency).
+All 100 scanned ports on 14.139.34.139 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.140
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.140 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.141
+Host is up (0.062s latency).
+All 100 scanned ports on 14.139.34.141 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.142
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.142 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.143
+Host is up (0.062s latency).
+All 100 scanned ports on 14.139.34.143 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.144
+Host is up (0.064s latency).
+All 100 scanned ports on 14.139.34.144 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.145
+Host is up (0.059s latency).
+All 100 scanned ports on 14.139.34.145 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.146
+Host is up (0.071s latency).
+All 100 scanned ports on 14.139.34.146 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.147
+Host is up (0.063s latency).
+All 100 scanned ports on 14.139.34.147 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.148
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.148 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.149
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.149 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.150
+Host is up (0.058s latency).
+All 100 scanned ports on 14.139.34.150 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.151
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.151 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.152
+Host is up (0.064s latency).
+All 100 scanned ports on 14.139.34.152 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.153
+Host is up (0.063s latency).
+All 100 scanned ports on 14.139.34.153 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.154
+Host is up (0.058s latency).
+All 100 scanned ports on 14.139.34.154 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.155
+Host is up (0.069s latency).
+All 100 scanned ports on 14.139.34.155 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.156
+Host is up (0.058s latency).
+All 100 scanned ports on 14.139.34.156 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.157
+Host is up (0.059s latency).
+All 100 scanned ports on 14.139.34.157 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.158
+Host is up (0.063s latency).
+All 100 scanned ports on 14.139.34.158 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.159
+Host is up (0.062s latency).
+All 100 scanned ports on 14.139.34.159 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.160
+Host is up (0.062s latency).
+All 100 scanned ports on 14.139.34.160 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.161
+Host is up (0.063s latency).
+All 100 scanned ports on 14.139.34.161 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.162
+Host is up (0.059s latency).
+All 100 scanned ports on 14.139.34.162 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.163
+Host is up (0.063s latency).
+All 100 scanned ports on 14.139.34.163 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.164
+Host is up (0.063s latency).
+All 100 scanned ports on 14.139.34.164 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.165
+Host is up (0.063s latency).
+All 100 scanned ports on 14.139.34.165 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.166
+Host is up (0.065s latency).
+All 100 scanned ports on 14.139.34.166 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.167
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.167 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.168
+Host is up (0.062s latency).
+All 100 scanned ports on 14.139.34.168 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.169
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.169 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.170
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.170 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.171
+Host is up (0.064s latency).
+All 100 scanned ports on 14.139.34.171 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.172
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.172 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.173
+Host is up (0.074s latency).
+All 100 scanned ports on 14.139.34.173 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.174
+Host is up (0.074s latency).
+All 100 scanned ports on 14.139.34.174 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.175
+Host is up (0.058s latency).
+All 100 scanned ports on 14.139.34.175 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.176
+Host is up (0.064s latency).
+All 100 scanned ports on 14.139.34.176 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.177
+Host is up (0.064s latency).
+All 100 scanned ports on 14.139.34.177 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.178
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.178 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.179
+Host is up (0.063s latency).
+All 100 scanned ports on 14.139.34.179 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.180
+Host is up (0.062s latency).
+All 100 scanned ports on 14.139.34.180 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.181
+Host is up (0.059s latency).
+All 100 scanned ports on 14.139.34.181 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.182
+Host is up (0.058s latency).
+All 100 scanned ports on 14.139.34.182 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.183
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.183 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.184
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.184 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.185
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.185 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.186
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.186 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.187
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.187 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.188
+Host is up (0.058s latency).
+All 100 scanned ports on 14.139.34.188 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.189
+Host is up (0.058s latency).
+All 100 scanned ports on 14.139.34.189 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.190
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.190 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.191
+Host is up (0.057s latency).
+All 100 scanned ports on 14.139.34.191 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.192
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.192 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.193
+Host is up (0.063s latency).
+All 100 scanned ports on 14.139.34.193 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.194
+Host is up (0.062s latency).
+All 100 scanned ports on 14.139.34.194 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.195
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.195 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.196
+Host is up (0.062s latency).
+All 100 scanned ports on 14.139.34.196 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.197
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.197 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.198
+Host is up (0.062s latency).
+All 100 scanned ports on 14.139.34.198 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.199
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.199 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.200
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.200 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.201
+Host is up (0.063s latency).
+All 100 scanned ports on 14.139.34.201 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.202
+Host is up (0.064s latency).
+All 100 scanned ports on 14.139.34.202 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.203
+Host is up (0.067s latency).
+All 100 scanned ports on 14.139.34.203 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.204
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.204 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.205
+Host is up (0.063s latency).
+All 100 scanned ports on 14.139.34.205 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.206
+Host is up (0.059s latency).
+All 100 scanned ports on 14.139.34.206 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.207
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.207 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.208
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.208 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.209
+Host is up (0.076s latency).
+All 100 scanned ports on 14.139.34.209 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.210
+Host is up (0.078s latency).
+All 100 scanned ports on 14.139.34.210 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.211
+Host is up (0.062s latency).
+All 100 scanned ports on 14.139.34.211 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.212
+Host is up (0.062s latency).
+All 100 scanned ports on 14.139.34.212 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.213
+Host is up (0.070s latency).
+All 100 scanned ports on 14.139.34.213 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.214
+Host is up (0.073s latency).
+All 100 scanned ports on 14.139.34.214 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.215
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.215 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.216
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.216 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.217
+Host is up (0.072s latency).
+All 100 scanned ports on 14.139.34.217 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.218
+Host is up (0.067s latency).
+All 100 scanned ports on 14.139.34.218 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.219
+Host is up (0.068s latency).
+All 100 scanned ports on 14.139.34.219 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.220
+Host is up (0.064s latency).
+All 100 scanned ports on 14.139.34.220 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.221
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.221 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.222
+Host is up (0.069s latency).
+All 100 scanned ports on 14.139.34.222 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.223
+Host is up (0.058s latency).
+All 100 scanned ports on 14.139.34.223 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.224
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.224 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.225
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.225 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.226
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.226 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.227
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.227 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.228
+Host is up (0.059s latency).
+All 100 scanned ports on 14.139.34.228 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.229
+Host is up (0.070s latency).
+All 100 scanned ports on 14.139.34.229 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.230
+Host is up (0.068s latency).
+All 100 scanned ports on 14.139.34.230 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.231
+Host is up (0.066s latency).
+All 100 scanned ports on 14.139.34.231 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.232
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.232 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.233
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.233 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.234
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.234 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.235
+Host is up (0.063s latency).
+All 100 scanned ports on 14.139.34.235 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.236
+Host is up (0.058s latency).
+All 100 scanned ports on 14.139.34.236 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.237
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.237 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.238
+Host is up (0.063s latency).
+All 100 scanned ports on 14.139.34.238 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.239
+Host is up (0.058s latency).
+All 100 scanned ports on 14.139.34.239 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.240
+Host is up (0.062s latency).
+All 100 scanned ports on 14.139.34.240 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.241
+Host is up (0.066s latency).
+All 100 scanned ports on 14.139.34.241 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.242
+Host is up (0.063s latency).
+All 100 scanned ports on 14.139.34.242 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.243
+Host is up (0.062s latency).
+All 100 scanned ports on 14.139.34.243 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.244
+Host is up (0.058s latency).
+All 100 scanned ports on 14.139.34.244 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.245
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.245 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.246
+Host is up (0.060s latency).
+All 100 scanned ports on 14.139.34.246 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.247
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.247 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.248
+Host is up (0.059s latency).
+All 100 scanned ports on 14.139.34.248 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.249
+Host is up (0.061s latency).
+All 100 scanned ports on 14.139.34.249 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.250
+Host is up (0.062s latency).
+All 100 scanned ports on 14.139.34.250 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.251
+Host is up (0.062s latency).
+All 100 scanned ports on 14.139.34.251 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.252
+Host is up (0.065s latency).
+All 100 scanned ports on 14.139.34.252 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.253
+Host is up (0.059s latency).
+All 100 scanned ports on 14.139.34.253 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.254
+Host is up (0.066s latency).
+All 100 scanned ports on 14.139.34.254 are filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SLM2008 or HP ProCurve 1800 switch (95%), Cisco SLM2008 switch (95%), Dell PowerConnect 2708 switch (95%), Digital Loggers, Inc. power controller (firmware 1.2.7) (95%), Koukaam NETIO-230A power control device or ZyXEL SP-220E thermal printer (95%), SMC 8024L2 switch (95%), Dell PowerConnect 2724 switch (95%), Schrack electric meter (95%), Areca ARC-1212 or ARC-1222 RAID controller or Siemens HiPath 3500 PBX (89%), Asus RT-53N WAP (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+Nmap scan report for 14.139.34.255
+Host is up (0.065s latency).
+Not shown: 98 filtered ports
+PORT    STATE  SERVICE
+179/tcp closed bgp
+646/tcp closed ldp
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco 3550 switch (IOS 12.2) (92%), HP LaserJet 2200dtn printer (89%), HP LaserJet 5M printer (89%), DEC Digital UNIX 5.X (89%), ZyXEL P-2602H-D1A DSL modem (88%), Apple AirPort Extreme WAP (88%), HP 170X print server or Inkjet 3000 printer (88%), HP JetDirect 2591A print server (88%), HP LaserJet 4050 or 4000n printer or JetDirect EX Plus 3 print server (88%), HP LaserJet 4050 printer (88%)
+No exact OS matches for host (test conditions non-ideal).
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 256 IP addresses (256 hosts up) scanned in 668.06 seconds

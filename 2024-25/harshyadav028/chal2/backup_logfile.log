@@ -1,0 +1,6 @@
+2025-01-29 12:15:10 starting full backup process 
+2025-01-29 12:15:11 Backup successful: ./backup/q4_db-data_20250129121510.tar.gz 
+2025-01-29 12:15:11 Backup successful: ./backup/html-site_html-data_20250129121511.tar.gz 
+2025-01-29 12:15:12 Backup successful: ./backup/sample-volume_20250129121511.tar.gz 
+2025-01-29 12:15:12 Backup successful: ./backup/853725f4a8bde12e0bda51c424609ad9994fad6996c5651c490afb9c468c2910_20250129121512.tar.gz 
+2025-01-29 12:15:12 All volumes backed up successfully. 

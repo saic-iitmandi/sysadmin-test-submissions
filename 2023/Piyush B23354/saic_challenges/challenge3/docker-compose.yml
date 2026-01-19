@@ -1,0 +1,23 @@
+version: "3"
+services:
+  website1:
+    image: challenge3a
+    ports:
+      - "8080:80"
+    volumes:
+      - saic_challenges\challenge3\problem3a
+    networks:
+      - website1_network
+  website2:
+    image: ruby:2.6.5
+    ports:
+      - "3000:3000"
+    volumes:
+      - saic_challenges\challenge3\problem3b
+    networks:
+      - website2_network
+networks:
+  website1_network:
+    driver: bridge
+  website2_network:
+    driver: host

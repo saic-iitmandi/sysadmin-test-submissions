@@ -1,0 +1,64 @@
+version: "3.8"
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - frontend-network
+
+  backend:
+    build:
+      context: ./backend
+    restart: always
+    ports:
+      - "8080:8080"
+    depends_on:
+      - database
+      - redis
+    env_file:
+      - .env # Backend also reads env variables
+    environment:
+      - DATABASE_URL=postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@database:5432/${POSTGRES_DB}
+      - REDIS_URL=redis://redis:6379
+      - REDIS_HOST=redis # Explicit Redis hostname
+    networks:
+      - backend-network
+
+  database:
+    image: postgres:latest
+    restart: always
+    env_file:
+      - .env
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    networks:
+      - backend-network
+    expose:
+      - "5432" # Database is only accessible within the backend-network
+
+  redis:
+    image: redis:latest
+    restart: always
+    networks:
+      - backend-network
+    expose:
+      - "6379"
+
+volumes:
+  db-data:
+
+networks:
+  frontend-network:
+    driver: bridge
+  backend-network:
+    driver: bridge
+    internal: true # Ensures the database is NOT exposed outside

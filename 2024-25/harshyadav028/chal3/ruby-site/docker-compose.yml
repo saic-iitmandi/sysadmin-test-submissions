@@ -1,0 +1,19 @@
+version: "3.8" # The Docker Compose file format version
+
+services:
+  nutrient-tracker: # Name of the service (can be anything, but meaningful names help)
+    build:
+      context: . # Build the Docker image using the Dockerfile in the current directory # Ensure this points to the directory containing the Dockerfile
+    container_name: nutrient-tracker # The name of the container
+    ports:
+      - "3000:3000" # Map port 3000 of the container to port 3000 on the host machine
+    volumes:
+      - .:/app # Mount the current directory to /app in the container
+    environment:
+      - RAILS_ENV=development # Set the Rails environment to development
+    networks:
+      - nutrient-net # Attach this container to a custom Docker network
+
+networks:
+  nutrient-net: # Define the custom network for this application
+    driver: bridge # Use the default bridge driver for network isolation

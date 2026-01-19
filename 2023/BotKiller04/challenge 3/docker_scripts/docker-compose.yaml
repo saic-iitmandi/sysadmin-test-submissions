@@ -1,0 +1,24 @@
+version: "3"
+services:
+  website:
+    image: saic_website
+    ports:
+      - "8080:80"
+  website2:
+    image: github_website
+    command: puma
+    ports:
+      - "8081:80"
+    depends_on:
+      - postgres
+    environment:
+      WEBSITE2_DB_HOST: postgres
+      WEBSITE2_DB_USER: root
+      WEBSITE2_DB_PASSWORD: "password"
+      WEBSITE2_DB_NAME: website2
+  postgres:
+    image: "postgres"
+    environment:
+      POSTGRES_PASSWORD: "password"
+    volumes:
+      - ./postgres:/var/lib/postgresql/data

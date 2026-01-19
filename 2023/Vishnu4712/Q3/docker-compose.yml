@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  html_css_js_website:
+    build:
+      context: .
+      dockerfile: Dockerfile1
+    ports:
+      - "8080:80"
+    networks:
+      - frontend
+    volumes:
+      - html_css_js_website_data:/usr/share/nginx/html
+
+  ruby_on_rails_website:
+    build:
+      context: .
+      dockerfile: Dockerfile2
+    ports:
+      - "3000:3000"
+    networks:
+      - backend
+    volumes:
+      - ruby_on_rails_website_data:/app
+
+networks:
+  frontend:
+    driver: bridge
+  backend:
+    driver: bridge
+
+volumes:
+  html_css_js_website_data:
+  ruby_on_rails_website_data:
+

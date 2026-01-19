@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAMFBMVEUAAABYWFhra2tCQkK4uLj09PT///+NjY3p6enR0dHFxcUmJiacnJzd3d2qqqp9fX2xNhOVAAAAl0lEQVR42t2RUQ7EIAhEK6KCYvf+t12Jrdlkxx6g80XgGZjxeKMCUdxPI6c8lHjDlLxU0Jx8IqrZRQCo18vGo6gAGG2dVRp3YEDaPMbMANCdsODlowlh2yVxLpcaMEH1JhIdWO1z9km0h8ANZ1lU79VO/Pr86xIE4rqt+a3AB/vqbsbiRpGDnpcEZ2VypcBbk8H/iY736QuY2AVel91hIQAAAABJRU5ErkJggg==" rel="icon" />
+    <title>STREISAND</title>
+
+    <style>
+    html {
+      font-size: 100%;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      text-rendering: optimizelegibility;
+    }
+
+    body {
+      margin: 1em auto;
+      padding: 1em;
+      line-height: 1.6875;
+      max-width: 44em;
+      font-family: Georgia, Palatino, 'Palatino Linotype', 'Times New Roman', serif;
+      font-size: 16px;
+      background: #fff;
+      color:#333;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: normal;
+      color: #111;
+      font-family: "Helvetica Neue", Helvetica, sans-serif;
+      font-weight: bold;
+      margin: 0;
+      line-height: 1.3;
+    }
+
+    h4,
+    h5,
+    h6 {
+      font-weight: bold;
+    }
+    
+    h1 {
+      font-size: 3.157em;
+
+    }
+
+    h2 {
+      margin-top: 2em;
+      font-size:1.777em;
+    }
+
+    h3 {
+      margin-top: 1.5em;
+      font-size: 1.333em;
+    }
+
+    h4 {
+      font-size:1em;
+    }
+
+    h5 {
+      font-size:0.9em;
+    }
+
+    h6 {
+      font-size:0.8em;
+    }
+
+    h5 + p,
+    h5 + pre {
+      margin-top: 0.25em;
+    }
+
+    ul,
+    ol {
+      margin: 1em 0 2em;
+      padding: 0 0 0 2em;
+    }
+
+    li + li {
+      margin-top: 0.5em;
+    }
+
+    ul + h3,
+    ol + h3 {
+      margin-top: 2em;
+    }
+
+    /*p em:only-child {
+      font-size: 1.333em;
+    }*/
+
+    /*p.lead {
+      margin-top: -0.25em;
+    }*/
+
+    li p:last-child {
+      margin:0;
+    }
+
+    p {
+      margin: 1em 0;
+    }
+
+    a {
+      text-decoration: none;
+      border-bottom: 1px solid #555;
+      color: #333;
+    }
+
+    a:hover {
+      color: white;
+      border-bottom-color: black;
+      background-color: black;
+      display: inline-block;
+      padding: 0 0.5em;
+      margin: 0 -0.5em -2px -0.5em;
+    }
+
+    a:hover,
+    a:active {
+      outline: 0;
+    }
+
+    ::-moz-selection,
+    a::-moz-selection {
+      background: rgba(0,0,0,0.1);
+      color: black;
+    }
+
+    ::selection,
+    a::selection {
+      background: rgba(0,0,0,0.1);
+      color: black;
+    }
+
+    img {
+      max-width:100%;
+      border: 0;
+      -ms-interpolation-mode: bicubic;
+      vertical-align: middle;
+    }
+
+    b,
+    strong {
+      font-weight: bold;
+    }
+
+    blockquote {
+      color:#666666;
+      margin:0;
+      padding-left: 3em;
+      border-left: 0.5em #EEE solid;
+    }
+
+    hr {
+      display: none;
+    }
+
+    pre,
+    code { 
+      color: #000; 
+      font-family: Consolas, monaco, monospace;
+      font-size: 0.88em; 
+      background-color: #e6e6e6;
+    }
+
+    code {
+      padding: 4px 6px 0;
+      display: inline-block;
+    }
+
+    pre {
+      padding: 4px 6px 0;
+      white-space: pre;
+      overflow-x: auto;
+    }
+
+    pre code {
+      padding: 0;
+      background-color: transparent;
+      font-size: 1em;
+    }
+
+
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+    }
+    
+    sup {
+      top: -0.5em;
+    }
+    
+    sub {
+      bottom: -0.25em;
+    }
+
+    .logo {
+      position: relative;
+      display: inline-block;
+      margin: 0 0 0.5em 0 !important;
+      padding: 0.1em 0.5em !important;
+      -webkit-font-smoothing: auto !important;
+      background-color: black;
+      color: white;
+      font-weight: bold;
+      font-family: "Helvetica Neue", Helvetica, sans-serif;
+      text-transform: uppercase;
+      font-size: 2em;
+      letter-spacing: 1px;
+      border: 0;
+    }
+
+    .logo:hover {
+      border: 0;
+      background-color: white;
+      color: black;
+    }
+
+    .logo:hover hr {
+      display: inline-block;
+      position: absolute;
+      height: 30%;
+      left: 0.4em;
+      right: 0.4em;
+      top: 9%;
+      border: 0;
+      background-color: black;
+      background-color: rgba(0,0,0,0.9);
+    }
+
+    hr + ul {
+      background-color: #f6f6f6;
+      padding: 1em 2em;
+      margin-top: 1.5em;
+      list-style-type: none;
+    }
+
+    hr + ul a {
+      text-decoration: none;
+    }
+
+    hr + ul li + li {
+      margin-top: 0.25em;
+    }
+
+    hr + ul ul {
+      margin-top: 0.25em;
+      margin-bottom: 1em;
+    }
+
+    a[download] {
+      border: 2px solid #333;
+      color: #333;
+      display: inline-block;
+      padding: 14px 18px;
+      font-family: "Helvetica Neue", Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 16px;
+      outline: none;
+      text-align: center;
+      margin: 1em 0;
+      text-transform: uppercase;
+    }
+
+    a[download]:hover {
+      background-color: black;
+      border-color: black;
+      color: white;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a[download] img {
+      vertical-align: top;
+      margin-right: 0.5em;
+      margin-left: -0.5em;
+    }
+
+    @media (max-width: 479px) {
+      a[download] {
+        display: block;
+      }
+    }
+
+    </style>
+
+    <script>
+      document.addEventListener('click', function (e) {
+        if (e.target.getAttribute('href') === '#download') {
+          e.preventDefault(); document.getElementById('download').click();
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <a href='/' class='logo'>Streisand<hr/></a>
+<hr />
+
+<p><a href="vpn-demo-fr.html">Français</a>&nbsp;
+  <a href="vpn-demo.html">English</a>&nbsp;</p>
+
+<hr />
+
+<p>Votre passerelle Streisand contient des instructions étape par étape pour les services qu'elle fournit, et des miroirs de tous les logiciels clients nécessaires.</p>
+
+<p>Ce document couvre les instructions d'installation du certificat SSL et vous montrera comment vous connecter à la passerelle afin de décrire comment configurer vos clients pour se connecter aux services fournis par Streisand.</p>
+
+<hr />
+
+<ul>
+<li><a href="#ssl">Installation du certificat SSL</a>
+<ul>
+<li><a href="#ssl-windows">Windows</a></li>
+<li><a href="#ssl-macos">macOS</a></li>
+<li><a href="#ssl-android">Androïde</a></li>
+<li><a href="#ssl-ios">iOS</a></li>
+<li><a href="#ssl-chromium">Chromium</a></li>
+<li><a href="#ssl-firefox">Firefox</a></li>
+<li><a href="#ssl-manual">Vérification du certificat</a></li>
+</ul></li>
+<li><a href="#connecting">Connexion à votre passerelle Streisand</a>
+<ul>
+<li><a href="#connecting-ssl">SSL</a></li>
+<li><a href="#connecting-tor">Service Caché Tor</a></li>
+</ul></li>
+</ul>
+
+<p><a name="ssl"></a></p>
+
+<h2>Installation du certificat SSL</h2>
+
+<p>Vous devez installer le certificat SSL de la passerelle afin que votre navigateur puisse vérifier automatiquement l'intégrité de la connexion. Cela empêche quiconque de falsifier votre trafic et également protègera  vos identifiants de connexion. Le certificat a été incorporé directement dans ce fichier HTML, et vous pouvez le télécharger içi:</p>
+
+<p><a download="188.166.85.209.crt" id="download" href="data:application/x-x509-ca-cert;base64,LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUVyVENDQXhXZ0F3SUJBZ0lKQUpWWGRXTHJuZ2VtTUEwR0NTcUdTSWIzRFFFQkN3VUFNRzB4Q3pBSkJnTlYKQkFZVEFsVlRNUk13RVFZRFZRUUlEQXBEWVd4cFptOXlibWxoTVE4d0RRWURWUVFIREFaTllXeHBZblV4RWpBUQpCZ05WQkFvTUNWTjBjbVZwYzJGdVpERWtNQ0lHQTFVRUN3d2JVM1J5WldsellXNWtJRVZtWm1WamRDQkVaWEJoCmNuUnRaVzUwTUI0WERURTRNREl3TkRBMk1URTFOMW9YRFRJek1ESXdNekEyTVRFMU4xb3diVEVMTUFrR0ExVUUKQmhNQ1ZWTXhFekFSQmdOVkJBZ01Da05oYkdsbWIzSnVhV0V4RHpBTkJnTlZCQWNNQmsxaGJHbGlkVEVTTUJBRwpBMVVFQ2d3SlUzUnlaV2x6WVc1a01TUXdJZ1lEVlFRTERCdFRkSEpsYVhOaGJtUWdSV1ptWldOMElFUmxjR0Z5CmRHMWxiblF3Z2dHaU1BMEdDU3FHU0liM0RRRUJBUVVBQTRJQmp3QXdnZ0dLQW9JQmdRRFBDS3ZIR283d3IzOXMKRmxiK0hPd25IUk56SmdSdmFYUExIelMrZEtUVGVDUFZSNGlqSHhhVzZBSUVjZjRMNEJlMzdwNjZ1OTVRTXpVZwpqNUI3NmdyUVNONHFGTE10SEFBM3FqUmVYWmdoUVR4NTFGSXl2QUx6cXloQkI2cGZPWnZTZG5UYllncjlPTXZDCkpaYlllRmpyVEs4OHFqVmV3eHVPSzMzUlhUUkxEZW40ZVpDNk14OUU0bmRaSGlLRXZhQ2ZISXZYOGk4ZjBtbTEKWmJjOUNTM3VyeWlid0hCamFmM0pzNElyU0JBQk9uRVpYTTRDay91ZFFseXFWUzV3UnZnNE8xRkRGYyt6bnpnUAoyMzRKQnFzTmdUcUVlcHNON0J6TjZhZmlOLzVDUDVtSndlaXRlN0dwMjlWbjZ6MjdUV05hOEd3UmN6b1UyZml2ClJNN2FZbGJMNVhjbHRXUFdNUzZFZlJpc0hjd05HTFQ4OEpxd2xPYU8wcjZwSXhLckV1MG5PaExmT1c2Tm93MUEKMXB1NW42M2swM2drVDFHL2o3dHJDbzBkUGcrbnpkdmM0MDhzZHJZWjFyNUQ3bGMzUmRDTjE1ZzBISXpyODMzSApqQVBBYUFJaWF1MHR3ZUdkSHI3NCtpaXgxcEJiMTduTlZJVVlUMi9aUXdReDNSdzZCRjBDQXdFQUFhTlFNRTR3CkhRWURWUjBPQkJZRUZQdDdPTmczTmtKa0tEckFCaWQwMEhOQy9xcXNNQjhHQTFVZEl3UVlNQmFBRlB0N09OZzMKTmtKa0tEckFCaWQwMEhOQy9xcXNNQXdHQTFVZEV3UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dHQgpBQ2RrRVRHckhjcTIyWmVJa3hHYUFmKzN6N0N0MFVyYTkyMEdtdERLZFRzdWVzVUVnN0dWYkh0T2RGNzRKQ0w4Cnp6dTRjRmp1eWd3eFJIOXE0OTNhVUY2VC9VcG9UcElkeGphaUdPSGljMGtXSzRGaFA0S1QvcnpLVXIvRWw0WlUKK1ZHelQwNi91aHZ1RGVZUkcvZmtFZzUxU3lqOXNuSXBHYXduclNhdUNPSXVDRGR2dHZWSWJNL3V0M2hLUm9BWApUTFI5SEY5bmJISnc0MWxnV3pMcHVrUlZQc3ZtZG9PVjJPci80ZkQwTWU0Z3FJQXlpM1MyeEp1aGZVbHdGSFplCmlySDRIY01CYnArWk5CV3F5dTJmVWhMQXlVaWcwcFNIcUo3SFZaNTZuY3lmQlFzUDg2N1NBUTE0em9mK1hWNzUKSHFZY0I5NkoyaU9ibjN2TUZ3WHl6MHRtNjdzN1pwUUVyam9KMmhpNjNhRGw0WWFGNmRlOTF3dlZpNkE4MzdZUApwMDlVUjhIR2dvM0pNMXdJUUdSVGR4VWNzSlNtOGRvM1U1QUNhWC9HbElqN2NWK3ZvZWpSUk9Cb3MzMzF6Q3JhCm0rS2FNclJOZ1MvOXkwS3F6T0NjcmF3OUxkR25jVVArMVdZYnhQdE9Zb0RHZVl4WnlOVFNuMXhsaEwwaWRJUXQKOWc9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==">Télécharger le certificat</a></p>
+
+<p><a name="ssl-windows"></a></p>
+
+<h3>Windows</h3>
+
+<p>Ces instructions fonctionnent pour Chrome et Internet Explorer. Firefox utilise son propre gestionnaire de certificats interne, mais est également <a href="#ssl-firefox">facile à configurer</a>.</p>
+
+<ol>
+<li><a href="#download">Téléchargez le certificat SSL</a> intégré dans ce document.</li>
+<li>Double-cliquez pour ouvrir le certificat téléchargé.</li>
+<li>Cliquez sur <em>Installer le certificat...</em></li>
+<li>L'Assistant d'importation de certificat démarrera. Cliquez sur <em>Suivant</em>.</li>
+<li>Sélectionnez <em>Placer tous les certificats dans le magasin suivant</em> puis cliquez <em>Parcourir</em>.</li>
+<li>Sélectionnez <em>Autorités de certification racine de confiance</em> puis cliquez <em>OK</em>.</li>
+<li>Cliquez <em>Suivant</em> en suite <em>Finir</em>.</li>
+<li>Confirmez que vous souhaitez installer le certificat en choisissant <em>Oui</em>.</li>
+<li>Redémarrez votre navigateur Web.</li>
+<li>Vous êtes prêt à vous connecter. Voir <a href="#connecting-ssl">Connexion à votre passerelle Streisand</a>.</li>
+</ol>
+
+<p><a name="ssl-macos"></a></p>
+
+<h3>macOS</h3>
+
+<p>Ces instructions fonctionnent pour Chrome et Safari. Firefox utilise son propre gestionnaire de certificats interne, mais est également <a href="#ssl-firefox">facile à configurer</a>.</p>
+
+<ol>
+<li>Lancez <em>Trousseaux d'accès</em>.</li>
+<li><a href="#download">Téléchargez le certificat SSL</a> intégré dans ce document.</li>
+<li>Faites glisser le certificat téléchargé dans la section de session.</li>
+<li>Faites un clic-droit et choisissez <em>Lire les informations</em>.</li>
+<li>Cliquez sur le triangle à guache de <em>Se fier</em> pour ouvrir le menu contextuelle.</li>
+<li>Choisissez l'option <em>Toujours approuver</em>  dans le menu deroulant pour le champ <em>(SSL) Secure Sockets Layer</em>.</li>
+<li>Fermer la fenêtre</li>
+<li>Une fenêtre apparaîtra qui vous demandera votre mot de passe; saissisez-le, puis cliquez sur <em>Mettre à jour les réglages</em></li>
+<li>Vous êtes prêt à vous connecter. Voir <a href="#connecting-ssl">Connexion à votre passerelle Streisand</a>.</li>
+</ol>
+
+<p><a name="ssl-android"></a></p>
+
+<h3>Androïde</h3>
+
+<p>Ces instructions fonctionnent pour Chrome Firefox pour Android utilise son propre gestionnaire de certificats interne mais ne fournit pas d'interface pour l'importation de certificats. Chrome est donc la manière recommandée de se connecter à la passerelle Streisand.</p>
+
+<h4>Moins sécurisé, mais facile</h4>
+
+<ol>
+<li><a href="#download">Téléchargez le certificat SSL</a> intégré dans ce document.</li>
+<li>Envoyez le certificat téléchargé par courrier électronique à un compte auquel vous pouvez accéder à partir de l'appareil Androïde.</li>
+<li>Ouvrez l'e-mail, puis appuyez sur la pièce jointe.</li>
+<li>Une invite apparaîtra, entez <code>vpn-demo</code> pour le <em>Nom du certificat</em>, et assurez-vous que <em>VPN et applications</em> est sélectionné pour la valeur de <em>Utilisation du certificat</em>.</li>
+<li>Tapez <em>OK</em>.</li>
+<li>Vous êtes prêt à vous connecter. Voir <a href="#connecting-ssl">Connexion à votre passerelle Streisand</a>.</li>
+</ol>
+
+<h4>Plus sécurisé</h4>
+
+<ol>
+<li>Connectez l'appareil Androïde à votre ordinateur.</li>
+<li><a href="#download">Téléchargez le certificat SSL</a> intégré dans ce document.</li>
+<li>Faites glisser le certificat téléchargé vers la racine du système de fichiers de l'appareil Androïde.</li>
+<li>Lancez l'application <em>Paramètres</em>.</li>
+<li>Faites défiler jusqu'à la section <em>Appareil</em> et tapez sur <em>Sécurité</em>.</li>
+<li>Faites défiler jusqu'à la section <em>Stockage des identifiants</em> et tapez <em>Installer depuis la carte SD</em>.</li>
+<li>Sélectionnez le certificat que vous avez copié sur votre téléphone.</li>
+<li>Entrez <code>vpn-demo</code> pour le <em>Nom du certificat</em>, et assurez-vous que <em>VPN et applications</em> est sélectionné pour la valeur de <em>Utilisation du certificat</em>.</li>
+<li>Tapez <em>OK</em>.</li>
+<li>Vous êtes prêt à vous connecter. Voir <a href="#connecting-ssl">Connexion à votre passerelle Streisand</a>.</li>
+</ol>
+
+<p><a name="ssl-ios"></a></p>
+
+<h3>iOS</h3>
+
+<h4>Moins sécurisé, mais facile</h4>
+
+<ol>
+<li><a href="#download">Téléchargez le certificat SSL</a> intégré dans ce document.</li>
+<li>Envoyez le certificat téléchargé par courrier électronique à un compte auquel vous pouvez accéder à partir de l'appareil iOS.</li>
+<li>Ouvrez l'e-mail avec l'app Mail de iOS, en suite appuyez sur la pièce jointe.</li>
+<li>L'écran <em>Installer le profil</em> apparaîtra. Vous pouvez afficher les détails du certificat et vous assurer qu'ils correspondent aux informations de la section <a href="#verification">Verification SSL</a> . Tapez <em>Installer</em>.</li>
+<li>Saisissez votre code NIP.</li>
+<li>Tapez <em>Installer</em> à nouveau lorsque l'avertissement apparaît.</li>
+<li>Tapez <em>OK</em>.</li>
+<li>Vous êtes prêt à vous connecter. Voir <a href="#connecting-ssl">Connexion à votre passerelle Streisand</a>.</li>
+</ol>
+
+<!---
+I am unable to download the app from the App Store since
+it is only available for macOS 10.12, of which I do not have currently installed.
+This section below is a best effort. -@alimakki
+-->
+
+<h4>Plus sécurisé</h4>
+
+<ol>
+<li>Connectez le périphérique iOS à votre ordinateur macOS.</li>
+<li>Tapez <em>Se fier</em> si l'avertissement <em>Faire confiance à cet ordinateur</em> apparaît.</li>
+<li>Installez l'utilitaire <a href="https://itunes.apple.com/fr/app/apple-configurator-2/id1037126344?mt=12">Apple Configurator 2</a> depuis le Mac App Store.</li>
+<li>Lancez l'utilitaire Apple Configurator et acceptez la licence.</li>
+<li>Cliquez <em>Start Preparing Devices</em>.</li>
+<li>Cliquez <em>Install Profiles...</em>.</li>
+<li>Allumez le téléphone et déverouille-le.</li>
+<li>Cliquez <em>Next</em>.</li>
+<li>Cliquez <em>New...</em> and entrez <code>vpn-demo</code> dans le champ <em>Name</em> dans la section <em>General</em>.</li>
+<li>Faites défiler jusqu'à la section <em>Certificates</em>.</li>
+<li><a href="#download">Téléchargez le certificat SSL</a> intégré dans ce document.</li>
+<li>Cliquez <em>Configure</em>, sélectionnez le certificat téléchargé et cliquez sur <em>Open</em>.</li>
+<li>Cliquez <em>Save</em>.</li>
+<li>Cocher l'options à côté du profil <code>vpn-demo</code> que vous avez crée. Cliquez <em>Next</em>.</li>
+<li>L'écran <em>Installer le profile</em> apparaîtra sur votre appareil iOS. Tapez <em>Installer</em>.</li>
+<li>Tapez <em>Installer</em> à nouveau lorsque l'avertissement apparaît.</li>
+<li>Tapez <em>OK</em>.</li>
+<li>Vous êtes prêt à vous connecter. Voir <a href="#connecting-ssl">Connexion à votre passerelle Streisand</a>.</li>
+</ol>
+
+<p><!--
+A best effort translation here as well.
+A review of the correct words used in context will be needed
+--@alimakki
+-->
+<a name="ssl-chromium"></a></p>
+
+<h3>Chromium</h3>
+
+<ol>
+<li>Cliquez sur le bouton Menu et accédez à <em>Paramètres</em>.</li>
+<li>Faites défiler jusqu'au bas de la fenêtre et cliquez sur <em>Afficher les paramètres avancés...</em></li>
+<li>Faites défiler jusqu'au la section HTTPS/SSL et cliquez <em>Gérer les certificats...</em></li>
+<li>Accedez a l'ognlet <em>Autorités</em>.</li>
+<li><a href="#download">Téléchargez le certificat SSL</a> intégré dans ce document.</li>
+<li>Cliquez <em>Importer...</em>, sélectionnez le certificat, en suite cliquez <em>Ouvrir</em>.</li>
+<li>Une invite apparaîtra. Cochez l'option à côté de <em>Confiez ce certificat pour identifier les sites Web</em> et cliquez sur <em>OK</em>.</li>
+<li>Cliquez <em>OK</em>.</li>
+<li>Vous êtes prêt à vous connecter. Voir <a href="#connecting-ssl">Connexion à votre passerelle Streisand</a>.</li>
+</ol>
+
+<p><a name="ssl-firefox"></a></p>
+
+<h3>Firefox</h3>
+
+<ol>
+<li>Lancez Firefox.</li>
+<li>Ouvrez le panneau <em>Options</em>, et sélectionnez <em>Préférences</em>.</li>
+<li>Naviguez vers <em>Vie privée et sécurité</em>.</li>
+<li>Défiler jusqu'à la rubrique <em>Sécurité > Certificats</em></li>
+<li>Cliquez sur <em>Afficher les certificats</em>.</li>
+<li>Une fenêtre apparaîtra. Cliquez sur l'onglet <em>Autorités</em>.</li>
+<li><a href="#download">Téléchargez le certificat SSL</a> intégré dans ce document.</li>
+<li>Cliquez <em>Importer...</em>, sélectionnez le certificat, en suite cliquez <em>Ouvrir</em>.</li>
+<li>Une invite apparaîtra. Cochez l'option à côté de <em>Confiez ce certificat pour identifier les sites Web</em> et cliquez sur <em>OK</em>.</li>
+<li>Cliquez <em>OK</em> pour fermer le gestionaire des ceritificats, en suite fermer le panneau de <em>Préférences</em>.</li>
+<li>Vous êtes prêt à vous connecter. Voir <a href="#connecting-ssl">Connexion à votre passerelle Streisand</a>.</li>
+</ol>
+
+<p><a name="ssl-manual"></a></p>
+
+<h3>Verification SSL manuelle</h3>
+
+<p><em>L'option de vérification du certificat manuel est significativement moins sécurisée que l'installation du certificat en utilisant l'une des méthodes ci-dessus. Votre navigateur affichera un message d'avertissement et vous serai plus vulnérable aux <a href="https://fr.wikipedia.org/wiki/Attaque_de_l%27homme_du_milieu">attaques de l'homme du milieu</a> car les empreintes digitales doivent être vérifiées lors de chaque tentative de connexion. Il devrait être utilisé avec beaucoup de soin, et seulement en dernier recours.</em></p>
+
+<p>Les détails du certificat doivent correspondre aux informations suivantes:</p>
+
+<h5>Numéro de série</h5>
+
+<p><code>serial=8411CDB87EAC2D19</code></p>
+
+<h5>Empreintes</h5>
+
+<pre><code>SHA256 Fingerprint=06:C5:1D:B2:E9:79:A8:69:0A:A6:3D:17:F1:95:87:11:6F:8E:BA:75:D9:8F:8C:D9:F0:B6:5C:97:12:9A:D6:AD
+SHA1 Fingerprint=6D:B4:66:32:12:F5:90:7B:EE:14:84:14:BC:E5:DB:E8:19:5B:59:D7
+MD5 Fingerprint=7F:9C:74:24:08:9F:F7:1E:F7:06:2A:53:08:35:C6:6C
+</code></pre>
+
+<p>Si tout vérifie, vous êtes prêt à vous connecter. Voir <a href="#connecting-ssl">Connexion à votre passerelle Streisand</a>.</p>
+
+<p><a name="connecting"></a></p>
+
+<h2>Connexion à votre passerelle Streisand</h2>
+
+<p><a name="connecting-ssl"></a>
+Chaque option de connexion vous emmène au même endroit et vous pouvez utiliser celle qui vous convient le mieux. Astuce: le mot de passe unique de votre passerelle a été généré en choisissant au hasard quatre mots d'un dictionnaire avec plus de 340.000 entrées.</p>
+
+<h3>SSL</h3>
+
+<p><a href="https://188.166.85.209/index-fr.html">https://188.166.85.209</a></p>
+
+<p>username: <code>streisand</code>
+password: <code>smooth.plastic.word.project.soul.brick</code></p>
+
+<p><a name="connecting-tor"></a></p>
+
+<h3>Service Caché Tor</h3>
+
+<p><em>Toutes les connexions aux services cachés Tor sont entièrement chiffrées.</em></p>
+
+<p><a href="http://dgc2e6ax4ysqxlg5.onion/index-fr.html">http://dgc2e6ax4ysqxlg5.onion</a></p>
+
+<p>username: <code>streisand</code>
+password: <code>smooth.plastic.word.project.soul.brick</code></p>
+</body>
+</html>

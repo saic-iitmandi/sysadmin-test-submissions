@@ -1,0 +1,149 @@
+1.	I used the tool named 'nmap' to find the details.
+	First of all run '$ sudo nmap -sn 14.139.34.0/24' this will give all the hosts that are up and then run a command '$sudo nmap -O hostIp' to get list of opened ports and the guess about the current OS running in the device. It also gives a guess about kind of device it is like a router or firewall etc.
+
+	Open Hosts List (Total 10):
+	A) 	14.139.34.2		Linux 3.11 - 4.1 (92%)
+		Opened Ports
+			PORT      STATE    SERVICE
+			22/tcp    open     ssh
+			53/tcp    open     domain
+			80/tcp    open     http
+			443/tcp   open     https
+			445/tcp   filtered microsoft-ds
+			1122/tcp  filtered availant-mgr
+			3000/tcp  open     ppp
+			5001/tcp  open     commplex-link
+			7001/tcp  open     afs3-callback
+			9000/tcp  filtered cslistener
+			10000/tcp open     snet-sensor-mgmt
+
+	B)	14.139.34.3		Linux 3.X|4.X (mail.students.iitmandi.ac.in)
+		Opened Ports
+			PORT      STATE  SERVICE
+			25/tcp    open   smtp
+			53/tcp    open   domain
+			80/tcp    open   http
+			110/tcp   open   pop3
+			143/tcp   open   imap
+			389/tcp   closed ldap
+			443/tcp   open   https
+			465/tcp   open   smtps
+			587/tcp   closed submission
+			993/tcp   open   imaps
+			995/tcp   open   pop3s
+			3306/tcp  closed mysql
+			5000/tcp  closed upnp
+			8000/tcp  closed http-alt
+			10000/tcp open   snet-sensor-mgmt
+
+	C)	14.139.34.4		Linux 3.X|4.X|2.6.X (96%)
+		Opened Ports
+			PORT     STATE    SERVICE
+			22/tcp   open     ssh
+			25/tcp   open     smtp
+			80/tcp   open     http
+			445/tcp  filtered microsoft-ds
+			6001/tcp open     X11:1
+			8080/tcp open     http-proxy
+
+	D)	14.139.34.7 	Linux 3.2 - 3.8 (96%) (mail.alumni.iitmandi.ac.in)
+		Opened Ports
+			PORT      STATE    SERVICE
+			22/tcp    open     ssh
+			25/tcp    open     smtp
+			53/tcp    open     domain
+			80/tcp    open     http
+			110/tcp   open     pop3
+			143/tcp   open     imap
+			445/tcp   filtered microsoft-ds
+			587/tcp   open     submission
+			993/tcp   open     imaps
+			995/tcp   open     pop3s
+			10000/tcp open     snet-sensor-mgmt
+			20000/tcp open     dnp
+
+	E)	14.139.34.8		Linux 3.X
+		Opened Ports
+			PORT      STATE  SERVICE
+			53/tcp    closed domain
+			80/tcp    open   http
+			389/tcp   open   ldap
+			443/tcp   open   https
+			3306/tcp  closed mysql
+			10000/tcp open   snet-sensor-mgmt
+
+	F)	14.139.34.9		Linux 3.X|4.X (mail.projects.iitmandi.ac.in)
+		Opened Ports
+			PORT      STATE  SERVICE
+			25/tcp    open   smtp
+			53/tcp    closed domain
+			80/tcp    open   http
+			110/tcp   open   pop3
+			143/tcp   open   imap
+			389/tcp   closed ldap
+			443/tcp   open   https
+			465/tcp   open   smtps
+			587/tcp   closed submission
+			993/tcp   open   imaps
+			10000/tcp open   snet-sensor-mgmt
+
+	G)	14.139.34.10	Linux 3.X|4.X|2.6.X (93%)
+		Opened Ports
+			PORT     STATE SERVICE
+			21/tcp   open  ftp
+			22/tcp   open  ssh
+			80/tcp   open  http
+			443/tcp  open  https
+			8082/tcp open  blackice-alerts
+
+
+	H)	14.139.34.11	Linux 3.X|4.X|2.6.X (96%)
+		Opened Ports
+			PORT     STATE    SERVICE
+			22/tcp   open     ssh
+			53/tcp   open     domain
+			80/tcp   open     http
+			445/tcp  filtered microsoft-ds
+			8080/tcp open     http-proxy
+
+	I)	14.139.34.26	Microsoft Windows 2012|7|2008|Vista (96%)
+		Opened Ports
+			PORT      STATE    SERVICE
+			80/tcp    open     http
+			135/tcp   open     msrpc
+			139/tcp   open     netbios-ssn
+			445/tcp   filtered microsoft-ds
+			1023/tcp  open     netvenuechat
+			1433/tcp  open     ms-sql-s
+			1801/tcp  open     msmq
+			2103/tcp  open     zephyr-clt
+			2105/tcp  open     eklogin
+			2107/tcp  open     msmq-mgmt
+			2383/tcp  open     ms-olap4
+			3389/tcp  open     ms-wbt-server
+			49152/tcp open     unknown
+			49153/tcp open     unknown
+			49154/tcp open     unknown
+			49155/tcp open     unknown
+			49156/tcp open     unknown
+			49157/tcp open     unknown
+			49158/tcp open     unknown
+			49159/tcp open     unknown
+
+	J)	14.139.34.43	Linux 3.2 - 3.8 (96%)
+		Opened Ports
+			PORT     STATE    SERVICE
+			22/tcp   open     ssh
+			80/tcp   open     http
+			139/tcp  open     netbios-ssn
+			445/tcp  filtered microsoft-ds
+			3306/tcp open     mysql
+			8080/tcp open     http-proxy
+			8081/tcp open     blackice-icecap
+			8082/tcp open     blackice-alerts
+
+
+
+2. I came to know about the site [http://myip.ms] which shows the all the details of the domain. Like the Hosting Company: National Knowledge Network, Hosting IP Address etc. 
+
+3. The info which I found about duckduckgo is that it is hosted on Amazon Web Services, and it is a private search engine i.e. it doest not keeps track of your searches.

@@ -1,0 +1,22 @@
+
+
+# Challenge 1 Documentation
+
+
+On reading the question for the first time, i didnt understand anything, but after some googling and taking chatGPT's help, i knew what i needed to do, to first run the file.
+While figuring out what to do next, a second .ova file was given to us, so i switched to that. 
+
+After some more time, i realised what was really happening, that on running the ova file, on booting up, it hosts a webpage, using an apache http server.
+
+Now i had to  somehow gain root privileges on this machine. To do that, i tried to run a nmap scan, but that didnt show any active host, although the website was still up (yes
+ i tried refreshing). So i googled some similar tools, so then i also used nikto, telnet, whatweb and masscan. All of them gave similar results, no hosts active. I was scanning
+with the ip of the running vm. I got this from the linux vm.(network properties)
+
+For some time i tried searching for vulnerabilities that i could use to gain root privileges. But after going through XSS, SQL injection, etc tutorials, i realised none of 
+those would probably work. And after seeing no result from all the network scans, i was a little demotivated, and tired so i switched to other challenges in the meantime.
+
+As last resort, i tried to a nmap scan on another PC on the same local network. And this time i did get an active port! It was a tcp port, running on a apache 2.2.22 server, it
+was a http server. (so the info matches with the info i got from inspect element in chrome). 
+
+But by this point, a lot of time and i didnt have a lot of time left. So i stopped there. But if i had more time, i would maybe perform word searches like dirb, etc to see if 
+webpage had any hidden files that i could take advantage of.

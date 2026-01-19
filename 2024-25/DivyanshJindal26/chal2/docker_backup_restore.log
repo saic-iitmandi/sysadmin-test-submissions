@@ -1,0 +1,65 @@
+[INFO] Starting Docker volume backup...
+[INFO] Backup completed successfully.
+[INFO] Starting Docker volume restore...
+[INFO] Restoring volume: *.tar.gz from /path/to/backup/*.tar.gz
+[INFO] Restore completed successfully.
+Usage: ./dockerBackupRestore.sh {backup|restore}
+[INFO] Starting Docker volume backup...
+[INFO] Backing up volume: my_test_volume
+[INFO] Backup completed successfully.
+[INFO] Starting Docker volume restore...
+[INFO] Restoring volume: my from /path/to/backup/my_test_volume_2025-01-25_23-51-23.tar.gz
+[INFO] Restore completed successfully.
+[INFO] Starting Docker volume backup...
+[INFO] Backing up volume: my
+[INFO] Backing up volume: my_test_volume
+[INFO] Backup completed successfully.
+[INFO] Starting Docker volume backup...
+[INFO] Backing up volume: my
+[INFO] Backing up volume: my_test_volume
+[INFO] Backup completed successfully.
+[INFO] Starting Docker volume backup...
+[INFO] Backing up volume: my
+[INFO] Backing up volume: my_test_volume
+[INFO] Backup completed successfully.
+[INFO] Starting Docker volume restore...
+[INFO] Restoring volume: my_2025-01-26_00-01-22.tar.gz" from /home/divyanshjindal/dockerBackup/my_2025-01-26_00-01-22.tar.gz
+[INFO] Restoring volume: my_test_volume_2025-01-26_00-01-22.tar.gz" from /home/divyanshjindal/dockerBackup/my_test_volume_2025-01-26_00-01-22.tar.gz
+[INFO] Restore completed successfully.
+[INFO] Starting Docker volume backup...
+[INFO] Backing up volume: my
+[INFO] Backing up volume: my_test_volume
+[INFO] Backup completed successfully.
+[INFO] Starting Docker volume restore...
+[INFO] Restoring volume: my_2025-01-26_00-01-22.tar.gz" from /home/divyanshjindal/dockerBackup/my_2025-01-26_00-01-22.tar.gz
+[INFO] Restoring volume: my_2025-01-26_00-02-47.tar.gz" from /home/divyanshjindal/dockerBackup/my_2025-01-26_00-02-47.tar.gz
+[INFO] Restoring volume: my_test_volume_2025-01-26_00-01-22.tar.gz" from /home/divyanshjindal/dockerBackup/my_test_volume_2025-01-26_00-01-22.tar.gz
+[INFO] Restoring volume: my_test_volume_2025-01-26_00-02-47.tar.gz" from /home/divyanshjindal/dockerBackup/my_test_volume_2025-01-26_00-02-47.tar.gz
+[INFO] Restore completed successfully.
+[INFO] Starting Docker volume backup...
+[INFO] Backing up volume: my
+[INFO] Backing up volume: my_test_volume
+[INFO] Backup completed successfully.
+[INFO] Starting Docker volume restore...
+[INFO] Restoring volume: my from /home/divyanshjindal/dockerBackup/my_2025-01-26_00-01-22.tar.gz
+[INFO] Restoring volume: my from /home/divyanshjindal/dockerBackup/my_2025-01-26_00-02-47.tar.gz
+[INFO] Restoring volume: my from /home/divyanshjindal/dockerBackup/my_2025-01-26_00-05-06.tar.gz
+[INFO] Restoring volume: my_test_volume from /home/divyanshjindal/dockerBackup/my_test_volume_2025-01-26_00-01-22.tar.gz
+[INFO] Restoring volume: my_test_volume from /home/divyanshjindal/dockerBackup/my_test_volume_2025-01-26_00-02-47.tar.gz
+[INFO] Restoring volume: my_test_volume from /home/divyanshjindal/dockerBackup/my_test_volume_2025-01-26_00-05-06.tar.gz
+[INFO] Restore completed successfully.
+Usage: ./dockerBackupRestore.sh {backup|restore}
+[INFO] Starting Docker volume backup...
+[INFO] Backing up volume: my
+[INFO] Backing up volume: my_test_volume
+[INFO] Backup completed successfully.
+[INFO] Starting Docker volume restore...
+[INFO] Restoring volume: my from /home/divyanshjindal/dockerBackup/my_2025-01-26_00-01-22.tar.gz
+[INFO] Restoring volume: my from /home/divyanshjindal/dockerBackup/my_2025-01-26_00-02-47.tar.gz
+[INFO] Restoring volume: my from /home/divyanshjindal/dockerBackup/my_2025-01-26_00-05-06.tar.gz
+[INFO] Restoring volume: my from /home/divyanshjindal/dockerBackup/my_2025-01-26_00-05-38.tar.gz
+[INFO] Restoring volume: my_test_volume from /home/divyanshjindal/dockerBackup/my_test_volume_2025-01-26_00-01-22.tar.gz
+[INFO] Restoring volume: my_test_volume from /home/divyanshjindal/dockerBackup/my_test_volume_2025-01-26_00-02-47.tar.gz
+[INFO] Restoring volume: my_test_volume from /home/divyanshjindal/dockerBackup/my_test_volume_2025-01-26_00-05-06.tar.gz
+[INFO] Restoring volume: my_test_volume from /home/divyanshjindal/dockerBackup/my_test_volume_2025-01-26_00-05-38.tar.gz
+[INFO] Restore completed successfully.

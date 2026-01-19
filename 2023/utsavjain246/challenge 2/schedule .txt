@@ -1,0 +1,7 @@
+﻿I used cron jobs to schedule the script for running at a particular time
+
+
+1. Crontab -e 
+2. 30 14 * * * /usr/bin/python3 /path/to/your_script.py
+This will set the script to run everyday at 2:30 pm
+Save it and done.

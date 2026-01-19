@@ -1,0 +1,40 @@
+
+
+services:
+  nutrient-tracker:
+    build: ./Nutrient-Tracker
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./Nutrient-Tracker:/app
+      - ./Nutrient-Tracker/db:/app/db  # For SQLite3 database persistence
+    environment:
+      - RAILS_ENV=development
+    # networks:  # Not needed for SQLite3
+    #   - app-network
+
+  tip:
+    build: ./TIP
+    ports:
+      - "3001:3000" # Next.js app on host port 3001
+    environment:
+      NEXT_PUBLIC_API_URL: http://nutrient-tracker:3000 # Internal Docker network communication
+    networks:
+      - app-network
+
+  # db:
+  #   image: postgres:15
+  #   volumes:
+  #     - postgres_data:/var/lib/postgresql/data # Persist PostgreSQL data
+  #   environment:
+  #     POSTGRES_USER: user
+  #     POSTGRES_PASSWORD: password
+  #     POSTGRES_DB: nutrient_tracker
+  #   networks:
+  #     - app-network
+
+
+
+networks:
+  app-network:
+    driver: bridge # Custom bridge network

@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  saic:
+    build:
+      context: ./SAIC-Website
+      dockerfile: Dockerfile
+    volumes:
+      - ./SAIC-Website/data:/usr/share/nginx/html/data
+    ports:
+      - '8080:80'
+    networks:
+      - saic_iit_network
+
+  rails_app:
+    build:
+      context: ./github-languages
+      dockerfile: Dockerfile
+    volumes:
+      - ./github-languages/data:/usr/src/app/data
+    ports:
+      - '3000:3000'
+    networks:
+      - rails_app_network
+
+networks:
+  saic_iit_network:
+  rails_app_network:

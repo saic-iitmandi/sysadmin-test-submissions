@@ -1,0 +1,40 @@
+<div class='vertically-align'>
+  <div id='home' class='container'>
+    <div class='row'>
+      <div class='col-xs-12 col-md-6 col-md-offset-3 text-center'>
+        <%= image_tag('gitlang.png') %>
+        <h1>GitHub Languages</h1>
+        <div class='search-box'>
+          <form id='form-github-username' class='search-form' action='/user' method='get'>
+            <input required class='form-control' placeholder='GitHub Username' type='text' name='user'>
+            <button id='search-button-button' class='btn btn-link search-btn'>
+              <i id='fa-search-button' class='fa fa-lg fa-search fa-fw'></i>
+            </button>
+          </form>
+        </div>
+        <p id='main-text-under-form'>Discover your favorite programming languages. <a id='show-about-this-site' href='#'>About this site</a>.</p>
+        <iframe src="https://ghbtns.com/github-btn.html?user=alex-felix&repo=github-languages&type=star&count=true" frameborder="0" scrolling="0" width="72px" height="20px"></iframe>
+        <p id='about-this-site' class='transparent'>This website is built by <a href='https://github.com/alex-felix'>Alex</a>. It finds your favorite programming languages using your <a href='https://github.com/'>GitHub</a> username. To find out more, send me an <a href='mailto:me@alexbenoit.xyz'>Email</a>, or you can check out the <a href="https://github.com/alex-felix/github-languages">Source Code</a>.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= content_for(:after_js) do %>
+  <%= javascript_tag do %>
+    $(document).ready(function() {
+      $( "#show-about-this-site" ).on( "click", function( e ) {
+        e.preventDefault();
+        $( "#about-this-site" ).toggleClass( "transparent" );
+        $( "#show-about-this-site" ).toggleClass( "underlined" );
+      });
+
+      $( "#form-github-username" ).on( "submit", function( e ) {
+        $( "#search-button-button" ).focus();
+        $( "#fa-search-button" ).removeClass( "fa-search" );
+        $( "#fa-search-button" ).addClass( "fa-spinner fa-spin" );
+      });
+
+    });
+  <% end %>
+<% end %>

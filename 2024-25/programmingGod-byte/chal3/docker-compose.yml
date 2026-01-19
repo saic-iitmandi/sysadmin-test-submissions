@@ -1,0 +1,19 @@
+
+
+services:
+  nextjs-app:
+    build: ./TIP  
+    ports:
+      - "3000:3000"
+    
+
+  rails-app:
+    build: ./Nutrient-Tracker  
+    ports:
+      - "3001:3000"
+    
+    environment:
+      RAILS_ENV: development
+      RAILS_MASTER_KEY: key
+
+

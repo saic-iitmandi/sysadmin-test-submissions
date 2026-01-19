@@ -1,0 +1,38 @@
+httpd easier
+
+sudo apt install nginx
+
+---show content in "site enable"
+
+unlink default
+
+-- create new conf file in conf.d
+
+newsite.conf
+--- past server block into .conf file
+server {
+   listen 80 default_server;
+   server_name yourdomain1.xyz www.yourdomain1.xyz;
+
+   location / {
+      proxy_set_header X-Real-IP $remote_addr;
+      proxy_pass http://localhost:8081;
+   }
+
+}
+
+server {
+   listen 80;
+   server_name yourdomain2.info www.yourdomain2.info;
+
+   location / {
+      proxy_set_header X-Real-IP $remote_addr;
+      proxy_pass http://localhost:8080;
+   }
+}
+
+nginx -t
+
+systemctl reload nginx
+
+systemctl status nginx

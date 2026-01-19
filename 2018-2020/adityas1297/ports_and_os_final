@@ -1,0 +1,224 @@
+Nmap scan report for 14.139.34.2
+Host is up (0.088s latency).
+Not shown: 92 closed ports
+PORT      STATE    SERVICE
+22/tcp    open     ssh
+25/tcp    filtered smtp
+53/tcp    open     domain
+80/tcp    open     http
+443/tcp   open     https
+445/tcp   filtered microsoft-ds
+3000/tcp  open     ppp
+10000/tcp open     snet-sensor-mgmt
+Device type: WAP|general purpose
+Running (JUST GUESSING): Linux 2.6.X|2.4.X (86%)
+OS CPE: cpe:/o:linux:linux_kernel:2.6.22 cpe:/o:linux:linux_kernel:2.4 cpe:/o:linux:linux_kernel:2.6
+Aggressive OS guesses: OpenWrt Kamikaze 7.09 (Linux 2.6.22) (86%), OpenWrt 0.9 - 7.09 (Linux 2.4.30 - 2.4.34) (85%), OpenWrt White Russian 0.9 (Linux 2.4.30) (85%), Linux 2.6.18 - 2.6.22 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 15 hops
+
+
+Nmap scan report for mail.students.iitmandi.ac.in (14.139.34.3)
+Host is up (0.087s latency).
+Not shown: 98 open|filtered ports, 86 filtered ports
+PORT      STATE  SERVICE
+53/tcp    open   domain
+80/tcp    open   http
+110/tcp   open   pop3
+143/tcp   open   imap
+389/tcp   closed ldap
+443/tcp   open   https
+465/tcp   open   smtps
+587/tcp   closed submission
+993/tcp   open   imaps
+995/tcp   open   pop3s
+3306/tcp  closed mysql
+5000/tcp  closed upnp
+8000/tcp  closed http-alt
+10000/tcp open   snet-sensor-mgmt
+53/udp    open   domain
+123/udp   closed ntp
+Device type: general purpose
+Running (JUST GUESSING): Linux 3.X|4.X|2.6.X (87%)
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:2.6.32
+Aggressive OS guesses: Linux 3.11 - 4.1 (87%), Linux 3.10 - 3.19 (86%), Linux 3.13 (86%), Linux 2.6.32 (86%), Linux 2.6.18 - 2.6.22 (85%), Linux 3.8 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 16 hops
+
+
+
+Nmap scan report for 14.139.34.4
+Host is up (0.096s latency).
+Not shown: 94 closed ports
+PORT     STATE    SERVICE
+22/tcp   open     ssh
+25/tcp   filtered smtp
+80/tcp   open     http
+445/tcp  filtered microsoft-ds
+6001/tcp open     X11:1
+8080/tcp open     http-proxy
+Device type: general purpose
+Running (JUST GUESSING): Linux 3.X|4.X|2.6.X (87%)
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:2.6.32
+Aggressive OS guesses: Linux 3.11 - 4.1 (87%), Linux 3.10 - 3.19 (86%), Linux 3.13 (86%), Linux 2.6.32 (86%), Linux 2.6.18 - 2.6.22 (85%), Linux 3.8 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 15 hops
+
+
+
+Nmap scan report for 14.139.34.8
+Host is up (0.098s latency).
+Not shown: 99 open|filtered ports, 94 filtered ports
+PORT      STATE  SERVICE
+53/tcp    closed domain
+80/tcp    open   http
+389/tcp   open   ldap
+443/tcp   open   https
+3306/tcp  closed mysql
+10000/tcp open   snet-sensor-mgmt
+123/udp   open   ntp
+No OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.01%E=4%D=2/2%OT=80%CT=53%CU=%PV=N%G=Y%TM=5A736DEB%P=x86_64-pc-l
+OS:inux-gnu)SEQ(SP=105%GCD=1%ISR=10C%TI=Z%CI=RI%TS=8)SEQ(SP=105%GCD=1%ISR=1
+OS:0C%TI=Z%CI=RI%II=I%TS=8)OPS(O1=M4ECST11NW7%O2=M4ECST11NW7%O3=M4ECNNT11NW
+OS:7%O4=M4ECST11NW7%O5=M4ECST11NW7%O6=M4ECST11)WIN(W1=3890%W2=3890%W3=3890%
+OS:W4=3890%W5=3890%W6=3890)ECN(R=Y%DF=Y%TG=40%W=3908%O=M4ECNNSNW7%CC=Y%Q=)T
+OS:1(R=Y%DF=Y%TG=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=N%TG=80%W
+OS:=400%S=A%A=S+%F=AR%O=%RD=0%Q=)T5(R=Y%DF=Y%TG=40%W=0%S=Z%A=S+%F=AR%O=%RD=
+OS:0%Q=)T6(R=Y%DF=N%TG=80%W=8000%S=A%A=S+%F=AR%O=%RD=0%Q=)T7(R=N)U1(R=N)IE(
+OS:R=Y%DFI=N%TG=40%CD=S)
+
+
+
+Nmap scan report for mail.projects.iitmandi.ac.in (14.139.34.9)
+Host is up (0.088s latency).
+Not shown: 98 open|filtered ports, 90 filtered ports
+PORT      STATE  SERVICE
+53/tcp    closed domain
+80/tcp    open   http
+110/tcp   open   pop3
+143/tcp   open   imap
+389/tcp   closed ldap
+443/tcp   open   https
+465/tcp   open   smtps
+587/tcp   closed submission
+993/tcp   open   imaps
+10000/tcp open   snet-sensor-mgmt
+53/udp    closed domain
+123/udp   closed ntp
+Device type: general purpose
+Running (JUST GUESSING): Linux 3.X|4.X|2.6.X (87%)
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:2.6.32
+Aggressive OS guesses: Linux 3.11 - 4.1 (87%), Linux 2.6.32 (86%), Linux 3.10 - 3.19 (86%), Linux 3.13 (86%), Linux 2.6.18 - 2.6.22 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 16 hops
+
+
+
+
+Nmap scan report for 14.139.34.10
+Host is up (0.092s latency).
+Not shown: 998 open|filtered ports, 959 filtered ports, 37 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+443/tcp  open  https
+8000/tcp open  http-alt
+8082/tcp open  blackice-alerts
+123/udp  open  ntp
+Device type: general purpose
+Running (JUST GUESSING): Linux 3.X|4.X|2.6.X (87%)
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:2.6.32
+Aggressive OS guesses: Linux 3.11 - 4.1 (87%), Linux 3.10 - 3.19 (86%), Linux 3.13 (86%), Linux 2.6.32 (86%), Linux 2.6.18 - 2.6.22 (85%), Linux 3.8 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 15 hops
+
+
+
+Nmap scan report for 14.139.34.11
+Host is up (0.10s latency).
+Not shown: 189 closed ports
+PORT     STATE         SERVICE
+22/tcp   open          ssh
+25/tcp   filtered      smtp
+53/tcp   open          domain
+80/tcp   open          http
+445/tcp  filtered      microsoft-ds
+8080/tcp open          http-proxy
+53/udp   open          domain
+67/udp   open|filtered dhcps
+161/udp  open|filtered snmp
+162/udp  open|filtered snmptrap
+445/udp  open|filtered microsoft-ds
+Device type: general purpose
+Running (JUST GUESSING): Linux 3.X|4.X|2.6.X (87%)
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:2.6.32
+Aggressive OS guesses: Linux 3.11 - 4.1 (87%), Linux 3.10 - 3.19 (86%), Linux 3.13 (86%), Linux 2.6.32 (86%), Linux 2.6.18 - 2.6.22 (85%), Linux 3.8 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 16 hops
+
+
+
+Nmap scan report for 14.139.34.26
+Host is up (0.095s latency).
+Not shown: 178 closed ports
+PORT      STATE         SERVICE
+25/tcp    filtered      smtp
+80/tcp    open          http
+135/tcp   open          msrpc
+139/tcp   open          netbios-ssn
+445/tcp   filtered      microsoft-ds
+1433/tcp  open          ms-sql-s
+3389/tcp  open          ms-wbt-server
+49152/tcp open          unknown
+49153/tcp open          unknown
+49154/tcp open          unknown
+49155/tcp open          unknown
+49156/tcp open          unknown
+49157/tcp open          unknown
+67/udp    open|filtered dhcps
+123/udp   open|filtered ntp
+137/udp   open          netbios-ns
+138/udp   open|filtered netbios-dgm
+161/udp   open|filtered snmp
+162/udp   open|filtered snmptrap
+445/udp   open|filtered microsoft-ds
+500/udp   open|filtered isakmp
+4500/udp  open|filtered nat-t-ike
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 7|2012 (88%)
+OS CPE: cpe:/o:microsoft:windows_7 cpe:/o:microsoft:windows_server_2012
+Aggressive OS guesses: Microsoft Windows 7 (88%), Microsoft Windows Windows 7 SP1 (87%), Microsoft Windows Server 2012 (86%), Microsoft Windows Server 2012 R2 (86%), Windows Server 2012 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 16 hops
+
+
+
+Nmap scan report for 14.139.34.43
+Host is up (0.095s latency).
+Not shown: 185 closed ports
+PORT     STATE         SERVICE
+22/tcp   open          ssh
+25/tcp   filtered      smtp
+80/tcp   open          http
+139/tcp  open          netbios-ssn
+445/tcp  filtered      microsoft-ds
+3306/tcp open          mysql
+8080/tcp open          http-proxy
+8081/tcp open          blackice-icecap
+67/udp   open|filtered dhcps
+137/udp  open          netbios-ns
+138/udp  open|filtered netbios-dgm
+161/udp  filtered      snmp
+162/udp  open|filtered snmptrap
+445/udp  open|filtered microsoft-ds
+5353/udp open          zeroconf
+Device type: general purpose|firewall|broadband router
+Running (JUST GUESSING): Linux 3.X|2.6.X (87%), WatchGuard Fireware 11.X (87%)
+OS CPE: cpe:/o:linux:linux_kernel:3.2 cpe:/o:watchguard:fireware:11.8 cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:3
+Aggressive OS guesses: Linux 3.2 (87%), Linux 3.8 (87%), Linux 3.2 - 3.8 (87%), WatchGuard Fireware 11.8 (87%), Linux 2.6.32 - 3.1 (86%), OpenWrt 12.09-rc1 Attitude Adjustment (Linux 3.3 - 3.7) (86%), Linux 3.11 (86%), Linux 2.6.32 (86%), Linux 3.1 - 3.2 (86%), Linux 2.6.32 - 3.13 (86%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 15 hops
+
+

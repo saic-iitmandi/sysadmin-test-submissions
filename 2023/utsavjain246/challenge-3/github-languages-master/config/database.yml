@@ -1,0 +1,24 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: github-languages
+  password: password
+  host: postgres  # Set the host to the service name in Docker Compose
+
+development:
+  <<: *default
+  database: github-languages_development
+
+test:
+  <<: *default
+  database: github-languages_test
+
+production:
+  <<: *default
+  database: github-languages_production
+  username: github-languages
+  password: <%= ENV['GITHUB_LANGUAGES_DATABASE_PASSWORD'] %>  # Set password using an environment variable
+  host: postgres  # Set the host to the service name in Docker Compose
+  port: 5432  # Optional: PostgreSQL default port, can be omitted
+

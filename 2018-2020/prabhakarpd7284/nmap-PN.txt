@@ -1,0 +1,21 @@
+
+Starting Nmap 7.01 ( https://nmap.org ) at 2018-02-07 00:47 IST
+Nmap scan report for students.iitmandi.ac.in (10.8.1.3)
+Host is up (0.039s latency).
+rDNS record for 10.8.1.3: mail.students.iitmandi.ac.in
+Not shown: 988 filtered ports
+PORT      STATE  SERVICE
+22/tcp    open   ssh
+25/tcp    open   smtp
+53/tcp    open   domain
+80/tcp    open   http
+110/tcp   open   pop3
+143/tcp   open   imap
+443/tcp   open   https
+465/tcp   open   smtps
+587/tcp   closed submission
+993/tcp   open   imaps
+995/tcp   open   pop3s
+10000/tcp open   snet-sensor-mgmt
+
+Nmap done: 1 IP address (1 host up) scanned in 15.49 seconds

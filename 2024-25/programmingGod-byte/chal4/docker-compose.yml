@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:80"
+    networks:
+      - applicationNetwork
+    depends_on:
+      - backend
+
+  backend:
+    build: ./backend
+    
+    networks:
+      - applicationNetwork
+    depends_on:
+      - database
+      - redis
+    environment:
+      - POSTGRES_HOST=database
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - REQUEST_ORIGIN=http://localhost:3000
+
+  database:
+    image: postgres:alpine
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    
+    networks:
+      - applicationNetwork
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+
+  redis:
+    image: redis:alpine
+    
+    networks:
+      - applicationNetwork
+
+networks:
+  applicationNetwork:
+    driver: bridge
+
+volumes:
+  db-data:
