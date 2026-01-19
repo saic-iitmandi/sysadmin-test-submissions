@@ -6,7 +6,7 @@ import socket
 import time
 
 # --- CONFIGURATION ---
-GENAI_API_KEY = "AIzaSyD2mz5aBgjOm8CIiEZPb6lXqvTyucbmim8"
+GENAI_API_KEY = "API"
 genai.configure(api_key=GENAI_API_KEY)
 
 # Initialize
