@@ -1,0 +1,6 @@
+exiftool final.png > metadata.txt
+pngcheck -7 final.png
+binwalk final.png
+dd if=final.png of=payload.zlib bs=1 skip=9795213
+zlib-flate -uncompress < payload.zlib > payload.bin
+
