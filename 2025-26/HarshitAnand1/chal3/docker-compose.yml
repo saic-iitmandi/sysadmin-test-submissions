@@ -1,0 +1,97 @@
+version: "3.9"
+
+networks:
+  royal_net:
+    driver: bridge
+  stac_net:
+    driver: bridge
+
+services:
+
+  # -------- ROYALCHESS --------
+
+  mongo:
+    image: mongo:6
+    networks:
+      - royal_net
+    volumes:
+      - mongo_data:/data/db
+    expose:
+      - "27017"     # HOST CANNOT ACCESS
+    restart: always
+
+  royal-server:
+    build:
+      context: ./royalchess
+      dockerfile: Dockerfile.server
+    networks:
+      - royal_net
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/royal
+    depends_on:
+      - mongo
+    expose:
+      - "5000"
+    restart: always
+
+  royal-client:
+    build:
+      context: ./royalchess
+      dockerfile: Dockerfile.client
+    environment:
+      - NEXT_PUBLIC_SERVER_URL=http://royal-server:5000
+
+    ports:
+      - "3000:3000"
+    networks:
+      - royal_net
+    depends_on:
+      - royal-server
+    restart: always
+
+
+  # -------- STAC --------
+
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: stac
+      POSTGRES_USER: stac
+      POSTGRES_PASSWORD: strongpass
+    networks:
+      - stac_net
+    expose:
+      - "5432"       # NOT EXPOSED TO HOST
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    restart: always
+  django:
+    build:
+      context: ./stac
+      dockerfile: Dockerfile.django
+    networks:
+      - stac_net
+    command: >
+      sh -c "python manage.py migrate &&
+             gunicorn STAC.wsgi:application --bind 0.0.0.0:8000"
+    depends_on:
+      - postgres
+    expose:
+      - "8000"
+    restart: always
+  stac-next:
+    build:
+      context: ./stac
+      dockerfile: Dockerfile.next
+    ports:
+      - "4000:3000"
+    networks:
+      - stac_net
+    depends_on:
+      - django
+    restart: always
+
+
+volumes:
+  mongo_data:
+  pg_data:
