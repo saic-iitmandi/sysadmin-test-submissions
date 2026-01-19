@@ -17,7 +17,9 @@ so i listed EVERYTHING
 
 no time to format :(
 there was 
+
 > .git/
+
 then checked the commit history
 
 > git log --oneline --all
