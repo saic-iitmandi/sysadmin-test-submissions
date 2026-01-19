@@ -1,0 +1,59 @@
+services:
+  # 1. Database Service (Isolated)
+  db:
+    image: postgres:15-alpine
+    restart: always
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=stac_db
+      - POSTGRES_USER=stac_user
+      - POSTGRES_PASSWORD=secure_password_123
+    networks:
+      - stac-internal-net
+    # NOTE: No "ports" section here. 
+    # This ensures the DB is NOT accessible from localhost:5432, only by the backend.
+
+  # 2. Backend Service
+  backend:
+    build: ./backend
+    restart: always
+    command: >
+      sh -c "python manage.py migrate && 
+             gunicorn --bind 0.0.0.0:8000 STAC.wsgi:application"
+    volumes:
+      - ./backend:/app  # Optional: For hot-reloading during dev
+    ports:
+      - "8000:8000"
+    environment:
+      - DB_NAME=stac_db
+      - DB_USER=stac_user
+      - DB_PASSWORD=secure_password_123
+      - DB_HOST=db
+      - ALLOWED_HOSTS=*
+    depends_on:
+      - db
+    networks:
+      - stac-internal-net
+
+  # 3. Frontend Service
+  frontend:
+    build: ./frontend
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      # Since Next.js runs in the browser, it needs the PUBLIC host address
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+    depends_on:
+      - backend
+    networks:
+      - stac-internal-net
+
+# Define a custom bridge network
+networks:
+  stac-internal-net:
+    driver: bridge
+
+volumes:
+  postgres_data:
