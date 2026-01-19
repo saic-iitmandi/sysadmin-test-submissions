@@ -1,0 +1,14 @@
+**What i had**
+We were given a png of our college.
+
+**What i did, Why i did and Where i landed**
+- Although it was just a normal looking PNG from outside but it's size make it kinda suspecious which was around -10MB so yeah it was case of stego (thanks to my participation in previous ctf events, especially Haunted Pumpkin ctf'25 why i got it )
+- Then ran some basic file inspection and got no metadata as exiftool was mostly empty but pngcheck gave a huge ztxt chuck of around 9.5mb so yeah entire things was sure inside ztxt
+- started extraction using pillow and it got crshed again and again, did some googling and came up with binwalk and finally successfully extracted and now had ztxt.bin
+- tbh i expected this file to be full of binary noise or just gibberrish but then got tons n tons of english word, totally random no connection, nothing, counted it via "wc -w xtext.bin" and it was really big number, then checked all unique words via "tr ' ' '\n' < ztext.bin | sort | unique | wc -l" but they were comperatively really small (around 94)
+- now i knew the flag was here for sure so did some internet digging came up with it was frequency encoding cause it was aligning with the fact that ztxt compresses repititive patterns, then counted word frequency via "tr ' ' '\n' | sort | uniq -c" and each words came exactly twice in which one's freqeuncy was extremely low and second one's was too high.
+- Sorted then in two different clusters one with low frequency ones and second with high fequency ones, till now i thought maybe one of em symbolises 0 and second symbolises 1, did two mapping first first was assumed high as 1 and low as 0 and second was opposite of this. 
+- wrote a script to decode this and it didn't went really well firstly it gave all 1's then all 0's and came up that only one cluster was being used checked and found the large cluster never used so it didn't encoded by value but by absence and presence, after this i had literally no idea what to do so again did some research.
+- again changed the mapping but still nothing either it was all 0's or 1's never in 01.
+- did some google and came up wih i can check if it was a decode bug or something  by checking if large cluster words appeared in raw stream and they were appearing, then checked my code and found out it was just my ranges were not matching the real count. so fixed it, ran it again still either all 0's or 1's. did some more changes in script still nothing. 
+- finally decided to leave it here, well it was solvable but ig nothing was working so yeah ending my report here maybe i'll revisit it in future.
