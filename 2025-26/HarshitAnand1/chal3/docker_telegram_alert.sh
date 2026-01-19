@@ -1,7 +1,11 @@
 #!/bin/bash
 
-TOKEN=REDACTED_TOKEN
-CHAT_ID=5507927858
+# Set these environment variables before running:
+# export TELEGRAM_BOT_TOKEN="your_token_here"
+# export TELEGRAM_CHAT_ID="your_chat_id_here"
+
+TOKEN=${TELEGRAM_BOT_TOKEN:-"YOUR_TELEGRAM_BOT_TOKEN_HERE"}
+CHAT_ID=${TELEGRAM_CHAT_ID:-"YOUR_TELEGRAM_CHAT_ID_HERE"}
 
 STATUS=$(docker ps -a)
 
