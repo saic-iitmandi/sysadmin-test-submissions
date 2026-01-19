@@ -1,20 +1,5 @@
 # Challenge 1 - Gain Access to a Remote Server
 
-## Challenge Description
-
-A drive link containing a saic.ova file is provided. It is to be imported into a Virtual Box and run as a Guest, it will act as a remote server hosting a site wich can be seen on my localhost.
-
-### Objective
-
-To get inside the server by exploiting vulnerabilities and find a flag present at root/flag.txt by obtaining root privilages
-
-### Scope and Constraints
-
-1. Not to use Metasploit
-2. Strictly not accessing the mounted disk from outside the VM environment
-3. Not using Recovery Mode or GRUB Terminal to gain root access
-4. Access to server is limited to a VM enviroment only
-
 ### Environment
 
 - Virtualization Platform: VirtualBox
@@ -22,14 +7,26 @@ To get inside the server by exploiting vulnerabilities and find a flag present a
 - Initial Privilege Level: Standard user
 - Network Mode: NAT
 
-## Initial Access
+### Initial Access
 
 - username : student
 - password : saic
 
-## Trying To Escalate Privilages
+## Methodology and Brief
 
-### Trying Sudo Misconfigurations
+1. Enumerated sudo permissions and confirmed no sudo misconfigurations were present.
+2. Enumerated SUID binaries and investigated potentially vulnerable binaries such as `pkexec` and `mount`, but found no exploitable misconfigurations or known working exploits.
+3. Performed kernel enumeration and identified the system as running an outdated Ubuntu 14.04.6 LTS kernel (4.4.0-148).
+4. Attempted privilege escalation using Dirty COW (CVE-2016-5195), which failed due to partial mitigations.
+5. Successfully exploited an OverlayFS kernel vulnerability, resulting in a root shell.
+6. Retrieved the flag from `/root/flag.txt`.
+
+--- 
+# Detailed Process Description
+
+## Privilage Escalation Enumeration
+
+### Sudo Misconfigurations Enumeration
 
 Command:
 
@@ -45,7 +42,7 @@ Sorry, user student may not run sudo on saic-VirtualBox.
 
 This indicates that there are no sudo misconfigurations, and a different privilege escalation approach is required.
 
-### Trying to Enumerate and Exploit SUID binaries
+### SUID binaries Enumeration
 
 Command:
 
@@ -112,7 +109,7 @@ pkexec /bin/sh
 Output:
 
 It asked for authentication via password. This mean it is not directly exploitable so a different approach has to be attempted.
-Also, this is same behaviour as CVE-2021-4034, a well know vulnarebility in polkit.
+Also, this is same behavior as CVE-2021-4034, a well know vulnerability in polkit.
 So, now a script in C can be used to potentially exploit it
 
 Commands:
@@ -161,9 +158,9 @@ It suggests that none of these can be exploited as they are hardened with noexec
 
 This suggests SUID enumeration is a dead end
 
-### Kernal Enumeration and Exploitation Attempt
+### Kernel Enumeration
 
-For this first the kernal has to be inspected
+For this first the kernel has to be inspected
 
 Command:
 
@@ -191,7 +188,7 @@ Linux version 4.4.0-148-generic (buildd@lgw01-amd64-014) (gcc version 4.8.4 (Ubu
 The system runs Ubuntu 14.04.6 LTS with Linux kernel 4.4.0-148.
 CVE-2016-5195 (Dirty COW) affects all Linux kernels prior to 4.8.3.
 Ubuntu 14.04 does not include a complete backport of the fix in this kernel version.
-Therefore, the kernel is vulnerable to local privilege escalation via Dirty COW.
+Therefore, it suggests that the kernel is possibly vulnerable to local privilege escalation via Dirty COW.
 
 Dirty COW
 
@@ -216,7 +213,9 @@ Result:
 ```text
 su: Permission denied
 ```
-dirty COW didn't work, now as a backup, OverlayFS can be used
+Although this kernel version is theoretically affected by CVE-2016-5195 (Dirty COW), the exploit attempt failed in this environment, an alternative kernel exploit is required.
+
+OverlayFS can be used as an alternate to DirtyCOW
 
 Attempting OverlayFS:
 
@@ -231,7 +230,8 @@ Output:
 ```text
 bash-4.3#
 ```
-this open another terminal with root access
+This open another terminal with root access
+Ubuntu 14.04 kernels prior to proper OverlayFS namespace restrictions allow unprivileged users to mount overlay filesystems in a way that can lead to privilege escalation.
 
 Further Commands in this terminal:
 
@@ -249,5 +249,11 @@ root
 uid=0(root) gid=0(root) groups=0(root),1001(student)
 SAIC{C0ngr4ts_d0_y0u_l0v3_ST4C?}
 ```
-## Solved
-### Flag = SAIC{C0ngr4ts_d0_y0u_l0v3_ST4C?}
+
+## Conclusion
+
+The system was running an outdated Ubuntu 14.04.6 LTS kernel vulnerable to local privilege escalation attacks. While common SUID and polkit-based escalation paths were mitigated, improper kernel hardening allowed exploitation of an OverlayFS vulnerability. This resulted in successful privilege escalation from a standard user to root, enabling access to `/root/flag.txt`.
+
+This highlights the importance of timely kernel patching and OS-level security, even when application-level services appear secure.
+
+Flag = SAIC{C0ngr4ts_d0_y0u_l0v3_ST4C?}
