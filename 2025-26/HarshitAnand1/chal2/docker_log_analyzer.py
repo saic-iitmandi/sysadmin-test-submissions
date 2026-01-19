@@ -3,8 +3,9 @@ import datetime
 import requests
 
 # ===== TELEGRAM CONFIG =====
-TOKEN = "REDACTED_TOKEN"
-CHAT_ID = "5507927858"
+# Note: Set TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID as environment variables
+TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "YOUR_TELEGRAM_BOT_TOKEN_HERE")
+CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "YOUR_TELEGRAM_CHAT_ID_HERE")
 
 def telegram(msg):
     url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
