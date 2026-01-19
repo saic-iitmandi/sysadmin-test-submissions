@@ -1,0 +1,19 @@
+---scan---
+[FAILURE] nginx1 Created
+[CLASH] nginx tried to bind port 8080 but failed
+[ACTION] removing failed container: nginx1
+[ACTION] restarting nginx1 on 8081
+[RECOVERY] nginx1 recovered on 8081
+
+---scan---
+web1 healthy on 8080
+nginx1 healthy on 8081
+
+---scan---
+[INFO] nginx/1.29.4 starting
+[INFO] nginx/1.29.4 worker process started
+[INFO] gunicorn 23.0.0 worker booting pid=7
+
+---scan---
+web1 healthy on 8080
+nginx1 healthy on 8081

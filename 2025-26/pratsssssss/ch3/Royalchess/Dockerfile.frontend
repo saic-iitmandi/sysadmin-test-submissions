@@ -1,0 +1,15 @@
+FROM node:20-alpine
+
+RUN corepack enable
+RUN corepack prepare pnpm@latest --activate
+
+WORKDIR /app
+
+COPY . .
+
+RUN pnpm install --frozen-lockfile
+
+RUN pnpm -F @royalchess/client build
+
+EXPOSE 3000
+CMD ["pnpm", "-F", "@royalchess/client", "start"]

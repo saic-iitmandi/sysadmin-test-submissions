@@ -1,0 +1,86 @@
+version: "3.9"
+
+services:
+  royal-frontend:
+    build:
+      context:  ./royalchess
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - royal-backend
+    networks:
+      - royal_net
+
+  royal-backend:
+    build:
+      context: ./royalchess
+      dockerfile: Dockerfile.backend
+    environment:
+      - MONGO_URL=mongodb://royal-mongo:27017/royaldb
+    expose:
+      - "5000"
+    depends_on:
+      - royal-mongo
+    networks:
+      - royal_net
+
+  royal-mongo:
+    image: mongo:6
+    restart: always
+    volumes:
+      - royal_mongo_data:/data/db
+    networks:
+      - royal_net
+
+  stac-frontend:
+    build: 
+      context: ./stac/frontend 
+      dockerfile: dockerfile
+    ports:
+      - "3001:3000"
+    depends_on:
+      - stac-backend
+    networks:
+      - stac_net
+    environment:
+      NEXT_PUBLIC_API_URL: http://stac-backend:8000
+
+
+  stac-backend:
+    build: 
+      context: ./stac/backend
+      dockerfile: dockerfile
+    environment:
+      - DB_HOST=stac-postgres
+      - DB_NAME=stacdb
+      - DB_USER=stacuser
+      - DB_PASS=stacpass
+    ports:
+      - "8000:8000"
+    depends_on:
+      - stac-postgres
+    networks:
+      - stac_net
+
+  stac-postgres:
+    image: postgres:15
+    restart: always
+    environment:
+      - POSTGRES_DB=stacdb
+      - POSTGRES_USER=stacuser
+      - POSTGRES_PASSWORD=stacpass
+    volumes:
+      - stac_pg_data:/var/lib/postgresql/data
+    networks:
+      - stac_net
+
+volumes:
+  royal_mongo_data:
+  stac_pg_data:
+
+networks:
+  royal_net:
+    driver: bridge
+  stac_net:
+    driver: bridge
