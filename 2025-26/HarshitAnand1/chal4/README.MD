@@ -1,4 +1,6 @@
 Q4.
+SAIC{ev3n_5t_n0_0n3}
+
 
 At first,i sawvThe folder only had two files:
 
@@ -11,22 +13,23 @@ Both of them were just bakery-themed text. Nothing encoded was there.(sad harshi
 Since the challenge description mentioned a Git repository
 so i listed EVERYTHING
 
-ls -la
+> ls -la
 
 no time to format :(
-there was .git/
+there was 
+> .git/
 then checked the commit history
 
-git log --oneline --all
+> git log --oneline --all
 
 to check more i ran
 
-git fsck --lost-found
+> git fsck --lost-found
 
 this had dangling commits
 so i thot i have some clue
 then started to inspect these by 
-git show <commit_hash>
+> git show <commit_hash>
 it had python script and one file w numbers
 
 so basically it was rsa encryption
