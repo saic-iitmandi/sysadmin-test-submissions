@@ -1,0 +1,113 @@
+version: '3.8'
+
+services:
+  royal_db:
+    image: ${POSTGRES_IMAGE}
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${ROYAL_DB_NAME}
+      POSTGRES_USER: ${ROYAL_DB_USER}
+      POSTGRES_PASSWORD: ${ROYAL_DB_PASSWORD}
+    volumes:
+      - royal_db_data:/var/lib/postgresql/data
+    networks:
+      - royal_internal
+    container_name: royal_db
+
+  royal_server:
+    build:
+      context: ${BUILD_CONTEXT}
+      dockerfile: ${ROYAL_SERVER_DOCKERFILE}
+    depends_on:
+      - royal_db
+    environment:
+      PORT: ${ROYAL_PORT}
+      NODE_ENV: ${ROYAL_NODE_ENV}
+      PGHOST: royal_db
+      PGPORT: ${ROYAL_DB_PORT}
+      PGDATABASE: ${ROYAL_DB_NAME}
+      PGUSER: ${ROYAL_DB_USER}
+      PGPASSWORD: ${ROYAL_DB_PASSWORD}
+      SESSION_SECRET: ${ROYAL_SESSION_SECRET}
+      CORS_ORIGIN: ${ROYAL_CORS_ORIGIN}
+    ports:
+      - "${ROYAL_SERVER_HOST_PORT}:${ROYAL_SERVER_CONTAINER_PORT}"
+    networks:
+      - royal_internal
+      - public
+    container_name: royal_server
+
+  royal_client:
+    build:
+      context: ${BUILD_CONTEXT}
+      dockerfile: ${ROYAL_CLIENT_DOCKERFILE}
+    environment:
+      NEXT_PUBLIC_API_URL: ${ROYAL_API_URL}
+    ports:
+      - "${ROYAL_CLIENT_HOST_PORT}:${ROYAL_CLIENT_CONTAINER_PORT}"
+    depends_on:
+      - royal_server
+    networks:
+      - public
+    container_name: royal_client
+
+  stac_db:
+    image: ${POSTGRES_IMAGE}
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${STAC_DB_NAME}
+      POSTGRES_USER: ${STAC_DB_USER}
+      POSTGRES_PASSWORD: ${STAC_DB_PASSWORD}
+    volumes:
+      - stac_db_data:/var/lib/postgresql/data
+    networks:
+      - stac_internal
+    container_name: stac_db
+
+  stac_backend:
+    build:
+      context: ${BUILD_CONTEXT}
+      dockerfile: ${STAC_BACKEND_DOCKERFILE}
+    depends_on:
+      - stac_db
+    environment:
+      DEBUG: ${STAC_DEBUG}
+      SECRET_KEY: ${STAC_SECRET_KEY}
+      ALLOWED_HOSTS: ${STAC_ALLOWED_HOSTS}
+      DATABASE_URL: postgresql://${STAC_DB_USER}:${STAC_DB_PASSWORD}@stac_db:${STAC_DB_PORT}/${STAC_DB_NAME}
+      CORS_ALLOWED_ORIGINS: ${STAC_CORS_ALLOWED_ORIGINS}
+      CORS_ALLOW_ALL_ORIGINS: ${STAC_CORS_ALLOW_ALL_ORIGINS}
+    ports:
+      - "${STAC_BACKEND_HOST_PORT}:${STAC_BACKEND_CONTAINER_PORT}"
+    networks:
+      - stac_internal
+      - public
+    container_name: stac_backend
+
+  stac_frontend:
+    build:
+      context: ${BUILD_CONTEXT}
+      dockerfile: ${STAC_FRONTEND_DOCKERFILE}
+    depends_on:
+      - stac_backend
+    environment:
+      NEXT_PUBLIC_API_URL: ${STAC_API_URL}
+    ports:
+      - "${STAC_FRONTEND_HOST_PORT}:${STAC_FRONTEND_CONTAINER_PORT}"
+    networks:
+      - public
+    container_name: stac_frontend
+
+volumes:
+  royal_db_data:
+  stac_db_data:
+
+networks:
+  public:
+    driver: bridge
+  royal_internal:
+    driver: bridge
+    internal: true
+  stac_internal:
+    driver: bridge
+    internal: true
