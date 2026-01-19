@@ -1,0 +1,12 @@
+--- [DEBUG] Starting Log Analysis ---
+--- [DEBUG] Found 1 running containers.
+Alert: Container 51be651011c5 has errors
+
+--- [DEBUG] Starting Port Clash Check ---
+--- [DEBUG] Found 1 exited/stopped containers.
+Port clash detected for container e0dacf1e9c0b
+--- [DEBUG] Clash confirmed. Image is: nginx
+--- [DEBUG] Finding free port starting from 8081...
+--- [DEBUG] Port 8081 is free!
+we handled the port_clash, new_port=8081
+0807b55359414541b09a6a0f28bc77c4656b26ea2a3b52e03fa81e147c1f411e

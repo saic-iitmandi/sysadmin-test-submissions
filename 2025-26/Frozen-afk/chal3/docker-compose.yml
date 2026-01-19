@@ -1,0 +1,94 @@
+version: '3.8'
+
+services:
+  
+  royal-db:
+    image: mongo:6.0
+    container_name: db-container
+    networks:
+      - royal_internal_net  
+    volumes:
+      - royal_data_vol:/data/db 
+
+  royal-backend:
+    build:
+      context: ./royalchess      
+      dockerfile: server/Dockerfile 
+    container_name: backend-container
+    ports:
+      - "5000:5000"
+    networks:
+      - royal_internal_net  
+      - royal_public_net     
+    environment:
+      - MONGO_URI=mongodb://db-container:27017/royalchess
+    depends_on:
+      - royal-db
+
+  royal-frontend:
+    build:
+      context: ./royalchess      
+      dockerfile: client/Dockerfile 
+    ports:
+      - "3000:3000"
+    networks:
+      - royal_public_net     
+    depends_on:
+      - royal-backend
+
+  stac-db:
+    image: postgres:15-alpine
+    container_name: stac-database
+    environment:
+      POSTGRES_DB: stac_db
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: 123
+    networks:
+      - stac_internal_net    
+    volumes:
+      - stac_data_vol:/var/lib/postgresql/data 
+
+  stac-backend:
+    build: ./stac-clone/backend
+    container_name: backend-stac
+    ports:
+      - "8000:8000"
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    environment:
+      
+      - DATABASE_URL=postgres://user:123@stac-database:5432/stac_db
+    networks:
+      - stac_internal_net    
+      - stac_public_net      
+    depends_on:
+      - stac-db
+
+  stac-frontend:
+    build: ./stac-clone/frontend
+    container_name: frontend-stac
+    ports:
+      - "3001:3000"
+    networks:
+      - stac_public_net      
+
+
+networks:
+  # Public networks (Frontend <-> Backend)
+  royal_public_net:
+    driver: bridge
+  stac_public_net:
+    driver: bridge
+
+  # Internal networks (Backend <-> DB only)
+  royal_internal_net:
+    driver: bridge
+    internal: true 
+  stac_internal_net:
+    driver: bridge
+    internal: true
+
+volumes:
+  royal_data_vol:
+  stac_data_vol:
