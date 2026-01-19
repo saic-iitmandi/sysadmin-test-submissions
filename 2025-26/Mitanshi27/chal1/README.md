@@ -1,15 +1,52 @@
-# Challenge1- Gain access to remote
-The objective is to identify and exploit the vulnerabiliy and gain root access on the VM machine (ubuntu) to capture the flag at '/root/flag.txt'.
+Challenge 1 – Gain Access to a Remote
+Overview
 
-After importing the VM we enter it by credentials provided: username: student, password:saic
+The goal of this challenge was to identify a vulnerability in the provided Ubuntu virtual machine, exploit it to gain root access, and retrieve the flag located at /root/flag.txt.
 
-After logging in basic enumeration was performed to identify potential privilege escalation vectors using following system checks: Os and kernel version, SUID binaries, Installed system services and privilege escalation vectors using known CVEs.
-During enumeration, it was observed that the system was vulnerable to **PwnKit (CVE-2021-4034)**, a local privilege escalation vulnerability affecting `polkit`.
+The VM was imported and run locally, and all actions were performed from within the system as required.
 
-PwnKit is a local privilege escalation vulnerability in `pkexec` that allows an unprivileged user to execute commands as root due to improper handling of environment variables.
+Initial Access
 
-The vulnerable `pkexec` binary was present and had the SUID bit set, making the system exploitable.
+Access to the machine was provided using the given credentials:
 
-A public proof-of-concept exploit for PwnKit was used to escalate privileges from the `student` user to root.
+Username: student
 
-After executing the exploit from within the VM: A root shell was successfully obtained
+Password: saic
+
+After logging in as a low-privileged user, the system was ready for further investigation.
+
+Enumeration
+
+Once logged in, basic enumeration was performed to identify possible privilege escalation paths. This included checking:
+
+Operating system and kernel version
+
+SUID binaries
+
+Installed services and configurations
+
+Known privilege escalation vulnerabilities (CVEs)
+
+During this process, it was observed that the system was running a vulnerable version of polkit, which is affected by PwnKit (CVE-2021-4034).
+
+Vulnerability Identified: PwnKit (CVE-2021-4034)
+
+PwnKit is a local privilege escalation vulnerability in the pkexec utility. Due to improper handling of environment variables, an unprivileged user can execute commands with root privileges.
+
+The pkexec binary on the system had the SUID bit set, confirming that the machine was vulnerable and exploitable.
+
+Exploitation
+
+A publicly available proof-of-concept exploit for PwnKit was executed from the student account. The exploit successfully abused the vulnerable pkexec binary and resulted in a root shell.
+
+No restricted methods such as recovery mode or external disk access were used during exploitation.
+
+Flag Retrieval
+
+After gaining root access, the flag was retrieved directly from the root directory:
+
+/root/flag.txt
+
+Conclusion
+
+This challenge demonstrates how unpatched local privilege escalation vulnerabilities can lead to complete system compromise. It highlights the importance of keeping system packages updated and carefully auditing SUID binaries on production systems.
