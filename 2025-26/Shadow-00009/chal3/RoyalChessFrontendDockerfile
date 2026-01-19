@@ -1,0 +1,46 @@
+# royal-chess/frontend/Dockerfile
+# Use Debian image for better file handling
+FROM node:20-bookworm-slim as builder
+WORKDIR /temp_repo
+
+# 1. Enable Yarn
+RUN corepack enable
+
+# 2. Install dependencies in the workspace first
+COPY . .
+RUN yarn install
+
+# ========================================================
+# THE "SCORCHED EARTH" STRATEGY
+# ========================================================
+WORKDIR /app
+
+# 3. Copy the frontend code here
+RUN cp -R /temp_repo/frontend/. .
+
+# 4. Deep Copy dependencies (Dereference symlinks with -L)
+# This breaks the link to the workspace and makes files local
+RUN cp -L -R /temp_repo/node_modules ./node_modules
+
+# 5. DESTROY THE EVIDENCE
+# We completely delete the original workspace.
+# Now, it is physically impossible for Next.js to find the parent package.json
+RUN rm -rf /temp_repo
+
+# 6. Remove local lockfiles to look like a standalone project
+RUN rm -f yarn.lock pnpm-lock.yaml package-lock.json
+
+# 7. Force Node Resolution
+ENV NODE_PATH=/app/node_modules
+ENV PATH=/app/node_modules/.bin:$PATH
+
+# 8. Build
+# We use 'npx' because it knows how to run the library directly
+# bypassing the broken binary shortcuts.
+RUN npx next build
+
+# Stage 2: Serve with Nginx
+FROM nginx:alpine
+COPY --from=builder /app/build /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]

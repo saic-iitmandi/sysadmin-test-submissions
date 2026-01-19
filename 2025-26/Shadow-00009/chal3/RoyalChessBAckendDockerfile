@@ -1,0 +1,23 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Enable Corepack
+RUN corepack enable
+
+# 1. Copy the ROOT package.json and lockfile first (for the workspace setup)
+COPY package.json yarn.lock* pnpm-lock.yaml* ./
+
+# 2. Copy the shared packages (if they exist) and the backend folder
+# We copy everything to make sure the workspace links work
+COPY . .
+
+# 3. Install dependencies from the root
+RUN yarn install
+
+# 4. Move into the backend folder to run the app
+WORKDIR /app/backend
+
+EXPOSE 5000
+
+CMD ["yarn", "start"]
