@@ -1,0 +1,19 @@
+===== Clash_WATCH CORE SYSTEM REPORT =====
+Timestamp: 2026-01-17 12:41:54.706515
+
+
+Inspecting Container: fresh1
+[CRITICAL] Container fresh1 is NOT running (state = created)
+[WARNING] Port clash detected on host port 8080. Container fresh1 cannot start.
+[RECOVERY] Rerouting colliding container fresh1 to new port 8001
+[SUCCESS] Container fresh1 rerouted and started on port 8001
+
+Inspecting Container: clash3
+[OK] Container clash3 running normally
+[INFO] Port 8000 is busy, but owned by THIS running container (clash3). No action needed.
+
+Inspecting Container: clash4
+[OK] Container clash4 running normally
+[INFO] Port 8080 is busy, but owned by THIS running container (clash4). No action needed.
+
+===== REPORT COMPLETE =====
