@@ -1,0 +1,17 @@
+services:
+  log-manager:
+    build: .
+    network_mode: "host"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+  
+  frontend:
+    image: nginx:alpine
+    ports:
+      - "8081:80"
+
+  api_docs:
+    image: httpd:alpine
+    ports:
+      - "8082:80"
+      
